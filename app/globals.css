@@ -1,0 +1,173 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* Primary Colors */
+  --navy: #0C3050;
+  --navy-muted: #B5D4F4;
+  --text-body: #5C4A2A;
+  --text-heading: #2D1A0E;
+  
+  /* Secondary Colors */
+  --cream: #F5F0E8;
+  --cream-card: #EDE5D4;
+  --divider: #B9AA90;
+  --border-color: #D8CEB8;
+  
+  /* Accent Colors */
+  --gold: #C6993A;
+  --gold-light: #FAEEDA;
+  --label: #633806;
+
+  /* Semantic tokens */
+  --background: #F5F0E8;
+  --foreground: #2D1A0E;
+  --card: #EDE5D4;
+  --card-foreground: #5C4A2A;
+  --popover: #EDE5D4;
+  --popover-foreground: #2D1A0E;
+  --primary: #0C3050;
+  --primary-foreground: #F5F0E8;
+  --secondary: #EDE5D4;
+  --secondary-foreground: #5C4A2A;
+  --muted: #D8CEB8;
+  --muted-foreground: #5C4A2A;
+  --accent: #C6993A;
+  --accent-foreground: #2D1A0E;
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.577 0.245 27.325);
+  --border: #D8CEB8;
+  --input: #D8CEB8;
+  --ring: #C6993A;
+  --radius: 0.5rem;
+}
+
+@theme inline {
+  --font-sans: var(--font-inter), system-ui, sans-serif;
+  --font-serif: var(--font-playfair), Georgia, serif;
+  --font-mono: 'Geist Mono', monospace;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  
+  /* Custom colors */
+  --color-navy: var(--navy);
+  --color-navy-muted: var(--navy-muted);
+  --color-cream: var(--cream);
+  --color-cream-card: var(--cream-card);
+  --color-gold: var(--gold);
+  --color-gold-light: var(--gold-light);
+  --color-label: var(--label);
+  --color-divider: var(--divider);
+  --color-text-body: var(--text-body);
+  --color-text-heading: var(--text-heading);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-cream text-text-body;
+  }
+}
+
+/* Custom animations */
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-left {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-in-right {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.8s ease-out forwards;
+}
+
+.animate-fade-in {
+  animation: fade-in 0.6s ease-out forwards;
+}
+
+.animate-slide-in-left {
+  animation: slide-in-left 0.8s ease-out forwards;
+}
+
+.animate-slide-in-right {
+  animation: slide-in-right 0.8s ease-out forwards;
+}
+
+.animation-delay-100 { animation-delay: 0.1s; }
+.animation-delay-200 { animation-delay: 0.2s; }
+.animation-delay-300 { animation-delay: 0.3s; }
+.animation-delay-400 { animation-delay: 0.4s; }
+.animation-delay-500 { animation-delay: 0.5s; }
+.animation-delay-600 { animation-delay: 0.6s; }
+
+/* Scroll reveal initial state */
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.scroll-reveal.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
