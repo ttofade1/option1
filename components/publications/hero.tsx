@@ -24,7 +24,7 @@ export function PublicationsHero() {
             isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
           }`}
         >
-          Books & Publications
+          Publications
         </h1>
         <p
           className={`text-navy-muted text-lg max-w-2xl mx-auto leading-relaxed transition-all duration-700 delay-200 ${

@@ -5,23 +5,23 @@ import { AnimatedSection } from "@/components/animated-section"
 const stats = [
   {
     value: "1,000+",
-    label: "Research Citations",
+    label: "Research Publication Citations",
   },
   {
     value: "7",
-    label: "New academic programs launched in 2024—largest expansion in ACPHS history",
+    label: "New academic programs launched in 2024",
   },
   {
     value: "35%",
-    label: "Increase in student deposits under her leadership",
+    label: "Increase in student deposits",
   },
   {
     value: "18",
-    label: "International partnerships at Howard, spanning 6 continents",
+    label: "International partnerships at Howard",
   },
   {
     value: "3x",
-    label: "Named to Albany Business Review Power 50 (2023, 2024, 2025)",
+    label: "Albany Business Review Power 50",
   },
 ]
 

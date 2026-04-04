@@ -48,10 +48,10 @@ export function CTASection() {
           <AnimatedSection animation="slide-right" delay={300}>
             <div className="grid grid-cols-2 gap-4">
               <div className="space-y-4">
-                <div className="relative aspect-[3/4]">
+                <div className="relative aspect-[3/4] object-[left_20%]">
                   <Image
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Toyin-takes-elevator-to-Inauguration-Ceremony-1540x866-zNsUNfInYRwXupNadDHMMSTYjOFTp3.jpg"
-                    alt="Dr. Tofade at inauguration ceremony"
+                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/SF_PBweb-21-LJCeMBUBhrjwOrp5DGxDz0NkakTgBT.jpg"
+                    alt="Dr. Tofade and her husband"
                     fill
                     className="object-cover"
                   />

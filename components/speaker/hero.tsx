@@ -18,10 +18,12 @@ export function SpeakerHero() {
           src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/4eecff39fbc66cedd4cea353d30ff64e-c8bEZjKMGceEmeojVKfJgt76IjQPqj.jpeg"
           alt="Dr. Tofade at podium"
           fill
-          className="object-cover opacity-30"
+          className="object-cover opacity-70"
           priority
+          style={{objectPosition: "center 10%"}}
+
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-navy via-navy/95 to-navy/80" />
+        <div className="absolute inset-0 bg-gradient-to-r from-navy via-navy/55 to-navy/80" />
       </div>
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">

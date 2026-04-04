@@ -18,10 +18,12 @@ export function GWLHero() {
           src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/width_1600%20%282%29-xfGc2m7LMmhxcHG7lzErJbjsLKSedL.jpeg"
           alt="Dr. Tofade speaking"
           fill
-          className="object-cover opacity-30"
+          className="object-cover opacity-90"
           priority
+          style={{objectPosition: "right 10%"}}
+
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-navy via-navy/95 to-navy/80" />
+        <div className="absolute inset-0 bg-gradient-to-r from-navy via-navy/65 to-navy/70" />
       </div>
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">

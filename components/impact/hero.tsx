@@ -18,10 +18,12 @@ export function ImpactHero() {
           src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ACPHS-Leadership-at-Commencement-1540x866-7nRBd4I5tozVjoDecjgyDvWKIL3N9b.jpg"
           alt="ACPHS Leadership at Commencement"
           fill
-          className="object-cover opacity-30"
+          className="object-cover opacity-95"
           priority
+          style={{objectPosition: "center 10%"}}
+
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-navy via-navy/90 to-navy/70" />
+        <div className="absolute inset-0 bg-gradient-to-r from-navy via-navy/60 to-navy/70" />
       </div>
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">

@@ -17,7 +17,7 @@ const storyChapters = [
 Chapel Hill was where she discovered the power of mentorship. It was there that she first crossed paths with Professor Fred Eckel who, she later said, "tapped me when I was a nobody in Nigeria." That relationship would span decades, and come full circle when she became the first Black person to receive the Fred Eckel Pharmacy Leadership Award from UNC in 2019.
 
 "I believe relationships are powerful," she said. "I list the touch points of my career in names rather than CV entries."`,
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/SF_PBPRINT-29-nYo06L9iTX7qgazn2KIAPlJYxj8f1l.jpg",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/SF_PBweb-13-BYVZGE1d2gRZtivmyg53TjCkYxUMFK.jpg",
     imageAlt: "Dr. Tofade professional portrait",
     imagePosition: "right",
   },

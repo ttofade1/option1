@@ -5,64 +5,58 @@ import { FileText, ExternalLink } from "lucide-react"
 
 const publications = [
   {
-    title: "Best practices in pharmacy education: teaching to transform student learning",
-    journal: "American Journal of Pharmaceutical Education",
-    year: "2010",
-  },
-  {
-    title: "Assessment of student pharmacists' knowledge and attitudes about pharmacogenomics",
-    journal: "American Journal of Pharmaceutical Education",
-    year: "2011",
-  },
-  {
-    title: "Use of reflective practice to improve pharmacists' patient care outcomes",
-    journal: "American Journal of Pharmaceutical Education",
-    year: "2013",
-  },
-  {
-    title: "Pharmacy education scholarship: from conception to publication",
-    journal: "American Journal of Pharmaceutical Education",
-    year: "2014",
-  },
-  {
-    title: "The role of institutional culture in mentoring junior pharmacy faculty",
+    title: "Making a Curricular Commitment to Continuing Professional Development in Doctor of Pharmacy Programs",
     journal: "American Journal of Pharmaceutical Education",
     year: "2015",
+    link:"https://www.researchgate.net/publication/286450899_Making_a_Curricular_Commitment_to_Continuing_Professional_Development_in_Doctor_of_Pharmacy_Programs",
   },
   {
-    title: "Development and validation of a competency framework for pharmacy education",
-    journal: "American Journal of Pharmaceutical Education",
+    title: "Strategies to grow an experiential learning program—The role of administrators",
+    journal: "Currents in Pharmacy Teaching and Learning",
     year: "2016",
+    link:"https://www.researchgate.net/publication/299125766_Strategies_to_grow_an_experiential_learning_program-The_role_of_administrators",
   },
   {
-    title: "Global pharmacy education: challenges and opportunities",
-    journal: "International Pharmaceutical Federation",
-    year: "2018",
-  },
-  {
-    title: "Transforming pharmacy education through strategic leadership",
+    title: "Use of SMART Learning Objectives to Introduce Continuing Professional Development Into the Pharmacy Curriculum",
     journal: "American Journal of Pharmaceutical Education",
-    year: "2019",
+    year: "2012",
+    link:"https://www.researchgate.net/publication/225050639_Use_of_SMART_Learning_Objectives_to_Introduce_Continuing_Professional_Development_Into_the_Pharmacy_Curriculum",
   },
   {
-    title: "Building diverse and inclusive pharmacy programs",
+    title: "Clinical Track Program Expansion Increases Rotation Capacity for Experiential Program",
     journal: "American Journal of Pharmaceutical Education",
-    year: "2020",
+    year: "2017",
+    link:"https://www.researchgate.net/publication/321142235_Clinical_Track_Program_Expansion_Increases_Rotation_Capacity_for_Experiential_Program",
   },
   {
-    title: "Crisis leadership in higher education: lessons from the pandemic",
-    journal: "Academic Medicine",
-    year: "2021",
+    title: "Current Practices in Hosting Non-US Pharmacy Students at US Pharmacy Schools in Experiential Clerkships",
+    journal: "American Journal of Pharmaceutical Education",
+    year: "2017",
+    link:"https://www.researchgate.net/publication/321893740_Current_Practices_in_Hosting_Non-US_Pharmacy_Students_at_US_Pharmacy_Schools_in_Experiential_Clerkships",
   },
   {
-    title: "International partnerships in pharmacy education: a framework for success",
-    journal: "International Pharmaceutical Federation",
-    year: "2022",
-  },
-  {
-    title: "The future of health sciences education: innovation and accessibility",
-    journal: "Journal of Health Sciences Education",
+    title: "Results from a global pharmacy leadership needs assessment: Opportunities to advance pharmacy leadership",
+    journal: "Pharmacy Education",
     year: "2024",
+    link:"https://www.researchgate.net/publication/378377012_Results_from_a_global_pharmacy_leadership_needs_assessment_Opportunities_to_advance_pharmacy_leadership",
+  },
+  {
+    title: "Transforming pharmaceutical education: A needs-based global analysis for policy development",
+    journal: "Exploratory Research in Clinical and Social Pharmacy",
+    year: "2023",
+    link:"https://www.researchgate.net/publication/368517117_Transforming_pharmaceutical_education_A_needs-based_global_analysis_for_policy_development",
+  },
+  {
+    title: "Leading with heart in service of global initiatives",
+    journal: "American journal of health-system pharmacy: AJHP: official journal of the American Society of Health-System Pharmacists",
+    year: "2023",
+    link:"https://www.researchgate.net/publication/367329740_Leading_with_heart_in_service_of_global_initiatives",
+  },
+  {
+    title: "Past, present, and future of the International Pharmaceutical Federation (FIP) Academic Pharmacy Section: Interviews with past presidents",
+    journal: "Pharmacy Education",
+    year: "2022",
+    link:"https://www.researchgate.net/publication/365295922_Past_present_and_future_of_the_International_Pharmaceutical_Federation_FIP_Academic_Pharmacy_Section_Interviews_with_past_presidents",
   },
 ]
 
@@ -88,6 +82,11 @@ export function PublicationsList() {
         <div className="grid gap-4">
           {publications.map((pub, index) => (
             <AnimatedSection key={pub.title} delay={index * 30}>
+                <a
+                href={pub.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                >
               <div className="flex gap-4 p-6 bg-cream-card border border-border hover:border-gold transition-colors duration-300 group">
                 <FileText className="w-6 h-6 text-gold shrink-0 mt-1" />
                 <div className="flex-1">
@@ -98,7 +97,9 @@ export function PublicationsList() {
                     {pub.journal} • {pub.year}
                   </p>
                 </div>
+                <ExternalLink className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </div>
+              </a>
             </AnimatedSection>
           ))}
         </div>

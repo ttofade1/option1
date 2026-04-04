@@ -79,6 +79,14 @@ export function GWLContent() {
         {/* Image Gallery */}
         <AnimatedSection delay={200}>
           <div className="grid md:grid-cols-3 gap-6">
+                        <div className="relative aspect-[3/4]">
+              <Image
+                src="/images/withKemi.jpeg"
+                alt="Dr. Tofade with church member"
+                fill
+                className="object-cover"
+              />
+            </div>
             <div className="relative aspect-[3/4]">
               <Image
                 src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/SF_PBweb-15-gl2EKrbeiBW970azeAnFlBE6JiwD0S.jpg"
@@ -89,18 +97,11 @@ export function GWLContent() {
             </div>
             <div className="relative aspect-[3/4]">
               <Image
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/width_1600%20%283%29-ieyqAmo5qDl1oWErZSR87X8vfsl48S.jpeg"
-                alt="Dr. Tofade worshipping"
+                src="/images/congregation.jpeg"
+                alt="Dr. Tofade with congregation"
                 fill
                 className="object-cover"
-              />
-            </div>
-            <div className="relative aspect-[3/4]">
-              <Image
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/SF_PBweb-21-LJCeMBUBhrjwOrp5DGxDz0NkakTgBT.jpg"
-                alt="Dr. Tofade with her husband"
-                fill
-                className="object-cover"
+                style={{objectPosition: "right 10%"}}
               />
             </div>
           </div>

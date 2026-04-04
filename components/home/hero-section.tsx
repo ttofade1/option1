@@ -18,10 +18,10 @@ export function HeroSection() {
           src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/4eecff39fbc66cedd4cea353d30ff64e-c8bEZjKMGceEmeojVKfJgt76IjQPqj.jpeg"
           alt="Dr. Toyin Tofade at the presidential podium"
           fill
-          className="object-cover object-top opacity-40"
+          className="object-cover object-top opacity-70"
           priority
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-navy via-navy/80 to-navy/60" />
+        <div className="absolute inset-0 bg-gradient-to-t from-navy via-navy/60 to-navy/40" />
       </div>
 
       {/* Content */}
@@ -33,7 +33,6 @@ export function HeroSection() {
               isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
             }`}
           >
-            Healthcare • Education • Faith
           </p>
 
           {/* Main Headline */}

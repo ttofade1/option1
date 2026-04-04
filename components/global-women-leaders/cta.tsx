@@ -8,7 +8,7 @@ export function GWLCta() {
   return (
     <section className="py-24 bg-navy">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <AnimatedSection>
+        {/* <AnimatedSection>
           <p className="text-gold text-sm tracking-[0.15em] uppercase mb-4">
             Join The Movement
           </p>
@@ -42,7 +42,7 @@ export function GWLCta() {
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </Link>
           </div>
-        </AnimatedSection>
+        </AnimatedSection> */}
       </div>
     </section>
   )

@@ -7,6 +7,9 @@ import { Send, Loader2 } from "lucide-react"
 export function SpeakerForm() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [isSubmitted, setIsSubmitted] = useState(false)
+  const today = new Date().toISOString().split('T')[0];
+  // const today = "01/01/01";
+
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
@@ -140,6 +143,7 @@ export function SpeakerForm() {
                 type="date"
                 id="date"
                 name="date"
+                min={today}
                 required
                 className="w-full px-4 py-3 bg-navy border border-navy-muted/30 text-cream focus:outline-none focus:border-gold transition-colors"
               />

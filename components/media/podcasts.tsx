@@ -5,25 +5,26 @@ import { Mic, ExternalLink } from "lucide-react"
 
 const podcasts = [
   {
-    show: "Unscripted (ACPHS Podcast)",
-    episode: "Servant Leadership",
+    show: "Unscripted",
+    episode: "Servant Leadership and the Importance of Sponsorship",
     platform: "Apple Podcasts",
-    link: "#",
-  },
-  {
-    show: "WHUR: The Journey",
-    episode: "Growing a Pharmacy Program on a Global Stage",
-    link: "#",
+    link: "https://podcasts.apple.com/us/podcast/50-toyin-tofade-ms-pharmd-bcps-cpcc-ffip-servant-leadership/id1578805977?i=1000607586023",
   },
   {
     show: "Visionary MD",
-    episode: "Mentorship Across Disciplines",
-    link: "#",
+    episode: "Mentorship across disciplines with President Toyin Tofade",
+    platform: "Apple Podcasts",
+    link: "https://podcasts.apple.com/us/podcast/mentorship-across-disciplines-with-president-toyin/id1700557468?i=1000656643905",
   },
   {
-    show: "WAMC Public Radio",
-    episode: "Interviews on pharmacy education and ACPHS leadership",
-    link: "#",
+    show: "Center for Women, Gender and Global Leadership",
+    episode: "Women in Leadership: Dean Toyin Tofade",
+    link: "https://www.youtube.com/watch?v=DTlmqEF8isY",
+  },
+    {
+    show: "International Pharmaceutical Federation",
+    episode: "Shaping the future of pharmacy education",
+    link: "https://www.youtube.com/watch?v=msJWBGyyf28",
   },
 ]
 
@@ -45,6 +46,7 @@ export function PodcastsSection() {
             <AnimatedSection key={podcast.show} delay={index * 50}>
               <a
                 href={podcast.link}
+                target="_blank"
                 className="flex gap-4 p-6 border border-navy-muted/20 hover:border-gold/50 transition-all duration-300 group"
               >
                 <Mic className="w-6 h-6 text-gold shrink-0 mt-1" />
