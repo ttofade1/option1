@@ -43,7 +43,7 @@ export function Navigation() {
               href="/speaker-request"
               className="bg-gold hover:bg-gold/90 text-text-heading px-5 py-2.5 text-sm font-medium tracking-wide transition-colors duration-200"
             >
-              Request to Speak
+             Speaker Request Form
             </Link>
           </div>
 
@@ -77,7 +77,7 @@ export function Navigation() {
               onClick={() => setMobileMenuOpen(false)}
               className="block bg-gold hover:bg-gold/90 text-text-heading px-5 py-3 text-center font-medium tracking-wide transition-colors duration-200 mt-4"
             >
-              Request to Speak
+              Speaker Request Form
             </Link>
           </div>
         </div>

@@ -46,7 +46,7 @@ export function Footer() {
             <h4 className="font-serif text-lg mb-4">Connect</h4>
             <div className="flex gap-4 mb-6">
               <a
-                href="https://www.linkedin.com/in/toyintofade/"
+                href="https://www.linkedin.com/in/toyin-tofade-a604181a/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-navy-muted hover:text-cream transition-colors"
@@ -55,7 +55,7 @@ export function Footer() {
                 <Linkedin className="w-5 h-5" />
               </a>
               <a
-                href="mailto:contact@toyintofade.com"
+                href="mailto:toyin.tofade@gmail.com"
                 className="text-navy-muted hover:text-cream transition-colors"
                 aria-label="Email"
               >
