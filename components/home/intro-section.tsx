@@ -41,7 +41,7 @@ export function IntroSection() {
                   From the pharmacy halls of Obafemi Awolowo University in Nigeria to the presidential office of one of the nation&apos;s most respected health sciences colleges, Dr. Toyin Tofade has spent her career doing one thing: raising people up.
                 </p>
                 <p>
-                  She has tripled enrollments, forged partnerships on six continents, and shaped pharmacists into leaders—all while remaining grateful to God for every opportunity to serve.
+                  She has tripled enrollments, forged partnerships on six continents, and shaped pharmacists into leaders, all while remaining grateful to God for every opportunity to serve.
                 </p>
                 <p>
                   Whether she is charting the future of pharmacy education, mentoring a first-generation student, or speaking to thousands about health equity and leadership, Dr. Tofade brings the same conviction: that institutions exist to transform lives, and leaders exist to serve.

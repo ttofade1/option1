@@ -6,7 +6,7 @@ import { AnimatedSection } from "@/components/animated-section"
 const storyChapters = [
   {
     title: "The Beginning",
-    content: `Her father, the late Professor Abayomi Sofowora, was a pioneering pharmacognosist who spent over four decades at Obafemi Awolowo University, including serving as Chairman of the WHO Regional Expert Committee on Traditional Medicine. It was watching him work—watching him translate plant science into medicine that reached communities across Africa—that first sparked Toyin's love of pharmacy. She went on to earn her Bachelor of Pharmacy from OAU, walking the same halls where her father had shaped generations of students.`,
+    content: `Her father, the late Professor Abayomi Sofowora, was a pioneering pharmacognosist who spent over four decades at Obafemi Awolowo University, including serving as Chairman of the WHO Regional Expert Committee on Traditional Medicine. It was watching him work, watching him translate plant science into medicine that reached communities across Africa, that first sparked Toyin's love of pharmacy. She went on to earn her Bachelor of Pharmacy from OAU, walking the same halls where her father had shaped generations of students.`,
     image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/tofade-toyinacphs10mw-11162201-r99A1N9T0FLkqziixpOjNU93NmEno6.jpg",
     imageAlt: "Dr. Tofade at ACPHS campus",
   },
@@ -40,7 +40,7 @@ At Maryland, she rose from Associate Professor and Associate Director to Assista
   },
   {
     title: "Raising Leaders at Howard",
-    content: `In August 2016, Dr. Toyin Tofade was appointed Dean and Professor at Howard University College of Pharmacy in Washington, D.C.—the nation's leading HBCU pharmacy school. She arrived with a clear mandate and an even clearer vision.
+    content: `In August 2016, Dr. Toyin Tofade was appointed Dean and Professor at Howard University College of Pharmacy in Washington, D.C., the nation's leading HBCU pharmacy school. She arrived with a clear mandate and an even clearer vision.
 
 "Any institution can produce a pharmacist," she said. "But to raise leaders takes a different kind of environment."
 
@@ -56,7 +56,7 @@ When she left for Albany in 2022, she didn't leave Howard behind. She establishe
 
 She did not arrive as a symbol. She arrived as a builder.
 
-Under her leadership, ACPHS launched its boldest strategic plan in a generation, introduced its first online academic portfolio, and approved seven new degree programs in a single year—the largest expansion in the institution's history. Applications rose 19%. PharmD first-year deposits surged 210%. Transfer admissions increased by more than 700%.
+Under her leadership, ACPHS launched its boldest strategic plan in a generation, introduced its first online academic portfolio, and approved seven new degree programs in a single year, the largest expansion in the institution's history. Applications rose 19%. PharmD first-year deposits surged 210%. Transfer admissions increased by more than 700%.
 
 At her inauguration in September 2023, she told the gathered community: "Today, I stand before you, not as an individual, but as a representative of a community that has chosen to place its trust in me. Together, we will continue to make history."`,
     image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Toyin-Tofade-stands-with-Board-of-Trustees-at-Inauguration-980x552-RiDO6vz5r605cnW92CD81iqOkxLT9b.jpg",

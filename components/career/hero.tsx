@@ -31,7 +31,7 @@ export function CareerHero() {
             isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
           }`}
         >
-          From clinical pharmacist to college president—a timeline of leadership, mentorship, and institutional transformation.
+          From clinical pharmacist to college president. A timeline of leadership, mentorship, and institutional transformation.
         </p>
       </div>
     </section>

@@ -47,7 +47,7 @@ export function GWLHero() {
               isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
             }`}
           >
-            Dr. Tofade has always believed that leadership is not a title—it is a responsibility. That belief gave rise to Global Women Leaders Inc., the nonprofit she founded to inspire and equip women around the world to step fully into the leadership they were created for.
+            Dr. Tofade has always believed that leadership is not a title, it is a responsibility. That belief gave rise to Global Women Leaders Inc., the nonprofit she founded to inspire and equip women around the world to step fully into the leadership they were created for.
           </p>
         </div>
       </div>

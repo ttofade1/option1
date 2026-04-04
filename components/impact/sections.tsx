@@ -19,7 +19,7 @@ She opened the gift only at the end of her sixth year, when she felt she had fin
     title: "On the Pharmacy Profession",
     content: `As Dean at Howard, Dr. Tofade oversaw the creation of a landmark FDA–GlaxoSmithKline fellowship in regulatory affairs, opening new career pathways for pharmacy graduates that had never existed before. She built partnerships in 16 countries. She elevated Howard's residency match rate from 36 to over 50 percent. She produced pharmacists practicing in every corner of the globe, including as deans of other pharmacy schools and presidents of national pharmacy organizations.
 
-At ACPHS, she launched seven new academic programs in a single year—the largest expansion in the institution's 141 year history. She introduced ACPHS Online, making health sciences education accessible beyond Albany. She doubled industrial fellowships for graduates in a single year.`,
+At ACPHS, she launched seven new academic programs in a single year, the largest expansion in the institution's 141 year history. She introduced ACPHS Online, making health sciences education accessible beyond Albany. She doubled industrial fellowships for graduates in a single year.`,
     image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/dean%20with%20students_0-ae3WmQHlv1TB7RdNGIULUbrLDYsib5.jpg",
     imageAlt: "Dr. Tofade with pharmacy professionals",
   },
