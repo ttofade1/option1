@@ -81,7 +81,7 @@ export function GWLContent() {
           <div className="grid md:grid-cols-3 gap-6">
                         <div className="relative aspect-[3/4]">
               <Image
-                src="/images/withKemi.jpeg"
+                src="withKemi.jpeg"
                 alt="Dr. Tofade with church member"
                 fill
                 className="object-cover"
@@ -97,7 +97,7 @@ export function GWLContent() {
             </div>
             <div className="relative aspect-[3/4]">
               <Image
-                src="/images/congregation.jpeg"
+                src="congregation.jpeg"
                 alt="Dr. Tofade with congregation"
                 fill
                 className="object-cover"
