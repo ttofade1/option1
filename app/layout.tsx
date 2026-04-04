@@ -18,7 +18,22 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: 'Dr. Toyin Tofade | Healthcare Leader, Academic President, Pastor',
   description: 'Dr. Toyin Tofade is a visionary leader at the intersection of healthcare, higher education, and faith. 10th President of Albany College of Pharmacy and Health Sciences.',
-  generator: 'v0.app',
+  icons: {
+    icon: [
+      {
+        url: '/favicon.ico',
+        media: '(prefers-color-scheme: light)',
+      },
+      {
+        url: '/favicon.ico',
+        media: '(prefers-color-scheme: dark)',
+      },
+      {
+        url: '/favicon.svg',
+        type: 'image/svg+xml',
+      },
+    ],
+  },
   keywords: ['Dr. Toyin Tofade', 'ACPHS President', 'Healthcare Leadership', 'Pharmacy Education', 'Women in Leadership'],
   openGraph: {
     title: 'Dr. Toyin Tofade | Healthcare Leader, Academic President, Pastor',
