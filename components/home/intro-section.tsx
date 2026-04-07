@@ -12,7 +12,7 @@ export function IntroSection() {
           <AnimatedSection animation="slide-left">
             <div className="relative aspect-[4/5] max-w-md mx-auto lg:mx-0">
               <Image
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/SF_PBweb-25-FvLMii3DicExE7bEt7aKyT8GxtE5Yo.jpg"
+                src="gray.jpg"
                 alt="Dr. Toyin Tofade professional portrait"
                 fill
                 className="object-cover"
