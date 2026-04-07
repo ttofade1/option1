@@ -41,7 +41,6 @@ export function HeroSection() {
               isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
             }`}
           >
-            <span className="text-gold italic">Called to heal.</span>
             <br />
             <span className="text-gold italic">Called to lead.</span>
             <br />
@@ -54,7 +53,7 @@ export function HeroSection() {
               isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
             }`}
           >
-            Dr. Toyin Tofade is a visionary leader at the intersection of healthcare, higher education, and faith, equipping institutions and individuals to lead with excellence and purpose.
+            Dr. Toyin Tofade is a visionary leader at the intersection of healthcare and higher education, equipping institutions and individuals to lead with excellence and purpose.
           </p>
 
           {/* Sub-headline Badge */}

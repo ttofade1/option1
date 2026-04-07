@@ -6,8 +6,6 @@ import { Mic } from "lucide-react"
 const topics = [
   "Transformational leadership in higher education",
   "Health equity, pharmacy practice, and the future of healthcare",
-  "Diversity, equity, and inclusion in academic institutions",
-  "Women in leadership: breaking barriers and building legacies",
   "The pharmacist as a leader: from clinical practice to the C-suite",
   "Mentorship, community, and the architecture of a meaningful career",
 ]

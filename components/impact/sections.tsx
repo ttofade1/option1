@@ -26,7 +26,7 @@ At ACPHS, she launched seven new academic programs in a single year, the largest
   {
     icon: Heart,
     title: "On Health Equity",
-    content: `Dr. Tofade has served on national boards including the Accreditation Council for Pharmacy Education, the Board of Pharmacy Specialties, and multiple AACP diversity and inclusion task forces. As FIP Academic Pharmacy Section President, she has shaped pharmacy education globally, with a particular commitment to ensuring that countries with the greatest health needs have access to the most prepared practitioners.`,
+    content: `Dr. Tofade has served on national boards including the Accreditation Council for Pharmacy Education, the Board of Pharmacy Specialties, and more. As FIP Academic Pharmacy Section President, she has shaped pharmacy education globally, with a particular commitment to ensuring that countries with the greatest health needs have access to the most prepared practitioners.`,
     image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/width_1600-Dfk81Av6Rm1U58Nu3Ba933MeAJ4mMN.jpeg",
     imageAlt: "Dr. Tofade at health equity event",
   },

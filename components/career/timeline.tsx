@@ -16,13 +16,6 @@ const timelineItems = [
     description: "Continued as a Clinical Specialist and developed and taught the Internal Medicine pharmacy student rotation. Served concurrently as Clinical Associate Professor at UNC Eshelman School of Pharmacy.",
   },
   {
-    years: "2000 – Present",
-    title: "Cofounder & Senior Pastor",
-    organization: "Jubilee Christian Church Int'l Chapel of Victory",
-    description: "Cofounded the North Carolina branch of Jubilee Christian Church Int'l alongside her husband, Dr. Alfred Bisi Tofade, which has branches across North America, Africa, and Europe.",
-    highlight: true,
-  },
-  {
     years: "2002 – 2011",
     title: "Associate Director & Director, Pharmacotherapy Services",
     organization: "Wake AHEC, Raleigh, NC",
@@ -39,7 +32,6 @@ const timelineItems = [
     title: "Dean & Professor",
     organization: "Howard University College of Pharmacy, Washington, D.C.",
     description: "Appointed Dean in 2016, becoming a transformational leader at the nation's preeminent HBCU pharmacy school. Under her six year tenure: enrollment nearly doubled; alumni giving rose 70%; 18 international partnerships were established; full eight year ACPE re-accreditation achieved; FDA-GlaxoSmithKline fellowship partnership created. The first Black woman to be named a FIP Fellow (2018).",
-    highlight: true,
   },
   {
     years: "2022 – Present",

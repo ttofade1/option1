@@ -8,12 +8,8 @@ const stats = [
     label: "Research Publication Citations",
   },
   {
-    value: "7",
-    label: "New academic programs launched in 2024",
-  },
-  {
     value: "35%",
-    label: "Increase in student deposits",
+    label: "Increase in student deposits in 2024",
   },
   {
     value: "18",
@@ -38,7 +34,7 @@ export function StatsSection() {
           </h2>
         </AnimatedSection>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-8">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {stats.map((stat, index) => (
             <AnimatedSection key={stat.value} delay={index * 100}>
               <div className="text-center p-6 border border-navy-muted/20 hover:border-gold/50 transition-colors duration-300">

@@ -10,7 +10,7 @@ export function Footer() {
           <div>
             <h3 className="font-serif text-2xl mb-4">Dr. Toyin Tofade</h3>
             <p className="text-navy-muted text-sm leading-relaxed max-w-xs">
-              A visionary leader at the intersection of healthcare, higher education, and faith.
+              A visionary leader at the intersection of healthcare and higher education.
             </p>
           </div>
 

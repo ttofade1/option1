@@ -77,7 +77,7 @@ export function GWLContent() {
         </div>
 
         {/* Image Gallery */}
-        <AnimatedSection delay={200}>
+        {/* <AnimatedSection delay={200}>
           <div className="grid md:grid-cols-3 gap-6">
                         <div className="relative aspect-[3/4]">
               <Image
@@ -105,7 +105,7 @@ export function GWLContent() {
               />
             </div>
           </div>
-        </AnimatedSection>
+        </AnimatedSection> */}
       </div>
     </section>
   )

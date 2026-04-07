@@ -15,12 +15,12 @@ export function GWLHero() {
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image
-          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/width_1600%20%282%29-xfGc2m7LMmhxcHG7lzErJbjsLKSedL.jpeg"
+          src="withKemi.jpeg"
           alt="Dr. Tofade speaking"
           fill
           className="object-cover opacity-90"
           priority
-          style={{objectPosition: "right 10%"}}
+          style={{objectPosition: "center 20%"}}
 
         />
         <div className="absolute inset-0 bg-gradient-to-r from-navy via-navy/65 to-navy/70" />

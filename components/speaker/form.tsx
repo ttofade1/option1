@@ -176,7 +176,6 @@ export function SpeakerForm() {
                 <option value="">Select a topic</option>
                 <option value="leadership">Transformational leadership in higher education</option>
                 <option value="health-equity">Health equity and the future of healthcare</option>
-                <option value="dei">Diversity, equity, and inclusion</option>
                 <option value="women-leadership">Women in leadership</option>
                 <option value="pharmacy">The pharmacist as a leader</option>
                 <option value="mentorship">Mentorship and career development</option>

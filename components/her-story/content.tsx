@@ -23,9 +23,7 @@ Chapel Hill was where she discovered the power of mentorship. It was there that 
   },
   {
     title: "Building a Practice, Building a Life",
-    content: `After her training, Dr. Tofade joined UNC hospitals as a clinical pharmacist, eventually rising to Clinical Specialist in the general medicine service. She then took the helm as Director of Pharmacotherapy Services at the Wake Area Health Education Center (AHEC), where she served from 2002 to 2011, shaping the next generation of pharmacy practitioners across North Carolina.
-
-During these years, alongside her professional life, she and her husband Alfred also planted roots in Durham's faith community. Together, they helped build Jubilee Christian Church International, a congregation that would grow into a vibrant, multinational community of worship.`,
+    content: `After her training, Dr. Tofade joined UNC hospitals as a clinical pharmacist, eventually rising to Clinical Specialist in the general medicine service. She then took the helm as Director of Pharmacotherapy Services at the Wake Area Health Education Center (AHEC), where she served from 2002 to 2011, shaping the next generation of pharmacy practitioners across North Carolina.`,
     image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/SF_PBweb-4-boJJTsyOnM7FSX7Cun2xMALpefKtMw.jpg",
     imageAlt: "Dr. Tofade with her husband",
   },
