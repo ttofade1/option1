@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react"
 
-export function PublicationsHero() {
+export function WorkWithMeHero() {
   const [isLoaded, setIsLoaded] = useState(false)
 
   useEffect(() => {
@@ -17,21 +17,21 @@ export function PublicationsHero() {
             isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
           }`}
         >
-          Research & Scholarship
+          Executive Coaching & Advisory
         </p>
         <h1
           className={`font-serif text-4xl sm:text-5xl lg:text-6xl text-cream leading-tight mb-6 transition-all duration-700 delay-100 ${
             isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
           }`}
         >
-          Publications & Media
+          Work With Prof. Tofade
         </h1>
         <p
-          className={`text-navy-muted text-lg max-w-2xl mx-auto leading-relaxed transition-all duration-700 delay-200 ${
+          className={`text-navy-muted text-lg max-w-3xl mx-auto leading-relaxed transition-all duration-700 delay-200 ${
             isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
           }`}
         >
-          Prof. Tofade is the author of research publications in pharmacy practice, pharmaceutical education, and health sciences leadership. Her work spans clinical pharmacokinetics, health disparities, pharmacy education, and global health. She has been featured in national and international publications, podcasts, and media outlets covering healthcare, education, and leadership.
+          Coaching that meets you where leadership gets hard
         </p>
       </div>
     </section>

@@ -9,9 +9,9 @@ const navLinks = [
   { href: "/her-story", label: "Her Story" },
   { href: "/career", label: "Career" },
   { href: "/impact", label: "Impact" },
-  { href: "/publications", label: "Publications" },
-  { href: "/media", label: "Media" },
+  { href: "/publications", label: "Publications & Media" },
   { href: "/global-women-leaders", label: "Global Women Leaders" },
+  { href: "/work-with-me", label: "Work With Me" },
 ]
 
 export function Navigation() {
