@@ -38,6 +38,11 @@ export function Footer() {
                   Speaker Request
                 </Link>
               </li>
+              <li>
+                <Link href="/work-with-me" className="text-navy-muted hover:text-cream text-sm transition-colors">
+                  Work With Me
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -55,7 +60,7 @@ export function Footer() {
                 <Linkedin className="w-5 h-5" />
               </a>
               <a
-                href="mailto:toyin.tofade@gmail.com"
+                href="mailto:presidenttofade@gmail.com"
                 className="text-navy-muted hover:text-cream transition-colors"
                 aria-label="Email"
               >
