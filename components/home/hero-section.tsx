@@ -33,6 +33,7 @@ export function HeroSection() {
               isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
             }`}
           >
+            Global Healthcare Executive · University President · Board & Policy Advisor
           </p>
 
           {/* Main Headline */}
@@ -41,6 +42,7 @@ export function HeroSection() {
               isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
             }`}
           >
+            Called to heal.
             <br />
             <span className="text-gold italic">Called to lead.</span>
             <br />
@@ -53,7 +55,7 @@ export function HeroSection() {
               isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
             }`}
           >
-            Dr. Toyin Tofade is a visionary leader at the intersection of healthcare and higher education, equipping institutions and individuals to lead with excellence and purpose.
+            Prof. Toyin Tofade, BPharm, MS, CPCC, FFIP
           </p>
 
           {/* Sub-headline Badge */}
@@ -63,10 +65,10 @@ export function HeroSection() {
             }`}
           >
             <p className="text-label text-sm font-medium leading-relaxed">
-              10th President, Albany College of Pharmacy and Health Sciences
+              10th President (2022–2026), Albany College of Pharmacy and Health Sciences
               <br />
               <span className="text-text-heading font-serif italic">
-                First Black Woman Elected President in the College&apos;s 141-Year History
+                President Emeritus, ACPHS · First Black Woman Elected President in the College&apos;s 143-Year History
               </span>
             </p>
           </div>

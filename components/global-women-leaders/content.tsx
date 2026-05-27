@@ -28,10 +28,10 @@ export function GWLContent() {
                 Our Purpose
               </p>
               <h2 className="font-serif text-3xl sm:text-4xl text-text-heading mb-8">
-                The organization focuses on training, mentorship, and community
+                The organisation focuses on training, mentorship, and community-building
               </h2>
               <p className="text-text-body leading-relaxed mb-8">
-                Providing women in every context with the tools, models, and networks they need to lead with confidence, competence, and purpose.
+                Providing women across sectors with the tools, models, and networks they need to lead with confidence, competence, and sustained impact.
               </p>
 
               {/* Features */}
@@ -43,7 +43,7 @@ export function GWLContent() {
                   <div>
                     <h3 className="font-serif text-lg text-text-heading mb-1">Mission</h3>
                     <p className="text-text-body text-sm">
-                      To inspire and train women internationally to maximize their leadership potential across sectors, across generations, and across borders.
+                      To inspire and train women internationally to maximise their leadership potential — across academia, healthcare, public service, and professional life.
                     </p>
                   </div>
                 </div>
@@ -55,7 +55,7 @@ export function GWLContent() {
                   <div>
                     <h3 className="font-serif text-lg text-text-heading mb-1">Who We Serve</h3>
                     <p className="text-text-body text-sm">
-                      Women in healthcare, academia, ministry, and public life who are ready to grow into the fullness of their calling. First-generation professionals stepping into new authority. Mentors who want to give back the way they have received.
+                      Women at every stage of their professional journey: those entering leadership roles for the first time, those navigating the complexity of senior positions, and those ready to invest in the next generation.
                     </p>
                   </div>
                 </div>
@@ -67,7 +67,7 @@ export function GWLContent() {
                   <div>
                     <h3 className="font-serif text-lg text-text-heading mb-1">Get Involved</h3>
                     <p className="text-text-body text-sm">
-                      Whether you are a woman seeking to deepen your leadership capacity, an organization looking to partner with us, or a donor committed to unlocking women&apos;s potential globally, there is a place for you here.
+                      Whether you are a woman ready to grow into the fullness of your professional potential, an organisation seeking to partner with us, or a donor committed to multiplying women&apos;s leadership impact globally — we want to hear from you.
                     </p>
                   </div>
                 </div>

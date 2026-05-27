@@ -4,82 +4,67 @@ import { AnimatedSection } from "@/components/animated-section"
 import { Users, Briefcase, Building2, Award, Mic } from "lucide-react"
 
 const audiences = [
-  "Senior executives and presidents in higher education and healthcare",
-  "Emerging leaders preparing for their first dean, VP, or C-suite role",
-  "Women in leadership navigating historically exclusionary spaces",
-  "Organizations seeking board advisory support on strategy, transformation, and health systems",
-  "Professional associations and pharmacy/health sciences organizations seeking speakers, facilitators, and advisors",
+  "Presidents, deans, VPs, and C-suite leaders in higher education and healthcare",
+  "Emerging leaders preparing for their first senior executive role",
+  "Women navigating historically exclusionary leadership environments",
+  "Boards seeking advisory expertise in higher education governance and health systems",
+  "Professional associations seeking speakers, facilitators, and strategic advisors",
 ]
 
 const offerings = [
   {
     title: "Executive Leadership Coaching",
-    subtitle: "For presidents, deans, VPs, and senior leaders navigating complex institutional environments",
+    subtitle: "For presidents, deans, VPs, and senior leaders in higher education and healthcare",
     icon: Award,
     items: [
-      "Strategic vision development and institutional positioning",
-      "Leading through transformation, merger, and organizational change",
-      "Board relations and governance dynamics",
-      "Executive presence, communications, and stakeholder management",
-      "Building and sustaining high-performing teams",
-      "Navigating firsts: leading as a woman, as a person of color, or as an outsider in a traditional institution",
-      "Resilience and sustainable leadership under pressure",
+      "Leading institutional transformation, merger, and complex organisational change",
+      "Strategic vision, board relations, and governance dynamics",
+      "Executive presence, stakeholder communications, and crisis leadership",
+      "Building high-performing teams and sustainable leadership cultures",
+      "Leading as a first, a woman, or an underrepresented leader in a traditional institution",
     ],
-    engagement: "1:1 sessions, typically 3-6 month engagements",
   },
   {
     title: "Emerging Leader Accelerator",
-    subtitle: "For directors, associate deans, and high-potential professionals preparing for executive roles",
+    subtitle: "For directors and associate deans preparing for executive roles",
     icon: Users,
     items: [
-      "Defining and communicating your leadership identity",
+      "Defining and communicating a clear leadership identity",
       "Translating subject-matter expertise into institutional leadership",
-      "Building strategic relationships and sponsor networks",
-      "Navigating career transitions into senior academic and healthcare administration",
-      "Developing an executive presence that opens doors",
+      "Building strategic relationships, sponsor networks, and executive presence",
+      "Navigating career transitions into senior academic or healthcare administration",
     ],
-    engagement: "Cohort or individual formats, typically 3-4 months",
   },
   {
-    title: "Organizational & Team Development",
-    subtitle: "For leadership teams building culture, alignment, and high performance",
+    title: "Organisational & Team Development",
+    subtitle: "For leadership teams building alignment and high performance",
     icon: Building2,
     items: [
       "Strategic planning facilitation for academic and healthcare institutions",
-      "Leadership development program design",
-      "Team culture diagnostics and alignment workshops",
-      "DEI leadership integration: making inclusion a leadership discipline, not an initiative",
-      "Building accreditation-ready cultures of excellence",
+      "Team culture diagnostics, alignment workshops, and accreditation-ready cultures",
+      "DEI integration as institutional strategy rather than standalone initiative",
     ],
-    engagement: "Custom engagements, typically workshop-based or 6-12 month advisory",
   },
   {
     title: "Board Advisory & Governance",
-    subtitle: "For boards and organizations seeking executive insight at the governance level",
+    subtitle: "For boards seeking executive insight at the governance level",
     icon: Briefcase,
     items: [
-      "Board governance and institutional strategy advisory",
-      "President/CEO evaluation frameworks for higher education boards",
-      "Health sciences and pharmacy sector expertise for healthcare and academic boards",
+      "Institutional strategy, president/CEO evaluation, and health sciences sector expertise",
       "Strategic partnership and merger evaluation advisory",
     ],
-    engagement: "Retainer or project-based",
   },
   {
     title: "Speaking & Leadership Facilitation",
-    subtitle: "For conferences, convenings, institutional events, and professional associations",
+    subtitle: "For conferences, associations, and institutional events",
     icon: Mic,
     items: [
       "Transformational leadership in higher education and healthcare",
-      "Health equity, pharmacy practice, and the future of health systems",
-      "Women in leadership: breaking barriers, building legacies, and paying it forward",
-      "Diversity, equity, and inclusion as institutional strategy",
-      "Global health workforce development and international partnerships",
-      "The pharmacist as a leader: from clinical practice to the executive suite",
-      "Mentorship, resilience, and the architecture of a meaningful career",
+      "Health equity, pharmacy practice, and global health workforce development",
+      "Women in leadership: breaking barriers and building legacies",
       "Leading through merger and institutional transformation",
+      "Mentorship, resilience, and the architecture of a meaningful career",
     ],
-    engagement: "Keynote, panel, workshop, or fireside chat formats",
   },
 ]
 
@@ -91,10 +76,10 @@ export function WorkWithMeContent() {
         <AnimatedSection>
           <div className="mb-16">
             <p className="text-text-body text-lg leading-relaxed mb-6">
-              Prof. Toyin Tofade is a Certified Professional Co-active Coach (CPCC) with over two decades of executive leadership experience across higher education, healthcare, and global policy. She has built high-performing teams, led complex institutional transformations, navigated mergers, secured major public-private partnerships, and developed leaders at every level — from student pharmacists to deans and senior executives.
+              Prof. Toyin Tofade is a Certified Professional Co-active Coach (CPCC) with over two decades of executive leadership experience across higher education, healthcare, and global policy. She has led institutional mergers, secured public-private partnerships, built high-performing teams across four institutions, and navigated the full complexity of senior academic and healthcare administration.
             </p>
             <p className="text-text-body text-lg leading-relaxed">
-              Her coaching practice draws directly from this experience. She works with a select group of executives, emerging leaders, and institutions who are navigating the transitions, decisions, and pressures that come with significant responsibility — and who are ready to lead at a higher level.
+              Her coaching practice is selective and draws directly from this experience. She works with a limited number of executives, emerging leaders, and organisations at a time — prioritising engagements where she can make a genuine and meaningful contribution.
             </p>
           </div>
         </AnimatedSection>
@@ -140,7 +125,7 @@ export function WorkWithMeContent() {
                     </p>
                   </div>
                 </div>
-                <ul className="space-y-2 mb-6 ml-16">
+                <ul className="space-y-2 ml-16">
                   {offering.items.map((item, i) => (
                     <li key={i} className="flex gap-3 items-start">
                       <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 shrink-0" />
@@ -148,9 +133,6 @@ export function WorkWithMeContent() {
                     </li>
                   ))}
                 </ul>
-                <p className="text-gold text-sm font-medium ml-16">
-                  Engagement: {offering.engagement}
-                </p>
               </div>
             </AnimatedSection>
           ))}
@@ -161,7 +143,7 @@ export function WorkWithMeContent() {
           <div className="mt-16 p-8 bg-gold-light border border-gold/30 text-center">
             <p className="text-label font-medium mb-2">A Note on Availability</p>
             <p className="text-text-body text-sm max-w-2xl mx-auto">
-              Prof. Tofade maintains a selective coaching practice and speaking calendar alongside her presidential responsibilities. Engagements are accepted on a limited basis to ensure depth, quality, and genuine impact. She prioritizes work that is aligned with her expertise and where she can bring meaningful contribution.
+              Prof. Tofade maintains a selective coaching practice alongside her ongoing advisory commitments. Engagements are accepted on a limited basis to ensure depth and genuine impact. All enquiries are reviewed; her team responds within five business days.
             </p>
           </div>
         </AnimatedSection>

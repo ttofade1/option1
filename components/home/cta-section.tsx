@@ -37,7 +37,14 @@ export function CTASection() {
                   href="/speaker-request"
                   className="inline-flex items-center justify-center gap-2 bg-gold hover:bg-gold/90 text-text-heading px-8 py-4 font-medium tracking-wide transition-colors duration-200 group"
                 >
-                  Request Dr. Tofade to Speak
+                  Request to Speak
+                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                </Link>
+                <Link
+                  href="/work-with-me"
+                  className="inline-flex items-center justify-center gap-2 border-2 border-navy hover:bg-navy hover:text-cream text-navy px-8 py-4 font-medium tracking-wide transition-colors duration-200 group"
+                >
+                  Work With Prof. Tofade
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </Link>
               </div>

@@ -35,7 +35,7 @@ export function HerStoryHero() {
                 isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
               }`}
             >
-              Every extraordinary leader has a first chapter that most people never see. For Dr. Toyin Tofade, that chapter began in Ile-Ife, Nigeria, in the shadow of one of West Africa&apos;s most distinguished universities, and one of its most distinguished pharmacists.
+              Every leader&apos;s authority is rooted somewhere. For Prof. Toyin Tofade, it is rooted in Nigeria — in the pharmacy halls of Obafemi Awolowo University, and in the example of her father, the late Professor Abayomi Sofowora.
             </p>
           </div>
 

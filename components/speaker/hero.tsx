@@ -40,14 +40,14 @@ export function SpeakerHero() {
               isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
             }`}
           >
-            Invite Dr. Tofade to speak
+            Invite Prof. Tofade to Speak
           </h1>
           <p
             className={`text-navy-muted text-lg leading-relaxed transition-all duration-700 delay-200 ${
               isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
             }`}
           >
-            Dr. Toyin Tofade is a sought-after speaker for conferences, convocations, leadership summits, and institutional events. She brings rigorous scholarship, real-world experience, and a powerful personal narrative to every engagement.
+            Prof. Toyin Tofade is a sought-after keynote speaker, panelist, and convener for conferences, institutional events, and professional association meetings across pharmacy, health sciences, higher education, and leadership.
           </p>
         </div>
       </div>

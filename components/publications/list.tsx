@@ -68,11 +68,11 @@ export function PublicationsList() {
         <AnimatedSection>
           <div className="flex justify-center gap-12 mb-16 pb-16 border-b border-divider">
             <div className="text-center">
-              <p className="font-serif text-5xl text-gold mb-2">1,000+</p>
+              <p className="font-serif text-5xl text-gold mb-2">1,127+</p>
               <p className="text-text-body text-sm">Research Citations</p>
             </div>
             <div className="text-center">
-              <p className="font-serif text-5xl text-gold mb-2">50+</p>
+              <p className="font-serif text-5xl text-gold mb-2">58+</p>
               <p className="text-text-body text-sm">Publications</p>
             </div>
           </div>

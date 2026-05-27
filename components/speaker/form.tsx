@@ -40,18 +40,18 @@ export function SpeakerForm() {
 
   if (isSubmitted) {
     return (
-      <section className="py-24 bg-navy">
+      <section className="py-24 bg-cream">
         <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <AnimatedSection>
-            <div className="p-12 border border-gold/30">
+            <div className="p-12 border border-gold/30 bg-cream-card">
               <div className="w-16 h-16 bg-gold/20 rounded-full flex items-center justify-center mx-auto mb-6">
                 <Send className="w-8 h-8 text-gold" />
               </div>
-              <h2 className="font-serif text-3xl text-cream mb-4">
+              <h2 className="font-serif text-3xl text-text-heading mb-4">
                 Thank you for your request
               </h2>
-              <p className="text-navy-muted">
-                Your speaking request has been submitted successfully. Dr. Tofade&apos;s team will review your request and respond within 5-7 business days.
+              <p className="text-text-body">
+                Your speaking request has been submitted successfully. Prof. Tofade&apos;s team will review your request and respond within 5-7 business days.
               </p>
             </div>
           </AnimatedSection>
@@ -61,37 +61,37 @@ export function SpeakerForm() {
   }
 
   return (
-    <section className="py-24 bg-navy">
+    <section className="py-24 bg-cream">
       <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
         <AnimatedSection>
           <p className="text-gold text-sm tracking-[0.15em] uppercase text-center mb-4">
             Request Form
           </p>
-          <h2 className="font-serif text-3xl sm:text-4xl text-cream text-center mb-12">
-            Submit a Speaking Request
+          <h2 className="font-serif text-3xl sm:text-4xl text-text-heading text-center mb-12">
+            Request a Speaking Engagement
           </h2>
         </AnimatedSection>
 
         <AnimatedSection delay={100}>
           <form onSubmit={handleSubmit} className="space-y-6">
-            {/* Name */}
+            {/* Name, Title, Organization */}
             <div>
-              <label htmlFor="name" className="block text-cream text-sm font-medium mb-2">
-                Name <span className="text-gold">*</span>
+              <label htmlFor="name" className="block text-text-heading text-sm font-medium mb-2">
+                Name, Title, Organization <span className="text-gold">*</span>
               </label>
               <input
                 type="text"
                 id="name"
                 name="name"
                 required
-                className="w-full px-4 py-3 bg-navy border border-navy-muted/30 text-cream placeholder:text-navy-muted/50 focus:outline-none focus:border-gold transition-colors"
-                placeholder="Your full name"
+                className="w-full px-4 py-3 bg-cream-card border border-border text-text-heading placeholder:text-text-body/50 focus:outline-none focus:border-gold transition-colors"
+                placeholder="Your name, title and organization"
               />
             </div>
 
             {/* Email */}
             <div>
-              <label htmlFor="email" className="block text-cream text-sm font-medium mb-2">
+              <label htmlFor="email" className="block text-text-heading text-sm font-medium mb-2">
                 Email <span className="text-gold">*</span>
               </label>
               <input
@@ -99,29 +99,28 @@ export function SpeakerForm() {
                 id="email"
                 name="email"
                 required
-                className="w-full px-4 py-3 bg-navy border border-navy-muted/30 text-cream placeholder:text-navy-muted/50 focus:outline-none focus:border-gold transition-colors"
+                className="w-full px-4 py-3 bg-cream-card border border-border text-text-heading placeholder:text-text-body/50 focus:outline-none focus:border-gold transition-colors"
                 placeholder="your@email.com"
               />
             </div>
 
-            {/* Organization */}
+            {/* Phone */}
             <div>
-              <label htmlFor="organization" className="block text-cream text-sm font-medium mb-2">
-                Organization <span className="text-gold">*</span>
+              <label htmlFor="phone" className="block text-text-heading text-sm font-medium mb-2">
+                Phone
               </label>
               <input
-                type="text"
-                id="organization"
-                name="organization"
-                required
-                className="w-full px-4 py-3 bg-navy border border-navy-muted/30 text-cream placeholder:text-navy-muted/50 focus:outline-none focus:border-gold transition-colors"
-                placeholder="Your organization name"
+                type="tel"
+                id="phone"
+                name="phone"
+                className="w-full px-4 py-3 bg-cream-card border border-border text-text-heading placeholder:text-text-body/50 focus:outline-none focus:border-gold transition-colors"
+                placeholder="Your phone number"
               />
             </div>
 
             {/* Event Name */}
             <div>
-              <label htmlFor="event" className="block text-cream text-sm font-medium mb-2">
+              <label htmlFor="event" className="block text-text-heading text-sm font-medium mb-2">
                 Event Name <span className="text-gold">*</span>
               </label>
               <input
@@ -129,14 +128,14 @@ export function SpeakerForm() {
                 id="event"
                 name="event"
                 required
-                className="w-full px-4 py-3 bg-navy border border-navy-muted/30 text-cream placeholder:text-navy-muted/50 focus:outline-none focus:border-gold transition-colors"
+                className="w-full px-4 py-3 bg-cream-card border border-border text-text-heading placeholder:text-text-body/50 focus:outline-none focus:border-gold transition-colors"
                 placeholder="Name of the event"
               />
             </div>
 
             {/* Event Date */}
             <div>
-              <label htmlFor="date" className="block text-cream text-sm font-medium mb-2">
+              <label htmlFor="date" className="block text-text-heading text-sm font-medium mb-2">
                 Event Date <span className="text-gold">*</span>
               </label>
               <input
@@ -145,55 +144,86 @@ export function SpeakerForm() {
                 name="date"
                 min={today}
                 required
-                className="w-full px-4 py-3 bg-navy border border-navy-muted/30 text-cream focus:outline-none focus:border-gold transition-colors"
+                className="w-full px-4 py-3 bg-cream-card border border-border text-text-heading focus:outline-none focus:border-gold transition-colors"
               />
             </div>
 
             {/* Event Location */}
             <div>
-              <label htmlFor="location" className="block text-cream text-sm font-medium mb-2">
-                Event Location
+              <label htmlFor="location" className="block text-text-heading text-sm font-medium mb-2">
+                Event Location <span className="text-gold">*</span>
               </label>
               <input
                 type="text"
                 id="location"
                 name="location"
-                className="w-full px-4 py-3 bg-navy border border-navy-muted/30 text-cream placeholder:text-navy-muted/50 focus:outline-none focus:border-gold transition-colors"
+                required
+                className="w-full px-4 py-3 bg-cream-card border border-border text-text-heading placeholder:text-text-body/50 focus:outline-none focus:border-gold transition-colors"
                 placeholder="City, State/Country or Virtual"
               />
             </div>
 
-            {/* Speaking Topic */}
+            {/* Estimated Audience Size */}
             <div>
-              <label htmlFor="topic" className="block text-cream text-sm font-medium mb-2">
-                Preferred Speaking Topic
+              <label htmlFor="audience_size" className="block text-text-heading text-sm font-medium mb-2">
+                Estimated Audience Size and Composition
+              </label>
+              <input
+                type="text"
+                id="audience_size"
+                name="audience_size"
+                className="w-full px-4 py-3 bg-cream-card border border-border text-text-heading placeholder:text-text-body/50 focus:outline-none focus:border-gold transition-colors"
+                placeholder="e.g., 200 pharmacy professionals"
+              />
+            </div>
+
+            {/* Type of Engagement */}
+            <div>
+              <label htmlFor="engagement_type" className="block text-text-heading text-sm font-medium mb-2">
+                Type of Engagement <span className="text-gold">*</span>
               </label>
               <select
-                id="topic"
-                name="topic"
-                className="w-full px-4 py-3 bg-navy border border-navy-muted/30 text-cream focus:outline-none focus:border-gold transition-colors"
+                id="engagement_type"
+                name="engagement_type"
+                required
+                className="w-full px-4 py-3 bg-cream-card border border-border text-text-heading focus:outline-none focus:border-gold transition-colors"
               >
-                <option value="">Select a topic</option>
-                <option value="leadership">Transformational leadership in higher education</option>
-                <option value="health-equity">Health equity and the future of healthcare</option>
-                <option value="women-leadership">Women in leadership</option>
-                <option value="pharmacy">The pharmacist as a leader</option>
-                <option value="mentorship">Mentorship and career development</option>
+                <option value="">Select engagement type</option>
+                <option value="keynote">Keynote</option>
+                <option value="panel">Panel</option>
+                <option value="workshop">Workshop</option>
+                <option value="fireside">Fireside Chat</option>
+                <option value="commencement">Commencement</option>
                 <option value="other">Other</option>
               </select>
             </div>
 
-            {/* Additional Details */}
+            {/* Topic Interest */}
             <div>
-              <label htmlFor="details" className="block text-cream text-sm font-medium mb-2">
-                Additional Details
+              <label htmlFor="topic" className="block text-text-heading text-sm font-medium mb-2">
+                Topic Interest or Description <span className="text-gold">*</span>
               </label>
               <textarea
-                id="details"
-                name="details"
+                id="topic"
+                name="topic"
                 rows={4}
-                className="w-full px-4 py-3 bg-navy border border-navy-muted/30 text-cream placeholder:text-navy-muted/50 focus:outline-none focus:border-gold transition-colors resize-none"
-                placeholder="Tell us more about your event, expected audience size, and any specific requirements..."
+                required
+                className="w-full px-4 py-3 bg-cream-card border border-border text-text-heading placeholder:text-text-body/50 focus:outline-none focus:border-gold transition-colors resize-none"
+                placeholder="What topic do you hope Prof. Tofade will address?"
+              />
+            </div>
+
+            {/* Honorarium Range */}
+            <div>
+              <label htmlFor="honorarium" className="block text-text-heading text-sm font-medium mb-2">
+                Honorarium Range or Budget
+              </label>
+              <input
+                type="text"
+                id="honorarium"
+                name="honorarium"
+                className="w-full px-4 py-3 bg-cream-card border border-border text-text-heading placeholder:text-text-body/50 focus:outline-none focus:border-gold transition-colors"
+                placeholder="Your budget range"
               />
             </div>
 

@@ -37,17 +37,17 @@ export function WorkWithMeForm() {
 
   if (isSubmitted) {
     return (
-      <section className="py-24 bg-navy">
+      <section className="py-24 bg-cream">
         <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <AnimatedSection>
-            <div className="p-12 border border-gold/30">
+            <div className="p-12 border border-gold/30 bg-cream-card">
               <div className="w-16 h-16 bg-gold/20 rounded-full flex items-center justify-center mx-auto mb-6">
                 <Send className="w-8 h-8 text-gold" />
               </div>
-              <h2 className="font-serif text-3xl text-cream mb-4">
+              <h2 className="font-serif text-3xl text-text-heading mb-4">
                 Thank you for your inquiry
               </h2>
-              <p className="text-navy-muted">
+              <p className="text-text-body">
                 Your request has been submitted successfully. Prof. Tofade&apos;s team will review your inquiry and respond within five business days.
               </p>
             </div>
@@ -58,17 +58,17 @@ export function WorkWithMeForm() {
   }
 
   return (
-    <section className="py-24 bg-navy">
+    <section className="py-24 bg-cream">
       <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
         <AnimatedSection>
           <p className="text-gold text-sm tracking-[0.15em] uppercase text-center mb-4">
-            Request to Work Together
+            Get in Touch
           </p>
-          <h2 className="font-serif text-3xl sm:text-4xl text-cream text-center mb-4">
-            Submit an Inquiry
+          <h2 className="font-serif text-3xl sm:text-4xl text-text-heading text-center mb-4">
+            Submit an Enquiry
           </h2>
-          <p className="text-navy-muted text-center mb-12 max-w-lg mx-auto">
-            Whether you are interested in executive coaching, a speaking engagement, a board advisory arrangement, or organizational consulting — please complete the form below.
+          <p className="text-text-body text-center mb-12 max-w-lg mx-auto">
+            All enquiries are reviewed; Prof. Tofade&apos;s team responds within five business days.
           </p>
         </AnimatedSection>
 
@@ -76,7 +76,7 @@ export function WorkWithMeForm() {
           <form onSubmit={handleSubmit} className="space-y-6">
             {/* Full Name */}
             <div>
-              <label htmlFor="name" className="block text-cream text-sm font-medium mb-2">
+              <label htmlFor="name" className="block text-text-heading text-sm font-medium mb-2">
                 Full Name <span className="text-gold">*</span>
               </label>
               <input
@@ -84,14 +84,14 @@ export function WorkWithMeForm() {
                 id="name"
                 name="name"
                 required
-                className="w-full px-4 py-3 bg-navy border border-navy-muted/30 text-cream placeholder:text-navy-muted/50 focus:outline-none focus:border-gold transition-colors"
+                className="w-full px-4 py-3 bg-cream-card border border-border text-text-heading placeholder:text-text-body/50 focus:outline-none focus:border-gold transition-colors"
                 placeholder="Your full name"
               />
             </div>
 
             {/* Title and Organization */}
             <div>
-              <label htmlFor="title_organization" className="block text-cream text-sm font-medium mb-2">
+              <label htmlFor="title_organization" className="block text-text-heading text-sm font-medium mb-2">
                 Title and Organization <span className="text-gold">*</span>
               </label>
               <input
@@ -99,14 +99,14 @@ export function WorkWithMeForm() {
                 id="title_organization"
                 name="title_organization"
                 required
-                className="w-full px-4 py-3 bg-navy border border-navy-muted/30 text-cream placeholder:text-navy-muted/50 focus:outline-none focus:border-gold transition-colors"
+                className="w-full px-4 py-3 bg-cream-card border border-border text-text-heading placeholder:text-text-body/50 focus:outline-none focus:border-gold transition-colors"
                 placeholder="Your title and organization"
               />
             </div>
 
             {/* Email */}
             <div>
-              <label htmlFor="email" className="block text-cream text-sm font-medium mb-2">
+              <label htmlFor="email" className="block text-text-heading text-sm font-medium mb-2">
                 Email Address <span className="text-gold">*</span>
               </label>
               <input
@@ -114,71 +114,71 @@ export function WorkWithMeForm() {
                 id="email"
                 name="email"
                 required
-                className="w-full px-4 py-3 bg-navy border border-navy-muted/30 text-cream placeholder:text-navy-muted/50 focus:outline-none focus:border-gold transition-colors"
+                className="w-full px-4 py-3 bg-cream-card border border-border text-text-heading placeholder:text-text-body/50 focus:outline-none focus:border-gold transition-colors"
                 placeholder="your@email.com"
               />
             </div>
 
             {/* Type of Engagement */}
             <div>
-              <label htmlFor="engagement_type" className="block text-cream text-sm font-medium mb-2">
+              <label htmlFor="engagement_type" className="block text-text-heading text-sm font-medium mb-2">
                 Type of Engagement <span className="text-gold">*</span>
               </label>
               <select
                 id="engagement_type"
                 name="engagement_type"
                 required
-                className="w-full px-4 py-3 bg-navy border border-navy-muted/30 text-cream focus:outline-none focus:border-gold transition-colors"
+                className="w-full px-4 py-3 bg-cream-card border border-border text-text-heading focus:outline-none focus:border-gold transition-colors"
               >
                 <option value="">Select engagement type</option>
-                <option value="executive-coaching">Executive Leadership Coaching</option>
+                <option value="executive-coaching">Executive Coaching</option>
                 <option value="emerging-leader">Emerging Leader Accelerator</option>
-                <option value="organizational">Organizational & Team Development</option>
-                <option value="board-advisory">Board Advisory & Governance</option>
-                <option value="speaking">Speaking Engagement</option>
+                <option value="organizational">Organisational Development</option>
+                <option value="board-advisory">Board Advisory</option>
+                <option value="speaking">Speaking</option>
                 <option value="other">Other</option>
               </select>
             </div>
 
             {/* Description */}
             <div>
-              <label htmlFor="description" className="block text-cream text-sm font-medium mb-2">
-                What are you working on and hoping to accomplish? <span className="text-gold">*</span>
+              <label htmlFor="description" className="block text-text-heading text-sm font-medium mb-2">
+                What are you working on and hoping to achieve? <span className="text-gold">*</span>
               </label>
               <textarea
                 id="description"
                 name="description"
                 rows={5}
                 required
-                className="w-full px-4 py-3 bg-navy border border-navy-muted/30 text-cream placeholder:text-navy-muted/50 focus:outline-none focus:border-gold transition-colors resize-none"
-                placeholder="Describe what you're working on and what you are hoping to accomplish through this engagement..."
+                className="w-full px-4 py-3 bg-cream-card border border-border text-text-heading placeholder:text-text-body/50 focus:outline-none focus:border-gold transition-colors resize-none"
+                placeholder="Brief description of what you are working on and what you hope to achieve..."
               />
             </div>
 
             {/* Timeline */}
             <div>
-              <label htmlFor="timeline" className="block text-cream text-sm font-medium mb-2">
+              <label htmlFor="timeline" className="block text-text-heading text-sm font-medium mb-2">
                 Preferred Timeline or Event Date
               </label>
               <input
                 type="text"
                 id="timeline"
                 name="timeline"
-                className="w-full px-4 py-3 bg-navy border border-navy-muted/30 text-cream placeholder:text-navy-muted/50 focus:outline-none focus:border-gold transition-colors"
+                className="w-full px-4 py-3 bg-cream-card border border-border text-text-heading placeholder:text-text-body/50 focus:outline-none focus:border-gold transition-colors"
                 placeholder="If applicable"
               />
             </div>
 
             {/* How did you find */}
             <div>
-              <label htmlFor="referral" className="block text-cream text-sm font-medium mb-2">
+              <label htmlFor="referral" className="block text-text-heading text-sm font-medium mb-2">
                 How did you find Prof. Tofade?
               </label>
               <input
                 type="text"
                 id="referral"
                 name="referral"
-                className="w-full px-4 py-3 bg-navy border border-navy-muted/30 text-cream placeholder:text-navy-muted/50 focus:outline-none focus:border-gold transition-colors"
+                className="w-full px-4 py-3 bg-cream-card border border-border text-text-heading placeholder:text-text-body/50 focus:outline-none focus:border-gold transition-colors"
                 placeholder="Referral, event, publication, etc."
               />
             </div>
@@ -197,7 +197,7 @@ export function WorkWithMeForm() {
               ) : (
                 <>
                   <Send className="w-5 h-5" />
-                  Submit Inquiry
+                  Submit Enquiry
                 </>
               )}
             </button>

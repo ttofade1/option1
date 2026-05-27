@@ -17,7 +17,7 @@ export function WorkWithMeHero() {
             isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
           }`}
         >
-          Executive Coaching & Advisory
+          Executive Coaching, Board Advisory & Speaking
         </p>
         <h1
           className={`font-serif text-4xl sm:text-5xl lg:text-6xl text-cream leading-tight mb-6 transition-all duration-700 delay-100 ${
@@ -31,7 +31,7 @@ export function WorkWithMeHero() {
             isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
           }`}
         >
-          Coaching that meets you where leadership gets hard
+          Coaching grounded in executive experience
         </p>
       </div>
     </section>
