@@ -33,21 +33,21 @@ export function GWLHero() {
               isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
             }`}
           >
-            Global Women Leaders Inc.
+            Community Service & Women&apos;s Leadership Development
           </p>
           <h1
             className={`font-serif text-4xl sm:text-5xl lg:text-6xl text-cream leading-tight mb-6 transition-all duration-700 delay-100 ${
               isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
             }`}
           >
-            Raising women to lead
+            Raising the next generation of women leaders
           </h1>
           <p
             className={`text-navy-muted text-lg leading-relaxed transition-all duration-700 delay-200 ${
               isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
             }`}
           >
-            Dr. Tofade has always believed that leadership is not a title, it is a responsibility. That belief gave rise to Global Women Leaders Inc., the nonprofit she founded to inspire and equip women around the world to step fully into the leadership they were created for.
+            Prof. Tofade has long believed that the measure of a leader is not what she achieves, but what she builds in others. Global Women Leaders Inc. is the organisational expression of that belief — a nonprofit she founded to inspire and equip women around the world to step fully into their leadership capacity.
           </p>
         </div>
       </div>

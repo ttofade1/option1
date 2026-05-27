@@ -31,7 +31,7 @@ export function PublicationsHero() {
             isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
           }`}
         >
-          Prof. Tofade is the author of research publications in pharmacy practice, pharmaceutical education, and health sciences leadership. Her work spans clinical pharmacokinetics, health disparities, pharmacy education, and global health. She has been featured in national and international publications, podcasts, and media outlets covering healthcare, education, and leadership.
+          Prof. Tofade is a published scholar with over 1,127 citations across more than 58 publications spanning pharmacy practice, pharmaceutical education, leadership development, and Co-active Coaching in health professions contexts.
         </p>
       </div>
     </section>

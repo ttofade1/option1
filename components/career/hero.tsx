@@ -24,14 +24,14 @@ export function CareerHero() {
             isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
           }`}
         >
-          A Career of Impact
+          Career Timeline
         </h1>
         <p
           className={`text-navy-muted text-lg max-w-2xl mx-auto leading-relaxed transition-all duration-700 delay-200 ${
             isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
           }`}
         >
-          From clinical pharmacist to college president. A timeline of leadership, mentorship, and institutional transformation.
+          Timeline of transitions and accomplishments
         </p>
       </div>
     </section>

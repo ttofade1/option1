@@ -38,13 +38,13 @@ export function IntroSection() {
             <AnimatedSection delay={300}>
               <div className="space-y-6 text-text-body leading-relaxed">
                 <p>
-                  From the pharmacy halls of Obafemi Awolowo University in Nigeria to the presidential office of one of the nation&apos;s most respected health sciences colleges, Dr. Toyin Tofade has spent her career doing one thing: raising people up.
+                  Prof. Toyin Tofade is a transformational university president, global health systems leader, and certified executive coach with over two decades of experience building institutions, forging international partnerships, and developing the next generation of leaders across four distinguished academic institutions.
                 </p>
                 <p>
-                  She has tripled enrollments, forged partnerships on six continents, and shaped pharmacists into leaders, all while remaining grateful to God for every opportunity to serve.
+                  Over her four-year presidency at Albany College of Pharmacy and Health Sciences, she launched the college&apos;s most ambitious strategic expansion in its 143-year history, earned its first Carnegie Research University classification, and co-created a landmark merger with Russell Sage College that will anchor health professions education in New York&apos;s Capital Region for decades.
                 </p>
                 <p>
-                  Whether she is charting the future of pharmacy education, mentoring a first-generation student, or speaking to thousands about health equity and leadership, Dr. Tofade brings the same conviction: that institutions exist to transform lives, and leaders exist to serve.
+                  As she concludes her presidential term on June 30, 2026, and continues as President Emeritus, she turns toward her next chapter: executive coaching, leadership advisory, speaking, and global health advocacy.
                 </p>
               </div>
             </AnimatedSection>

@@ -8,36 +8,32 @@ const impactAreas = [
   {
     icon: Users,
     title: "On Students",
-    content: `In 2017, at the end of her first year as Dean at Howard, a student placed a wrapped gift and a long handwritten letter on her desk. The letter called her "a ray of sunshine" and "a stunning example of leadership." She didn't open it. She kept it as a reminder, she said, that "I'm here to serve the students, and I must keep on making them top of mind, top of heart, top of focus in every decision that I make."
-
-She opened the gift only at the end of her sixth year, when she felt she had finally earned it.`,
+    content: `In 2017, at the end of her first year as Howard Dean, a student placed a wrapped gift and a handwritten letter on her desk — calling her 'a ray of sunshine' and 'a stunning example of leadership.' She kept it wrapped for six years as a daily reminder that students must remain 'top of mind, top of heart, top of focus in every decision.' She opened it only when she felt she had truly earned it.`,
     image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Students-stand-together-with-Toyin-at-Inauguration-ceremony-1220x686-ne6iam4kURqbv93swDaNZvZqgqBWQD.jpg",
-    imageAlt: "Dr. Tofade with students at inauguration",
+    imageAlt: "Prof. Tofade with students at inauguration",
   },
   {
     icon: Globe,
     title: "On the Pharmacy Profession",
-    content: `As Dean at Howard, Dr. Tofade oversaw the creation of a landmark FDA–GlaxoSmithKline fellowship in regulatory affairs, opening new career pathways for pharmacy graduates that had never existed before. She built partnerships in 16 countries. She elevated Howard's residency match rate from 36 to over 50 percent. She produced pharmacists practicing in every corner of the globe, including as deans of other pharmacy schools and presidents of national pharmacy organizations.
-
-At ACPHS, she launched seven new academic programs in a single year, the largest expansion in the institution's 141 year history. She introduced ACPHS Online, making health sciences education accessible beyond Albany. She doubled industrial fellowships for graduates in a single year.`,
+    content: `As the first Black woman President of the FIP Academic Pharmacy Section, Prof. Tofade shaped pharmacy education policy for a global federation representing over five million pharmacists. As the first African-born Chair of the AACP Council of Deans, she advanced accreditation standards across U.S. institutions. As recipient of the ASHP Donald E. Francke Medal — the field's highest honour for international contributions — she is recognized as someone who moved the entire profession forward. She has led two institutions to achieve the maximum possible accreditation years for their programs.`,
     image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/dean%20with%20students_0-ae3WmQHlv1TB7RdNGIULUbrLDYsib5.jpg",
-    imageAlt: "Dr. Tofade with pharmacy professionals",
+    imageAlt: "Prof. Tofade with pharmacy professionals",
   },
   {
     icon: Heart,
-    title: "On Health Equity",
-    content: `Dr. Tofade has served on national boards including the Accreditation Council for Pharmacy Education, the Board of Pharmacy Specialties, and more. As FIP Academic Pharmacy Section President, she has shaped pharmacy education globally, with a particular commitment to ensuring that countries with the greatest health needs have access to the most prepared practitioners.`,
+    title: "On Economic Development & Community",
+    content: `Prof. Tofade believes institutions do not end at their walls. At ACPHS she expanded: the Collaboratory in Albany's South End — addressing health disparities in a medically underserved neighbourhood; student-operated pharmacies (the only ones of their kind in the country) serving real patients while training students; and the Stack Family Center for Biopharmaceutical Education and Training (CBET), backed by Empire State Development funding and an FDA contract, building Albany's biopharma workforce pipeline.
+
+Her leadership of the ACPHS–Russell Sage merger represents her single largest contribution to regional economic development: a comprehensive university of ~4,000 students with $246M in combined assets, positioned to anchor health professions education in the Capital Region for decades.`,
     image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/width_1600-Dfk81Av6Rm1U58Nu3Ba933MeAJ4mMN.jpeg",
-    imageAlt: "Dr. Tofade at health equity event",
+    imageAlt: "Prof. Tofade at community event",
   },
   {
     icon: Lightbulb,
-    title: "On Mentorship",
-    content: `She gives credit freely to Professor Fred Eckel, who recognized her in Nigeria before she recognized herself; to Dr. Natalie Eddington, who kept her on track to the deanship when she doubted herself; to Dr. Freeman Hrabowski, whose integrity and vision inspired her approach to leadership. 
-
-And she pays it forward: through the Tofade Aspiring Leaders Endowed Fund at Howard, through the countless students she has guided, and through Global Women Leaders Inc., the nonprofit she founded to inspire and equip women worldwide.`,
+    title: "On Mentorship & Leadership Development",
+    content: `She names her mentors freely — Professor Fred Eckel, Dr. Natalie Eddington, Dr. Freeman Hrabowski — and pays the investment forward through direct coaching, the Tofade Aspiring Leaders Endowed Fund at Howard, Global Women Leaders Inc., and two decades of quietly shaping professionals who now lead institutions of their own.`,
     image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/picture%201-6fA22jLiII21oOfCokcF9lWMdlirXm.jpg",
-    imageAlt: "Dr. Tofade mentoring",
+    imageAlt: "Prof. Tofade mentoring",
   },
 ]
 

@@ -40,14 +40,14 @@ export function ImpactHero() {
               isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
             }`}
           >
-            The mark of a leader is what she leaves behind
+            The measure of a leader is what she builds for others
           </h1>
           <p
             className={`text-navy-muted text-lg leading-relaxed transition-all duration-700 delay-200 ${
               isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
             }`}
           >
-            Dr. Tofade doesn&apos;t measure her work in enrollment numbers alone, though the numbers are extraordinary. She measures it in students who became deans, in faculty who found their voice, in communities that received care they might not otherwise have had.
+            Prof. Tofade measures her work in careers launched, institutions strengthened, communities served, and professionals who became leaders because someone invested in them.
           </p>
         </div>
       </div>
