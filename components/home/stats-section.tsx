@@ -10,7 +10,8 @@ const stats = [
     label: "Albany Business Review Power 50 three consecutive years",
   },
   {
-    value: "24+",
+    year: "Since 2002",
+    value: "20+",
     label: "Years building highly performant teams",
   },
   {
