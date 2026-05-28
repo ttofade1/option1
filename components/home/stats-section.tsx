@@ -11,8 +11,8 @@ const stats = [
   },
   {
     year: "Since 2002",
-    value: "20+",
-    label: "Years building highly performant teams",
+    value: "20+ Years",
+    label: "Building highly performant teams",
   },
   {
     year: "2024",
