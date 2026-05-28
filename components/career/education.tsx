@@ -4,14 +4,14 @@ import { AnimatedSection } from "@/components/animated-section"
 import { GraduationCap } from "lucide-react"
 
 const education = [
-  { degree: "BPharm", institution: "Obafemi Awolowo University, Ile-Ife, Nigeria" },
+  { degree: "BPharm", institution: "Obafemi Awolowo University, Ile-Ife, Nigeria (1989)" },
   { degree: "MS in Pharmacy Practice", institution: "UNC Eshelman School of Pharmacy, Chapel Hill (1994)" },
   { degree: "Doctor of Pharmacy (PharmD)", institution: "UNC Eshelman School of Pharmacy, Chapel Hill (1997)" },
   { degree: "Clinical Pharmacokinetics Residency", institution: "UNC Chapel Hill (1994)" },
   { degree: "ASHP-Accredited Residency", institution: "UNC Hospitals (1995)" },
-  { degree: "Academic Leadership Academy", institution: "Penn State" },
-  { degree: "Management Development Programme", institution: "Harvard Graduate School of Education" },
-  { degree: "Crisis Leadership in Higher Education", institution: "Harvard Kennedy School (2020)" },
+  { degree: "Academic Leadership Academy", institution: "The Pennsylvania State University (2016)" },
+  { degree: "Management Development Programme", institution: "Harvard Graduate School of Education (2017)" },
+  { degree: "Certificate in Public Leadership", institution: "Harvard Kennedy School (2023)" },
 ]
 
 export function EducationSection() {
