@@ -40,7 +40,7 @@ export function SpeakingTopics() {
           <div className="mt-16 p-8 bg-gold-light border border-gold/30 text-center">
             <p className="text-label font-medium mb-2">Past Speaking Engagements</p>
             <p className="text-text-body text-sm">
-              Dr. Tofade has spoken at national pharmacy conferences, HBCU summits, health equity forums, institutional inaugurations, and commencement ceremonies across the United States and internationally.
+              Prof. Tofade has spoken at national pharmacy conferences, HBCU summits, health equity forums, institutional inaugurations, and commencement ceremonies across the United States and internationally.
             </p>
           </div>
         </AnimatedSection>

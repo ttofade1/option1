@@ -37,7 +37,7 @@ export function CTASection() {
                   href="/speaker-request"
                   className="inline-flex items-center justify-center gap-2 bg-gold hover:bg-gold/90 text-text-heading px-8 py-4 font-medium tracking-wide transition-colors duration-200 group"
                 >
-                  Request to Speak
+                  Speaker Request
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </Link>
                 <Link

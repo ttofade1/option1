@@ -4,7 +4,7 @@ import { HerStoryHero } from "@/components/her-story/hero"
 import { HerStoryContent } from "@/components/her-story/content"
 
 export const metadata = {
-  title: "Her Story | Dr. Toyin Tofade",
+  title: "Her Story | Prof. Toyin Tofade",
   description: "A journey from Ile-Ife, Nigeria to the presidency of Albany College of Pharmacy and Health Sciences.",
 }
 
