@@ -31,7 +31,7 @@ export function PublicationsHero() {
             isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
           }`}
         >
-          Prof. Tofade is a published scholar with over 1,127 citations across more than 58 publications spanning pharmacy practice, pharmaceutical education, leadership development, and Co-active Coaching in health professions contexts.
+          Prof. Tofade is a published scholar with over 1,200 citations across more than 58 publications spanning pharmacy practice, pharmaceutical education, leadership development, and Co-active Coaching in health professions contexts.
         </p>
       </div>
     </section>

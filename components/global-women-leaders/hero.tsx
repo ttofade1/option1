@@ -47,7 +47,7 @@ export function GWLHero() {
               isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
             }`}
           >
-            Prof. Tofade has long believed that the measure of a leader is not what she achieves, but what she builds in others. Global Women Leaders Inc. is the organisational expression of that belief — a nonprofit she founded to inspire and equip women around the world to step fully into their leadership capacity.
+            Prof. Tofade has long believed that the measure of a leader is not what she achieves, but what she builds in others. Global Women Leaders Inc. is the organisational expression of that belief, a nonprofit she founded to inspire and equip women around the world to step fully into their leadership capacity.
           </p>
         </div>
       </div>

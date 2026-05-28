@@ -51,7 +51,7 @@ export function SpeakerForm() {
                 Thank you for your request
               </h2>
               <p className="text-text-body">
-                Your speaking request has been submitted successfully. Prof. Tofade&apos;s team will review your request and respond within 5-7 business days.
+                Your speaking request has been submitted successfully.
               </p>
             </div>
           </AnimatedSection>

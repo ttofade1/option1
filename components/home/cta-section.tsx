@@ -57,7 +57,7 @@ export function CTASection() {
               <div className="space-y-4">
                 <div className="relative aspect-[3/4] object-[left_20%]">
                   <Image
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/SF_PBweb-21-LJCeMBUBhrjwOrp5DGxDz0NkakTgBT.jpg"
+                    src="SF_PBweb-22.jpg"
                     alt="Dr. Tofade and her husband"
                     fill
                     className="object-cover"
@@ -65,8 +65,8 @@ export function CTASection() {
                 </div>
                 <div className="relative aspect-square">
                   <Image
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/width_1600%20%282%29-xfGc2m7LMmhxcHG7lzErJbjsLKSedL.jpeg"
-                    alt="Dr. Tofade speaking at church"
+                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/tofade-toyinacphs10mw-11162201-r99A1N9T0FLkqziixpOjNU93NmEno6.jpg"
+                    alt="Dr. Tofade speaking at podium"
                     fill
                     className="object-cover"
                   />
@@ -83,7 +83,7 @@ export function CTASection() {
                 </div>
                 <div className="relative aspect-[3/4]">
                   <Image
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/SF_PBweb-13-BYVZGE1d2gRZtivmyg53TjCkYxUMFK.jpg"
+                    src="SF_PBweb-14.jpg"
                     alt="Dr. Tofade portrait"
                     fill
                     className="object-cover"

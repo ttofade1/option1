@@ -35,7 +35,7 @@ export function HerStoryHero() {
                 isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
               }`}
             >
-              Every leader&apos;s authority is rooted somewhere. For Prof. Toyin Tofade, it is rooted in Nigeria — in the pharmacy halls of Obafemi Awolowo University, and in the example of her father, the late Professor Abayomi Sofowora.
+              Every leader&apos;s story is rooted somewhere. For Prof. Toyin Tofade, it is rooted in Nigeria, in the pharmacy halls of Obafemi Awolowo University, and in the example of her father, the late Professor Abayomi Sofowora.
             </p>
           </div>
 
