@@ -8,7 +8,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {/* Brand */}
           <div>
-            <h3 className="font-serif text-2xl mb-4">Dr. Toyin Tofade</h3>
+            <h3 className="font-serif text-2xl mb-4">Prof. Toyin Tofade</h3>
             <p className="text-navy-muted text-sm leading-relaxed max-w-xs">
               A visionary leader at the intersection of healthcare and higher education.
             </p>
@@ -71,14 +71,14 @@ export function Footer() {
               href="/speaker-request"
               className="inline-block bg-gold hover:bg-gold/90 text-text-heading px-6 py-3 text-sm font-medium tracking-wide transition-colors"
             >
-              Request Dr. Tofade to Speak
+              Request Prof. Tofade to Speak
             </Link>
           </div>
         </div>
 
         <div className="border-t border-divider/30 mt-12 pt-8 text-center">
           <p className="text-navy-muted text-sm">
-            &copy; {new Date().getFullYear()} Dr. Toyin Tofade. All rights reserved.
+            &copy; {new Date().getFullYear()} Prof. Toyin Tofade. All rights reserved.
           </p>
         </div>
       </div>

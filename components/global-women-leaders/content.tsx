@@ -13,7 +13,7 @@ export function GWLContent() {
           <AnimatedSection animation="slide-left">
             <div className="relative aspect-[4/5] max-w-md">
               <Image
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/SF_PBweb-13-BYVZGE1d2gRZtivmyg53TjCkYxUMFK.jpg"
+                src="SF_PBweb-14.jpg"
                 alt="Dr. Tofade"
                 fill
                 className="object-cover"
@@ -43,7 +43,7 @@ export function GWLContent() {
                   <div>
                     <h3 className="font-serif text-lg text-text-heading mb-1">Mission</h3>
                     <p className="text-text-body text-sm">
-                      To inspire and train women internationally to maximise their leadership potential — across academia, healthcare, public service, and professional life.
+                      To inspire and train women internationally to maximise their leadership potential across academia, healthcare, public service, and professional life.
                     </p>
                   </div>
                 </div>
@@ -67,7 +67,7 @@ export function GWLContent() {
                   <div>
                     <h3 className="font-serif text-lg text-text-heading mb-1">Get Involved</h3>
                     <p className="text-text-body text-sm">
-                      Whether you are a woman ready to grow into the fullness of your professional potential, an organisation seeking to partner with us, or a donor committed to multiplying women&apos;s leadership impact globally — we want to hear from you.
+                      Whether you are a woman ready to grow into the fullness of your professional potential, an organisation seeking to partner with us, or a donor committed to multiplying women&apos;s leadership impact globally we want to hear from you.
                     </p>
                   </div>
                 </div>

@@ -3,46 +3,28 @@
 import { AnimatedSection } from "@/components/animated-section"
 
 const stats = [
+
   {
-    year: "2026",
-    value: "President Emeritus",
-    label: "ACPHS — Concluding four-year presidential term June 30, 2026",
-  },
-  {
-    year: "2025",
-    value: "~4,000",
-    label: "Students — Merger with Russell Sage College (target Fall 2027)",
-  },
-  {
-    year: "2025",
-    value: "Carnegie R2",
-    label: "Earned Carnegie Research Institution classification — first in ACPHS history",
-  },
-  {
-    year: "2025",
+    year: "2023, 2024, 2025",
     value: "Power 50 × 3",
-    label: "Albany Business Review Power 50 three consecutive years (2023, 2024, 2025)",
+    label: "Albany Business Review Power 50 three consecutive years",
+  },
+  {
+    year: "Since 2002",
+    value: "20+ Years",
+    label: "Building highly performant teams",
   },
   {
     year: "2024",
-    value: "7",
-    label: "New programs — Largest single-year academic expansion in ACPHS's 143-year history",
-  },
-  {
-    year: "2024",
-    value: "+210%",
+    value: "210%",
     label: "Year-over-year increase in PharmD Year-1 deposits since 2022",
   },
   {
-    year: "2022",
-    value: "6",
-    label: "Continents — International partnerships spanning every inhabited continent",
+    year: "2021",
+    value: "6 Continents",
+    label: "International partnerships spanning every inhabited continent",
   },
-  {
-    year: "2018",
-    value: "First",
-    label: "Black woman named Fellow of the International Pharmaceutical Federation",
-  },
+
 ]
 
 export function StatsSection() {
@@ -54,7 +36,7 @@ export function StatsSection() {
             By The Numbers
           </p>
           <h2 className="font-serif text-3xl sm:text-4xl text-cream text-center mb-16">
-            Key Statistics — With Years
+            Key Statistics
           </h2>
         </AnimatedSection>
 

@@ -3,13 +3,6 @@
 import { AnimatedSection } from "@/components/animated-section"
 import { Users, Briefcase, Building2, Award, Mic } from "lucide-react"
 
-const audiences = [
-  "Presidents, deans, VPs, and C-suite leaders in higher education and healthcare",
-  "Emerging leaders preparing for their first senior executive role",
-  "Women navigating historically exclusionary leadership environments",
-  "Boards seeking advisory expertise in higher education governance and health systems",
-  "Professional associations seeking speakers, facilitators, and strategic advisors",
-]
 
 const offerings = [
   {
@@ -25,24 +18,12 @@ const offerings = [
     ],
   },
   {
-    title: "Emerging Leader Accelerator",
-    subtitle: "For directors and associate deans preparing for executive roles",
-    icon: Users,
-    items: [
-      "Defining and communicating a clear leadership identity",
-      "Translating subject-matter expertise into institutional leadership",
-      "Building strategic relationships, sponsor networks, and executive presence",
-      "Navigating career transitions into senior academic or healthcare administration",
-    ],
-  },
-  {
     title: "Organisational & Team Development",
     subtitle: "For leadership teams building alignment and high performance",
     icon: Building2,
     items: [
       "Strategic planning facilitation for academic and healthcare institutions",
       "Team culture diagnostics, alignment workshops, and accreditation-ready cultures",
-      "DEI integration as institutional strategy rather than standalone initiative",
     ],
   },
   {
@@ -54,18 +35,6 @@ const offerings = [
       "Strategic partnership and merger evaluation advisory",
     ],
   },
-  {
-    title: "Speaking & Leadership Facilitation",
-    subtitle: "For conferences, associations, and institutional events",
-    icon: Mic,
-    items: [
-      "Transformational leadership in higher education and healthcare",
-      "Health equity, pharmacy practice, and global health workforce development",
-      "Women in leadership: breaking barriers and building legacies",
-      "Leading through merger and institutional transformation",
-      "Mentorship, resilience, and the architecture of a meaningful career",
-    ],
-  },
 ]
 
 export function WorkWithMeContent() {
@@ -75,31 +44,13 @@ export function WorkWithMeContent() {
         {/* Introduction */}
         <AnimatedSection>
           <div className="mb-16">
-            <p className="text-text-body text-lg leading-relaxed mb-6">
-              Prof. Toyin Tofade is a Certified Professional Co-active Coach (CPCC) with over two decades of executive leadership experience across higher education, healthcare, and global policy. She has led institutional mergers, secured public-private partnerships, built high-performing teams across four institutions, and navigated the full complexity of senior academic and healthcare administration.
-            </p>
-            <p className="text-text-body text-lg leading-relaxed">
-              Her coaching practice is selective and draws directly from this experience. She works with a limited number of executives, emerging leaders, and organisations at a time — prioritising engagements where she can make a genuine and meaningful contribution.
+            <p className="text-text-body text-lg leading-relaxed mb-0">
+              Prof. Toyin Tofade is a Certified Professional Co-active Coach (CPCC) with over two decades of executive leadership experience across higher education, healthcare, and global policy. She has led an institutional merger, secured public-private partnerships, built high-performing teams across multiple institutions, and navigated the full complexity of senior academic and healthcare administration.
             </p>
           </div>
         </AnimatedSection>
 
-        {/* Who Prof. Tofade Works With */}
-        <AnimatedSection delay={100}>
-          <div className="mb-16">
-            <h2 className="font-serif text-2xl sm:text-3xl text-text-heading mb-8">
-              Who Prof. Tofade Works With
-            </h2>
-            <ul className="space-y-4">
-              {audiences.map((audience, index) => (
-                <li key={index} className="flex gap-4 items-start">
-                  <span className="w-2 h-2 bg-gold rounded-full mt-2.5 shrink-0" />
-                  <span className="text-text-body">{audience}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </AnimatedSection>
+
 
         {/* Coaching Offerings */}
         <AnimatedSection delay={200}>
@@ -143,7 +94,7 @@ export function WorkWithMeContent() {
           <div className="mt-16 p-8 bg-gold-light border border-gold/30 text-center">
             <p className="text-label font-medium mb-2">A Note on Availability</p>
             <p className="text-text-body text-sm max-w-2xl mx-auto">
-              Prof. Tofade maintains a selective coaching practice alongside her ongoing advisory commitments. Engagements are accepted on a limited basis to ensure depth and genuine impact. All enquiries are reviewed; her team responds within five business days.
+              Prof. Tofade maintains a selective coaching practice alongside her ongoing advisory commitments. Engagements are accepted on a limited basis to ensure depth and genuine impact.
             </p>
           </div>
         </AnimatedSection>

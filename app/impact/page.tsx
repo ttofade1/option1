@@ -4,8 +4,8 @@ import { ImpactHero } from "@/components/impact/hero"
 import { ImpactSections } from "@/components/impact/sections"
 
 export const metadata = {
-  title: "Impact | Dr. Toyin Tofade",
-  description: "The mark of a leader is what she leaves behind. Discover Dr. Tofade's lasting impact on students, the pharmacy profession, and health equity.",
+  title: "Impact | Prof. Toyin Tofade",
+  description: "The mark of a leader is what she leaves behind. Discover Prof. Tofade's lasting impact on students, the pharmacy profession, and health equity.",
 }
 
 export default function ImpactPage() {

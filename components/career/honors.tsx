@@ -5,11 +5,13 @@ import { Award } from "lucide-react"
 
 const honors = [
   { year: "2023, 2024, 2025", title: "Albany Business Review Power 50" },
-  { year: "2022", title: "ASHP Donald E. Francke Medal", description: "For significant international contributions to pharmacy practice" },
+  { year: "2022-2023", title: "Chair of the Council of Deans", description: "American Association of Colleges of Pharmacy" },
+  { year: "2022", title: "Donald E. Francke Medal: American Society for Health System Pharmacists", description: "For significant international contributions to pharmacy practice" },
   { year: "2022", title: "Top 25 Women Leaders in Healthcare Education", description: "Women We Admire" },
+  { year: "2021-2025", title: "President", description: "FIP Academic Pharmacy Section" },
   { year: "2021", title: "UNC Eshelman Pharmacy Alumni Distinguished Service Award" },
   { year: "2020", title: "A. Richard Bliss Jr. Grand Council Citation of Appreciation", description: "Kappa Psi Pharmaceutical Fraternity" },
-  { year: "2019", title: "Fred M. Eckel Pharmacy Leadership Award", description: "UNC — the first Black person to receive this honor" },
+  { year: "2019", title: "Fred M. Eckel Pharmacy Leadership Award", description: "The first Black person to receive this honor" },
   { year: "2018", title: "FIP Fellow", description: "The first Black woman named Fellow of the International Pharmaceutical Federation" },
   { year: "2016", title: "Excellence & Distinction in Medicine and Health", description: "Christian Association of Nigerian Americans" },
   { year: "2008", title: "Wake AHEC Mentor of the Year" },

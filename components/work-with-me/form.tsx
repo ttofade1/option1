@@ -48,7 +48,7 @@ export function WorkWithMeForm() {
                 Thank you for your inquiry
               </h2>
               <p className="text-text-body">
-                Your request has been submitted successfully. Prof. Tofade&apos;s team will review your inquiry and respond within five business days.
+                Your request has been submitted successfully.
               </p>
             </div>
           </AnimatedSection>
@@ -68,7 +68,6 @@ export function WorkWithMeForm() {
             Submit an Enquiry
           </h2>
           <p className="text-text-body text-center mb-12 max-w-lg mx-auto">
-            All enquiries are reviewed; Prof. Tofade&apos;s team responds within five business days.
           </p>
         </AnimatedSection>
 
@@ -132,10 +131,8 @@ export function WorkWithMeForm() {
               >
                 <option value="">Select engagement type</option>
                 <option value="executive-coaching">Executive Coaching</option>
-                <option value="emerging-leader">Emerging Leader Accelerator</option>
                 <option value="organizational">Organisational Development</option>
                 <option value="board-advisory">Board Advisory</option>
-                <option value="speaking">Speaking</option>
                 <option value="other">Other</option>
               </select>
             </div>
@@ -158,7 +155,7 @@ export function WorkWithMeForm() {
             {/* Timeline */}
             <div>
               <label htmlFor="timeline" className="block text-text-heading text-sm font-medium mb-2">
-                Preferred Timeline or Event Date
+                Preferred Timeline or Start Date
               </label>
               <input
                 type="text"
@@ -180,6 +177,20 @@ export function WorkWithMeForm() {
                 name="referral"
                 className="w-full px-4 py-3 bg-cream-card border border-border text-text-heading placeholder:text-text-body/50 focus:outline-none focus:border-gold transition-colors"
                 placeholder="Referral, event, publication, etc."
+              />
+            </div>
+
+            {/* Budget Range */}
+            <div>
+              <label htmlFor="honorarium" className="block text-text-heading text-sm font-medium mb-2">
+                Budget
+              </label>
+              <input
+                type="text"
+                id="honorarium"
+                name="honorarium"
+                className="w-full px-4 py-3 bg-cream-card border border-border text-text-heading placeholder:text-text-body/50 focus:outline-none focus:border-gold transition-colors"
+                placeholder="Your budget range"
               />
             </div>
 

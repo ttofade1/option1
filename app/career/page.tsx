@@ -6,7 +6,7 @@ import { EducationSection } from "@/components/career/education"
 import { HonorsSection } from "@/components/career/honors"
 
 export const metadata = {
-  title: "Career | Dr. Toyin Tofade",
+  title: "Career | Prof. Toyin Tofade",
   description: "A career timeline spanning clinical practice, academic leadership, and institutional transformation.",
 }
 

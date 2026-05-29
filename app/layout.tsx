@@ -16,8 +16,8 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: 'Dr. Toyin Tofade | Healthcare Leader, Academic President, Executive Coach',
-  description: 'Dr. Toyin Tofade is a visionary leader at the intersection of healthcare and higher education. 10th President of Albany College of Pharmacy and Health Sciences.',
+  title: 'Prof. Toyin Tofade | Healthcare Leader, Academic President, Executive Coach',
+  description: 'Prof. Toyin Tofade is a visionary leader at the intersection of healthcare and higher education. 10th President of Albany College of Pharmacy and Health Sciences.',
   icons: {
     icon: [
       {
@@ -34,9 +34,9 @@ export const metadata: Metadata = {
       },
     ],
   },
-  keywords: ['Dr. Toyin Tofade', 'ACPHS President', 'Healthcare Leadership', 'Pharmacy Education', 'Women in Leadership'],
+  keywords: ['Prof. Toyin Tofade', 'ACPHS President', 'Healthcare Leadership', 'Pharmacy Education', 'Women in Leadership'],
   openGraph: {
-    title: 'Dr. Toyin Tofade | Healthcare Leader, Academic President, Executive Coach',
+    title: 'Prof. Toyin Tofade | Healthcare Leader, Academic President, Executive Coach',
     description: 'A visionary leader at the intersection of healthcare and higher education.',
     type: 'website',
   },

@@ -24,7 +24,7 @@ export function Navigation() {
           {/* Logo */}
           <Link href="/" className="flex items-center">
             <span className="text-cream font-serif text-xl tracking-wide">
-              Dr. Toyin Tofade
+              Prof. Toyin Tofade
             </span>
           </Link>
 
