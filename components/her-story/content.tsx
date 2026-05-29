@@ -59,10 +59,9 @@ She deepened the college's economic and community footprint: expanding the Stack
 Global partnerships expanded to India, the Philippines, Nigeria, Brazil, Indonesia, Taiwan, South Korea, and the Grand Bahamas, with more in progress across Asia and Australia.
 
 In April 2025, she led the announcement of a historic merger with Russell Sage College, a merger of equals that, upon completion in Fall 2027, will create a comprehensive institution of approximately 4,000 students with combined assets of $246 million and the broadest health professions curriculum in the Capital Region.`,
-    quote: `"Together, we will broaden horizons, expand opportunities, and empower our students to thrive."`,
-    quoteAttribution: "— Prof. Toyin Tofade, on the ACPHS–Russell Sage merger, April 2025",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Toyin-Tofade-stands-with-Board-of-Trustees-at-Inauguration-980x552-RiDO6vz5r605cnW92CD81iqOkxLT9b.jpg",
-    imageAlt: "Prof. Tofade at inauguration with Board of Trustees",
+    image2: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Toyin-Tofade-stands-with-Board-of-Trustees-at-Inauguration-980x552-RiDO6vz5r605cnW92CD81iqOkxLT9b.jpg",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Toyin-takes-elevator-to-Inauguration-Ceremony-1540x866-MS9b3c9VdW38eE3Q9Itm7bxNrmL7SE.jpg",
+    imageAlt: "Prof. Tofade at inauguration",
     imagePosition: "right",
 
   },
@@ -77,6 +76,8 @@ In her message to the community she wrote: "It has been my honor to serve you as
 As she turns toward her next chapter Prof. Tofade carries forward more than four years of institution-building, a 143-year legacy preserved, and a merger that will anchor health professions education in New York's Capital Region for decades.`,
     image: "merger.jpeg",
     imageAlt: "Prof. Tofade mentoring a student",
+    quote: `"Together, we will broaden horizons, expand opportunities, and empower our students to thrive."`,
+    quoteAttribution: "— Prof. Toyin Tofade, on the ACPHS–Russell Sage merger, April 2025",
   },
 ]
 
@@ -99,7 +100,7 @@ export function HerStoryContent() {
                 animation={chapter.imagePosition === "right" ? "slide-right" : "slide-left"}
                 className={chapter.imagePosition === "right" ? "lg:order-2" : ""}
               >
-                <div className="relative aspect-[4/3]">
+                <div className="relative mb-5 aspect-[4/3]">
                   <Image
                     src={chapter.image}
                     alt={chapter.imageAlt}
@@ -107,7 +108,22 @@ export function HerStoryContent() {
                     className="object-cover"
                   />
                 </div>
+                 {(chapter.image2 &&
+                  <AnimatedSection
+                  >
+                    <div className="relative aspect-[4/3]">
+                      <Image
+                        src={chapter.image2}
+                        alt={chapter.imageAlt}
+                        fill
+                        className="object-cover"
+                      />
+                    </div>
+                  </AnimatedSection>
+              )}
               </AnimatedSection>
+
+              
 
               {/* Content */}
               <AnimatedSection
