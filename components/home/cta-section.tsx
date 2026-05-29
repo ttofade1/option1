@@ -55,20 +55,24 @@ export function CTASection() {
           <AnimatedSection animation="slide-right" delay={300}>
             <div className="grid grid-cols-2 gap-4">
               <div className="space-y-4">
-                <div className="relative aspect-[3/4] object-[left_20%]">
+                <div className="relative aspect-[3/4] object-[center_50%]">
                   <Image
-                    src="SF_PBweb-22.jpg"
-                    alt="Dr. Tofade and her husband"
+                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/tofade-toyinacphs10mw-11162201-r99A1N9T0FLkqziixpOjNU93NmEno6.jpg"
+                    alt="Dr. Tofade with students"
                     fill
                     className="object-cover"
+                    style={{objectPosition: "center 20%"}}
+
                   />
                 </div>
                 <div className="relative aspect-square">
                   <Image
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/tofade-toyinacphs10mw-11162201-r99A1N9T0FLkqziixpOjNU93NmEno6.jpg"
-                    alt="Dr. Tofade speaking at podium"
+                    src="/option1/DrToyinEscalator.png"
+                    alt="Dr. Tofade and students on escalator"
                     fill
                     className="object-cover"
+                    style={{objectPosition: "left"}}
+
                   />
                 </div>
               </div>
@@ -83,10 +87,12 @@ export function CTASection() {
                 </div>
                 <div className="relative aspect-[3/4]">
                   <Image
-                    src="SF_PBweb-14.jpg"
+                    src="/option1/SF_PBweb-14.jpg"
                     alt="Dr. Tofade portrait"
                     fill
                     className="object-cover"
+                    style={{objectPosition: "center 20%"}}
+
                   />
                 </div>
               </div>

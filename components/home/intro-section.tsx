@@ -31,8 +31,8 @@ export function IntroSection() {
 
             <AnimatedSection delay={200}>
               <h2 className="font-serif text-3xl sm:text-4xl text-text-heading leading-tight mb-8">
-                From the pharmacy halls of Nigeria to the presidential office of one of America&apos;s most respected health sciences colleges
-              </h2>
+From clinical pharmacist to college president, Dr. Tofade&apos;s career reflects an unwavering commitment to excellence.             
+ </h2>
             </AnimatedSection>
 
             <AnimatedSection delay={300}>
@@ -44,8 +44,7 @@ export function IntroSection() {
                   Over her four-year presidency at Albany College of Pharmacy and Health Sciences, she launched the college&apos;s most ambitious strategic expansion in its 143-year history, earned its first Carnegie Research University classification, and co-created a landmark merger with Russell Sage College that will anchor health professions education in New York&apos;s Capital Region for decades.
                 </p>
                 <p>
-                  As she concludes her presidential term on June 30, 2026, and continues as President Emeritus, Prof. Tofade carries forward a legacy of transformation and the conviction that highly impactful work is still ahead.
-                </p>
+As she concludes her presidential term on June 30, 2026, and continues as President Emeritus, an honorary title recognizing her distinguished service and sustaining her connection to the institution she transformed, Prof. Tofade carries forward a legacy of transformation and the conviction that highly impactful work is still ahead.                </p>
               </div>
             </AnimatedSection>
           </div>
