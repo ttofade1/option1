@@ -199,7 +199,7 @@ As she turns toward her next chapter Prof. Tofade carries forward more than four
             </p>
                           <div className="relative aspect-[4/3] rounded-xl overflow-hidden shadow-lg">
                 <Image
-                  src="/option2/merger.jpeg"
+                  src="/option1/merger.jpeg"
                   alt="Dr. Tofade with Russel Sage Team"
                   fill
                   className="object-cover"
