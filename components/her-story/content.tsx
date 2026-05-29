@@ -1,6 +1,5 @@
 "use client"
 import { Navigation } from "@/components/navigation"
-import { Footer } from "@/components/footer"
 import { AnimatedSection } from "@/components/animated-section"
 import Image from "next/image"
 import { Quote } from "lucide-react"
@@ -220,7 +219,6 @@ As she turns toward her next chapter Prof. Tofade carries forward more than four
         </div>
       </section>
 
-      <Footer />
     </main>
   )
 }
