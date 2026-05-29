@@ -3,12 +3,6 @@
 import { AnimatedSection } from "@/components/animated-section"
 import { Users, Briefcase, Building2, Award, Mic } from "lucide-react"
 
-const audiences = [
-  "Presidents, deans, VPs, and C-suite leaders in higher education and healthcare",
-  "Emerging leaders preparing for their first senior executive role",
-  "Boards seeking advisory expertise in higher education governance and health systems",
-  "Professional associations seeking speakers, facilitators, and strategic advisors",
-]
 
 const offerings = [
   {
@@ -56,22 +50,7 @@ export function WorkWithMeContent() {
           </div>
         </AnimatedSection>
 
-        {/* Who Prof. Tofade Works With */}
-        <AnimatedSection delay={100}>
-          <div className="mb-16">
-            <h2 className="font-serif text-2xl sm:text-3xl text-text-heading mb-8">
-              Who Prof. Tofade Works With
-            </h2>
-            <ul className="space-y-4">
-              {audiences.map((audience, index) => (
-                <li key={index} className="flex gap-4 items-start">
-                  <span className="w-2 h-2 bg-gold rounded-full mt-2.5 shrink-0" />
-                  <span className="text-text-body">{audience}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </AnimatedSection>
+
 
         {/* Coaching Offerings */}
         <AnimatedSection delay={200}>
