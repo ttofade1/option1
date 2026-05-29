@@ -3,7 +3,25 @@
 import { AnimatedSection } from "@/components/animated-section"
 
 const stats = [
-
+  {
+    year: "2025",
+    value: "Carnegie",
+    label: "Carnegie Research University classification for ACPHS",
+  },
+  {
+    year: "2024, 2025",
+    value: "9",
+    label: "new academic programs launched in two years",
+  },
+  {
+    year: "2025",
+    value: "61%",
+    label: "increase in giving & increased alumni engagement",
+  },
+  {
+    value: "80%",
+    label: "medical school placement rate for students",
+  },
   {
     year: "2023, 2024, 2025",
     value: "Power 50 × 3",
@@ -24,6 +42,8 @@ const stats = [
     value: "6 Continents",
     label: "International partnerships spanning every inhabited continent",
   },
+
+
 
 ]
 
