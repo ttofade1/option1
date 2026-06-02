@@ -83,6 +83,7 @@ export function Footer() {
             <Link
               href="https://favored.digital/"
               className="text-white text-sm underline"
+              target="_blank"
             >
               Website by favored.digital
             </Link>
