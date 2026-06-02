@@ -82,7 +82,7 @@ export function Footer() {
           </p>
             <Link
               href="https://favored.digital/"
-              className="text-navy-muted text-sm"
+              className="text-white text-sm underline"
             >
               Website by favored.digital
             </Link>
