@@ -53,6 +53,10 @@ export const SOURCES = {
     href: "https://www.researchgate.net/profile/Toyin-Tofade",
     label: "ResearchGate — Toyin Tofade profile (citation and publication counts)",
   },
+    FIP: {
+    href: "https://www.fip.org/academic-pharmacy",
+    label: "FIP Academic Pharmacy Section",
+  },
 } as const
 
 export type SourceKey = keyof typeof SOURCES
@@ -60,10 +64,10 @@ export type SourceKey = keyof typeof SOURCES
 /** Per-page ordered source lists. Reference-list numbers follow this order. */
 export const HOME_KEYS = ["OFFICE", "PARTNERSHIPS", "BUSINESS", "REFLECTS", "STRATEGIC_PLAN"] as const
 export const HERSTORY_KEYS = ["ECKEL_UNCMC", "ENDOWED", "REFLECTS", "OFFICE", "PARTNERSHIPS"] as const
-export const CAREER_KEYS = ["OFFICE", "ECKEL_UNCMC", "ASHP_FRANCKE", "WIKI"] as const
+export const CAREER_KEYS = ["OFFICE", "ECKEL_UNCMC", "ASHP_FRANCKE"] as const
 export const IMPACT_KEYS = ["ENDOWED", "PARTNERSHIPS", "WIKI", "ASHP_FRANCKE", "REFLECTS"] as const
 export const PUBLICATIONS_KEYS = ["RESEARCHGATE"] as const
-export const GLOBAL_KEYS = ["WIKI", "ENDOWED"] as const
+export const GLOBAL_KEYS = ["FIP", "ENDOWED"] as const
 
 /** 1-based number for `key` within the given page ordering. */
 export function n(keys: readonly SourceKey[], key: SourceKey): number {

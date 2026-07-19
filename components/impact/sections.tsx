@@ -28,7 +28,7 @@ const impactAreas: {
     content: `As the first Black woman President of the FIP Academic Pharmacy Section, Prof. Tofade shaped pharmacy education policy for a global federation representing over five million pharmacists. As Chair of the AACP Council of Deans, she advanced accreditation standards across U.S. institutions. As recipient of the ASHP Donald E. Francke Medal, the field's highest honour for international contributions, she is recognized as someone who moved the entire profession forward. She has led two institutions to achieve the maximum possible accreditation years for their programs.`,
     image: "FIP.jpeg",
     imageAlt: "Prof. Tofade with pharmacy professionals",
-    citeKeys: ["WIKI", "ASHP_FRANCKE"],
+    citeKeys: ["FIP", "ASHP_FRANCKE"],
   },
   {
     icon: Heart,

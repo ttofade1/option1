@@ -35,7 +35,7 @@ export function GWLContent() {
               <p className="text-text-body leading-relaxed mb-6">
                 As a Fellow of the International Pharmaceutical Federation (FFIP) and President of its
                 Academic Pharmacy Section, Prof. Tofade has shaped how a global federation cultivates
-                its next generation of academic leaders.<Cite n={n(GLOBAL_KEYS, "WIKI")} href={SOURCES.WIKI.href} /> A Certified
+                its next generation of academic leaders.<Cite n={n(GLOBAL_KEYS, "FIP")} href={SOURCES.FIP.href} /> A Certified
                 Professional Co-active Coach (CPCC), she brings that same discipline to the individual
                 leaders she mentors, one relationship at a time.
               </p>
