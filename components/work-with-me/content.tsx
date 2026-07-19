@@ -24,6 +24,8 @@ const offerings = [
     items: [
       "Strategic planning facilitation for academic and healthcare institutions",
       "Team culture diagnostics, alignment workshops, and accreditation-ready cultures",
+      "Facilitating retreats",
+      "Higher education consulting",
     ],
   },
   {

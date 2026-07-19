@@ -1,40 +1,48 @@
 "use client"
 
 import { AnimatedSection } from "@/components/animated-section"
+import { Cite, References, type Source } from "@/components/cite"
+
+const OFFICE = "https://www.acphs.edu/about/people/leadership/office-of-the-president/"
+const ENDOWED = "https://thedig.howard.edu/all-stories/departing-college-pharmacy-dean-toyin-tofade-establishes-endowed-fund-leadership-development"
+const WIKI = "https://en.wikipedia.org/wiki/Toyin_Tofade"
 
 const timelineItems = [
   {
     years: "1994 – 2002",
     title: "Clinical Pharmacist, Specialist & Faculty",
     organization: "UNC Hospitals / UNC Eshelman School of Pharmacy",
-    description: "• BPharm, Obafemi Awolowo University, Nigeria • MS Pharmacy Practice (1994) and PharmD (1997) from UNC Chapel Hill • Completed ASHP-accredited residency at UNC Hospitals and clinical pharmacokinetics residency. • Clinical Specialist, general medicine service; Clinical Associate Professor, UNC Eshelman School of Pharmacy.",
+    description:"",
   },
   {
     years: "2002 – 2011",
     title: "Associate Director & Director, Pharmacotherapy Services",
     organization: "Wake AHEC, Raleigh, NC",
-    description: "• Led pharmacotherapy services and clinical training across North Carolina's Wake region. • Named Wake AHEC Mentor of the Year (2008). • Published foundational research on Co-active Coaching in pharmacy education.",
+    description:"",
   },
   {
     years: "2011 – 2016",
     title: "Associate Professor & Assistant Dean",
     organization: "University of Maryland School of Pharmacy, Baltimore",
-    description: "• Associate Professor, Pharmacy Practice and Science. • Assistant Dean, Experiential Learning Program overseeing statewide clinical education.",
+    description: "",
   },
   {
     years: "2016 – 2022",
     title: "Dean & Professor",
     organization: "Howard University College of Pharmacy, Washington, D.C.",
-    description: "• Enrollment nearly doubled; alumni giving rose 70%; residency match rate rose from 36% to 50%+ • Built 18 international partnerships across 16 countries and 6 continents. • Secured landmark FDA–GlaxoSmithKline regulatory affairs fellowship (first of its kind). • Achieved maximum ACPE re-accreditation: 8 years (through 2029). • Established Alfred & Toyin Tofade Aspiring Leaders Endowed Fund upon departure.",
+    description:"",
   },
   {
     years: "2022 – 2026",
     title: "10th President",
     organization: "Albany College of Pharmacy and Health Sciences, Albany, NY",
-    description: "• First Black woman elected president in ACPHS's 143-year history. • Launched 2024–2029 Strategic Plan; earned Carnegie Research University classification (2025). • Approved 7 new degree programs in 2024, largest single-year expansion in institutional history. • Introduced ACPHS Online, the college's first digital academic portfolio. • Applications +19%; PharmD deposits +210%; transfer admissions +714%. • Secured $1.9M FDA contract for mRNA vaccine training at CBET. • Led ACPHS–Russell Sage College merger announcement (April 2025).• Concluding presidential term June 30, 2026; continuing as President Emeritus from July 1, 2026.",
+    description:
+      "• First Black woman appointed president in ACPHS's history. • Launched the 2024–2029 Strategic Plan; earned Carnegie Research University classification (2025). • Nine new degree programs launched across 2024 and 2025, the largest expansion in institutional history. • Introduced ACPHS Online, the college's first digital academic portfolio. • Applications +19%; PharmD year-one deposits +210%; transfer admissions +700%. • Secured a $1.9M FDA contract for CBET. • Led the ACPHS–Russell Sage College merger announcement (April 2025). • Concluding her presidential term June 30, 2026; continuing as President Emerita from July 1, 2026.",
     highlight: true,
   },
 ]
+
+
 
 export function CareerTimeline() {
   return (
@@ -45,7 +53,7 @@ export function CareerTimeline() {
             Timeline
           </p>
           <h2 className="font-serif text-3xl sm:text-4xl text-text-heading text-center mb-16">
-            Career Timeline
+            A Journey Across Institutions and Continents
           </h2>
         </AnimatedSection>
 
@@ -93,6 +101,8 @@ export function CareerTimeline() {
             </AnimatedSection>
           ))}
         </div>
+
+
       </div>
     </section>
   )

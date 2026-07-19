@@ -3,6 +3,23 @@ import { Navigation } from "@/components/navigation"
 import { AnimatedSection } from "@/components/animated-section"
 import Image from "next/image"
 import { Quote } from "lucide-react"
+import { Cite, References, type Source } from "@/components/cite"
+
+const OFFICE = "https://www.acphs.edu/about/people/leadership/office-of-the-president/"
+const PARTNERSHIPS = "https://www.acphs.edu/news/partnerships-extend-colleges-reach/"
+const ENDOWED = "https://thedig.howard.edu/all-stories/departing-college-pharmacy-dean-toyin-tofade-establishes-endowed-fund-leadership-development"
+const REFLECTS = "https://thedig.howard.edu/all-stories/toyin-tofade-reflects-her-tenure-dean-college-pharmacy"
+const UNC_ECKEL = "https://pharmacy.howard.edu/articles/howard-pharmacy-dean-tofade-honored-university-north-carolina"
+const WIKI = "https://en.wikipedia.org/wiki/Toyin_Tofade"
+
+const sources: Source[] = [
+  { n: 1, label: "Wikipedia — Toyin Tofade (education, career overview)", href: WIKI },
+  { n: 2, label: "Howard University College of Pharmacy — Dean Tofade Honored by University of North Carolina (Fred M. Eckel Award, 2019)", href: UNC_ECKEL },
+  { n: 3, label: "The Dig, Howard University — Departing Dean Toyin Tofade Establishes Endowed Fund for Leadership Development", href: ENDOWED },
+  { n: 4, label: "The Dig, Howard University — Toyin Tofade Reflects on Her Tenure as Dean of the College of Pharmacy", href: REFLECTS },
+  { n: 5, label: "ACPHS — Office of the President, Prof. Toyin Tofade (tenure statistics)", href: OFFICE },
+  { n: 6, label: "ACPHS News — Partnerships Extend College's Reach (ACPHS–Russell Sage merger)", href: PARTNERSHIPS },
+]
 
 export function HerStoryContent() {
   return (
@@ -45,7 +62,7 @@ Her father, the late Professor Abayomi Sofowora, was a pioneering pharmacognosis
                   A Defining Chapter
                 </h2>
                 <p className="text-[#5C4A2A] leading-relaxed">
-                  In the early 1990s, Toyin crossed an ocean to pursue graduate study at the University of North Carolina at Chapel Hill, the number one ranked pharmacy school in the nation. There, she earned both her Master&apos;s in Pharmacy Practice (1994) and her Doctor of Pharmacy (1997), completing clinical residencies at UNC hospitals along the way.
+                  In the early 1990s, Toyin crossed an ocean to pursue graduate study at the University of North Carolina at Chapel Hill, the number one ranked pharmacy school in the nation. There, she earned both her Master&apos;s in Pharmacy Practice (1994) and her Doctor of Pharmacy (1997), completing clinical residencies at UNC hospitals along the way.<Cite n={1} href={WIKI} />
                 </p>
               </div>
             </div>
@@ -55,7 +72,7 @@ Her father, the late Professor Abayomi Sofowora, was a pioneering pharmacognosis
               </p>
             </div>
             <p className="text-[#5C4A2A] leading-relaxed mt-6">
-              Chapel Hill was where she discovered the power of mentorship. It was there that she first crossed paths with Professor Fred Eckel who, she later said, &ldquo;tapped me when I was a nobody in Nigeria.&rdquo; That relationship would span decades, and come full circle when she became the first Black person to receive the Fred Eckel Pharmacy Leadership Award from UNC in 2019.
+              Chapel Hill was where she discovered the power of mentorship. It was there that she first crossed paths with Professor Fred Eckel who, she later said, &ldquo;tapped me when I was a nobody in Nigeria.&rdquo; That relationship would span decades, and come full circle when she received the Fred M. Eckel Pharmacy Leadership Award from UNC in 2019.<Cite n={2} href={UNC_ECKEL} />
             </p>
           </AnimatedSection>
 
@@ -128,10 +145,10 @@ At Maryland, she rose from Associate Professor and Associate Director to Assista
               </p>
             </div>
             <p className="text-white/80 leading-relaxed mb-4">
-              Over six transformative years, she made that environment. Enrollment nearly doubled. Student internships doubled. Alumni giving increased by over 70 percent. The student residency match rate climbed from 36 to more than 50 percent. Howard&apos;s College of Pharmacy achieved full re-accreditation for eight years, the maximum possible term.
+              Over six transformative years, her team made that environment. Under her leadership, enrollment nearly doubled, student internships doubled, and alumni giving increased by over 70 percent. The student residency match rate climbed, and Howard&apos;s College of Pharmacy achieved full re-accreditation for eight years, the maximum possible term.<Cite n={3} href={ENDOWED} />
             </p>
             <p className="text-white/80 leading-relaxed">
-              She built 18 international partnerships across 16 countries, realizing her stated goal of reaching every continent on earth, with the exception of Antarctica. When she left for Albany in 2022, she didn&apos;t leave Howard behind. She established the Alfred and Toyin Tofade Aspiring Leaders Endowed Fund, ensuring that future Howard faculty, staff, and students would have resources to pursue leadership development long after her departure.
+              Under her leadership, the college built 18 international partnerships across 16 countries, realizing her stated goal of reaching every continent on earth, with the exception of Antarctica.<Cite n={4} href={REFLECTS} /> When she left for Albany in 2022, she didn&apos;t leave Howard behind. She established the Alfred and Toyin Tofade Aspiring Leaders Endowed Fund, ensuring that future Howard faculty, staff, and students would have resources to pursue leadership development long after her departure.<Cite n={3} href={ENDOWED} />
             </p>
           </AnimatedSection>
 
@@ -162,10 +179,10 @@ At Maryland, she rose from Associate Professor and Associate Director to Assista
               On July 1, 2022, Dr. Toyin Tofade became the 10th President of Albany College of Pharmacy and Health Sciences and the first Black woman to hold that office in the college&apos;s 141-year history.
             </p>
             <p className="text-[#5C4A2A] leading-relaxed mb-4">
-Under her leadership, ACPHS launched its boldest strategic plan in a generation, earned the Carnegie Research University classification (2025) &mdash; a designation held by only four institutions in the Capital Region &mdash; and introduced its first online academic portfolio. Nine new degree programs launched across 2024 and 2025, including bachelor&apos;s programs in health sciences, psychology, forensic science, and biology; graduate programs in biomedical sciences, cytotechnology, and health data science; and a bachelor&apos;s in nursing offered as a 1+2+1 partnership with St. Peter&apos;s Health Partners &mdash; the largest expansion in the college&apos;s history. Applications rose 19&#37;, deposits 35&#37;, PharmD year-one deposits 210&#37;, and transfer admissions more than 700&#37;. Industrial fellowships for recent graduates doubled, giving increased 61&#37;, and the college achieved an 80&#37; placement rate for students pursuing medical school. She also launched the first six-year Accelerated Pathway to MD program in Upstate New York &mdash; one of only a handful in the country.
+Under her leadership, ACPHS launched its boldest strategic plan in a generation, earned the Carnegie Research University classification (2025).<Cite n={5} href={OFFICE} /> A designation held by only four institutions in the Capital Region, and introduced its first online academic portfolio. Nine new degree programs launched across 2024 and 2025, including bachelor&apos;s programs in health sciences, psychology, forensic science, and biology; graduate programs in biomedical sciences, cytotechnology, and health data science; and a bachelor&apos;s in nursing offered as a 1+2+1 partnership with St. Peter&apos;s Health Partners, the largest expansion in the college&apos;s history. Applications rose 19&#37;, deposits 35&#37;, PharmD year-one deposits 210&#37;, and transfer admissions more than 700&#37;.<Cite n={5} href={OFFICE} /> Industrial fellowships for recent graduates doubled, giving increased 61&#37;, and the college achieved an 80&#37; placement rate for students pursuing medical school.
 </p>
             <p className="text-[#5C4A2A] leading-relaxed mb-4">
-She deepened the college&apos;s economic and community footprint: expanding CBET, backed by a &#36;1.75M Empire State Development grant and a &#36;1.9M FDA contract; growing the Collaboratory in Albany&apos;s South End; and sustaining the college&apos;s student-operated pharmacies &mdash; the only ones of their kind in the country. The School of Pharmacy earned eight years of full accreditation and Health Sciences programs maintained a 100&#37; licensure rate. She successfully advocated at the federal and state level for student-centered legislative reforms and for revisions to MSCHE accreditation processes to better support institutional mergers across higher education &mdash; a contribution with implications well beyond ACPHS.
+She deepened the college&apos;s economic and community footprint: expanding CBET, backed by a &#36; Empire State Development grant and a &#36; FDA contract, and growing the Collaboratory in Albany&apos;s South End. The School of Pharmacy earned eight years of full accreditation and Health Sciences programs maintained a 100&#37; licensure rate. She successfully advocated at the federal and state level for student-centered legislative reforms and for revisions to MSCHE accreditation processes to better support institutional mergers across higher education, a contribution with implications well beyond ACPHS.
             </p>
 
             <p className="text-[#5C4A2A] leading-relaxed mb-4">
@@ -173,7 +190,7 @@ Global partnerships expanded to India, the Philippines, Nigeria, Brazil, Indones
             </p>
 
             <p className="text-[#5C4A2A] leading-relaxed">
-  In April 2025, she led the announcement of a historic merger with Russell Sage College, a merger of equals, that upon completion in Fall 2027 will create a comprehensive institution of approximately 4,000 students with combined assets of &#36;246 million and the broadest health professions curriculum in the Capital Region.
+  In April 2025, she led the announcement of a historic merger with Russell Sage College, a merger of equals, that upon completion in Fall 2027 will create a comprehensive institution of approximately 4,000 students with combined assets of &#36;246 million and the broadest health professions curriculum in the Capital Region.<Cite n={6} href={PARTNERSHIPS} />
 </p>
           </AnimatedSection>
 
@@ -186,7 +203,7 @@ Global partnerships expanded to India, the Philippines, Nigeria, Brazil, Indones
             <h2 className="font-serif text-3xl font-bold text-[#2C1A0E] mb-6">
             A Distinguished Conclusion and a New Chapter            </h2>
             <p className="text-[#5C4A2A] leading-relaxed mb-4">
-On April 24, 2026, Prof. Tofade announced that she will conclude her presidential term on June 30, 2026 with the merger on track and the first phase of the transaction set to close June 1. She will continue as President Emeritus from July 1, 2026, supporting the transition as Russell Sage President Matthew Shaftel leads both institutions toward the combined university.            </p>
+On April 24, 2026, Prof. Tofade announced that she will conclude her presidential term on June 30, 2026 with the merger on track and the first phase of the transaction set to close June 1. She will continue as President Emerita from July 1, 2026, supporting the transition as Russell Sage President Matthew Shaftel leads both institutions toward the combined university.<Cite n={5} href={OFFICE} />            </p>
             <p className="text-[#5C4A2A] leading-relaxed mb-4">
 ACPHS Board Chair Walter S. Borisenok said: "President Tofade has brought ACPHS through a historic chapter. The ACPHS Board of Trustees is extremely grateful for her leadership and service."
             </p>
@@ -195,16 +212,20 @@ In her message to the community she wrote: "It has been my honor to serve you as
             </p>
 
             <p className="text-[#5C4A2A] leading-relaxed mb-3">
-As she turns toward her next chapter Prof. Tofade carries forward more than four years of institution-building, a 143-year legacy preserved, and a merger that will anchor health professions education in New York's Capital Region for decades.
+As she turns toward her next chapter Prof. Tofade carries forward more than four years of institution-building, a 141-year legacy preserved, and a merger that will anchor health professions education in New York's Capital Region for decades.
             </p>
-                          <div className="relative aspect-[4/3] rounded-xl overflow-hidden shadow-lg">
-                <Image
-                  src="/option1/merger.jpeg"
-                  alt="Dr. Tofade with Russel Sage Team"
-                  fill
-                  className="object-cover"
-                />
-              </div>
+            <p className="text-[#5C4A2A] leading-relaxed mb-3">
+              Read more about the ACPHS&ndash;Russell Sage College merger and the partnerships extending the college&apos;s reach in the{" "}
+              <a
+                href={PARTNERSHIPS}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-label underline decoration-dotted underline-offset-2 hover:text-gold transition-colors"
+              >
+                official ACPHS announcement
+              </a>
+              .
+            </p>
           </AnimatedSection>
 
                     <AnimatedSection className="bg-[#3D1854] rounded-2xl p-8 md:p-12 text-center">
@@ -214,6 +235,10 @@ As she turns toward her next chapter Prof. Tofade carries forward more than four
             <cite className="text-[#C9A0E8] text-sm not-italic">
               Prof. Toyin Tofade, on the ACPHS–Russell Sage merger, April 2025
             </cite>
+          </AnimatedSection>
+
+          <AnimatedSection>
+            <References sources={sources} variant="light" />
           </AnimatedSection>
 
         </div>

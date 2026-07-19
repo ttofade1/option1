@@ -5,8 +5,8 @@ import { GWLContent } from "@/components/global-women-leaders/content"
 import { GWLCta } from "@/components/global-women-leaders/cta"
 
 export const metadata = {
-  title: "Global Women Leaders Inc. | Prof. Toyin Tofade",
-  description: "Global Women Leaders Inc. inspires and trains women internationally to maximize their leadership potential across sectors, generations, and borders.",
+  title: "Global Leaders | Prof. Toyin Tofade",
+  description: "Raising the next generation of leaders through mentorship, FIP fellowship, and Global Women Leaders Inc. — equipping leaders across sectors, generations, and borders.",
 }
 
 export default function GlobalWomenLeadersPage() {

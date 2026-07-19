@@ -24,14 +24,14 @@ export function CareerHero() {
             isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
           }`}
         >
-          Career Timeline
+          A Global Leadership Journey
         </h1>
         <p
           className={`text-navy-muted text-lg max-w-2xl mx-auto leading-relaxed transition-all duration-700 delay-200 ${
             isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
           }`}
         >
-          Timeline of transitions and accomplishments
+          From clinical practice in North Carolina to the deanship at Howard and the presidency at Albany, Prof. Tofade has built institutions and partnerships across six continents. She is a leader whose reach extends well beyond any single profession or country.
         </p>
       </div>
     </section>

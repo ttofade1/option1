@@ -10,7 +10,7 @@ const navLinks = [
   { href: "/career", label: "Career" },
   { href: "/impact", label: "Impact" },
   { href: "/publications", label: "Publications & Media" },
-  { href: "/global-women-leaders", label: "Global Women Leaders" },
+  { href: "/global-women-leaders", label: "Global Leaders" },
   { href: "/work-with-me", label: "Work With Me" },
 ]
 

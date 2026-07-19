@@ -2,19 +2,28 @@
 
 import Image from "next/image"
 import { AnimatedSection } from "@/components/animated-section"
-import { Target, Users, Heart } from "lucide-react"
+import { Cite, References, type Source } from "@/components/cite"
+import { Target, Users, Heart, Globe } from "lucide-react"
+
+const WIKI = "https://en.wikipedia.org/wiki/Toyin_Tofade"
+const ENDOWED = "https://thedig.howard.edu/all-stories/departing-college-pharmacy-dean-toyin-tofade-establishes-endowed-fund-leadership-development"
+
+const sources: Source[] = [
+  { n: 1, label: "Wikipedia — Toyin Tofade (FIP Fellow; President, FIP Academic Pharmacy Section)", href: WIKI },
+  { n: 2, label: "The Dig, Howard University — Departing Dean Toyin Tofade Establishes Endowed Fund for Leadership Development", href: ENDOWED },
+]
 
 export function GWLContent() {
   return (
     <section className="py-24 bg-cream">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Mission Section */}
+        {/* Mentorship & the Next Generation of Leaders (primary) */}
         <div className="grid lg:grid-cols-2 gap-16 items-center mb-24">
           <AnimatedSection animation="slide-left">
             <div className="relative aspect-[4/5] max-w-md">
               <Image
                 src="SF_PBweb-14.jpg"
-                alt="Dr. Tofade"
+                alt="Prof. Tofade"
                 fill
                 className="object-cover"
               />
@@ -25,25 +34,35 @@ export function GWLContent() {
           <AnimatedSection animation="slide-right" delay={100}>
             <div>
               <p className="text-label text-sm tracking-[0.15em] uppercase mb-4">
-                Our Purpose
+                A Life&apos;s Work in Mentorship
               </p>
               <h2 className="font-serif text-3xl sm:text-4xl text-text-heading mb-8">
-                The organisation focuses on training, mentorship, and community-building
+                Developing leaders across sectors, generations, and borders
               </h2>
+              <p className="text-text-body leading-relaxed mb-6">
+                As a Fellow of the International Pharmaceutical Federation (FFIP) and President of its
+                Academic Pharmacy Section, Prof. Tofade has shaped how a global federation cultivates
+                its next generation of academic leaders.<Cite n={1} href={WIKI} /> A Certified
+                Professional Co-active Coach (CPCC), she brings that same discipline to the individual
+                leaders she mentors, one relationship at a time.
+              </p>
               <p className="text-text-body leading-relaxed mb-8">
-                Providing women across sectors with the tools, models, and networks they need to lead with confidence, competence, and sustained impact.
+                Her belief that leadership must be built in others is embodied in the Alfred and Toyin
+                Tofade Aspiring Leaders Endowed Fund at Howard University, which she established to
+                ensure future faculty, staff, and students have lasting resources for leadership
+                development.<Cite n={2} href={ENDOWED} />
               </p>
 
               {/* Features */}
               <div className="space-y-6">
                 <div className="flex gap-4">
                   <div className="w-12 h-12 bg-gold-light flex items-center justify-center shrink-0">
-                    <Target className="w-6 h-6 text-label" />
+                    <Globe className="w-6 h-6 text-label" />
                   </div>
                   <div>
-                    <h3 className="font-serif text-lg text-text-heading mb-1">Mission</h3>
+                    <h3 className="font-serif text-lg text-text-heading mb-1">Global Federation Leadership</h3>
                     <p className="text-text-body text-sm">
-                      To inspire and train women internationally to maximise their leadership potential across academia, healthcare, public service, and professional life.
+                      Advancing academic pharmacy education worldwide through the FIP Academic Pharmacy Section.
                     </p>
                   </div>
                 </div>
@@ -53,9 +72,9 @@ export function GWLContent() {
                     <Users className="w-6 h-6 text-label" />
                   </div>
                   <div>
-                    <h3 className="font-serif text-lg text-text-heading mb-1">Who We Serve</h3>
+                    <h3 className="font-serif text-lg text-text-heading mb-1">One-on-One Coaching</h3>
                     <p className="text-text-body text-sm">
-                      Women at every stage of their professional journey: those entering leadership roles for the first time, those navigating the complexity of senior positions, and those ready to invest in the next generation.
+                      Certified executive coaching for emerging and established leaders across academia, healthcare, and public service.
                     </p>
                   </div>
                 </div>
@@ -65,9 +84,9 @@ export function GWLContent() {
                     <Heart className="w-6 h-6 text-label" />
                   </div>
                   <div>
-                    <h3 className="font-serif text-lg text-text-heading mb-1">Get Involved</h3>
+                    <h3 className="font-serif text-lg text-text-heading mb-1">Endowed Investment</h3>
                     <p className="text-text-body text-sm">
-                      Whether you are a woman ready to grow into the fullness of your professional potential, an organisation seeking to partner with us, or a donor committed to multiplying women&apos;s leadership impact globally we want to hear from you.
+                      Permanent resources for leadership development, ensuring the work continues for generations.
                     </p>
                   </div>
                 </div>
@@ -76,36 +95,66 @@ export function GWLContent() {
           </AnimatedSection>
         </div>
 
-        {/* Image Gallery */}
-        {/* <AnimatedSection delay={200}>
-          <div className="grid md:grid-cols-3 gap-6">
-                        <div className="relative aspect-[3/4]">
-              <Image
-                src="withKemi.jpeg"
-                alt="Dr. Tofade with church member"
-                fill
-                className="object-cover"
-              />
-            </div>
-            <div className="relative aspect-[3/4]">
-              <Image
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/SF_PBweb-15-gl2EKrbeiBW970azeAnFlBE6JiwD0S.jpg"
-                alt="Dr. Tofade in prayer"
-                fill
-                className="object-cover"
-              />
-            </div>
-            <div className="relative aspect-[3/4]">
-              <Image
-                src="congregation.jpeg"
-                alt="Dr. Tofade with congregation"
-                fill
-                className="object-cover"
-                style={{objectPosition: "right 10%"}}
-              />
+        {/* Global Women Leaders Inc. (demoted sub-section) */}
+        <AnimatedSection>
+          <div className="bg-cream-card border border-border p-8 md:p-12">
+            <p className="text-label text-sm tracking-[0.15em] uppercase mb-3">
+              A Dedicated Initiative
+            </p>
+            <h2 className="font-serif text-2xl sm:text-3xl text-text-heading mb-4">
+              Global Women Leaders Inc.
+            </h2>
+            <p className="text-text-body leading-relaxed mb-8 max-w-3xl">
+              Global Women Leaders Inc. is the nonprofit Prof. Tofade founded to inspire and equip
+              women around the world to step fully into their leadership capacity. The organisation
+              focuses on training, mentorship, and community-building. Providing women across
+              sectors with the tools, models, and networks they need to lead with confidence,
+              competence, and sustained impact.
+            </p>
+
+            <div className="grid md:grid-cols-3 gap-6">
+              <div className="flex gap-4">
+                <div className="w-10 h-10 bg-gold-light flex items-center justify-center shrink-0">
+                  <Target className="w-5 h-5 text-label" />
+                </div>
+                <div>
+                  <h3 className="font-serif text-base text-text-heading mb-1">Mission</h3>
+                  <p className="text-text-body text-sm">
+                    To inspire and train women internationally to maximise their leadership potential across academia, healthcare, public service, and professional life.
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex gap-4">
+                <div className="w-10 h-10 bg-gold-light flex items-center justify-center shrink-0">
+                  <Users className="w-5 h-5 text-label" />
+                </div>
+                <div>
+                  <h3 className="font-serif text-base text-text-heading mb-1">Who We Serve</h3>
+                  <p className="text-text-body text-sm">
+                    Women at every stage of their professional journey. Those entering leadership for the first time, those navigating senior positions, and those ready to invest in the next generation.
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex gap-4">
+                <div className="w-10 h-10 bg-gold-light flex items-center justify-center shrink-0">
+                  <Heart className="w-5 h-5 text-label" />
+                </div>
+                <div>
+                  <h3 className="font-serif text-base text-text-heading mb-1">Get Involved</h3>
+                  <p className="text-text-body text-sm">
+                    Whether you are a woman ready to grow, an organisation seeking to partner, or a donor committed to multiplying women&apos;s leadership impact globally, we want to hear from you.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
-        </AnimatedSection> */}
+        </AnimatedSection>
+
+        <AnimatedSection>
+          <References sources={sources} variant="light" />
+        </AnimatedSection>
       </div>
     </section>
   )

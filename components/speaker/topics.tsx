@@ -4,12 +4,12 @@ import { AnimatedSection } from "@/components/animated-section"
 import { Mic, Users } from "lucide-react"
 
 const topics = [
-  "Health equity, pharmacy practice, and the future of healthcare workforce",
+  "Leadership and building high-performing teams",
   "Women in leadership: breaking barriers across generations",
-  "Global health workforce development: building partnerships across six continents",
-  "The pharmacist as a leader: from clinical practice to the executive suite",
-  "Mentorship, sponsorship, and the architecture of a meaningful career",
-  "Accreditation excellence as a leadership discipline",
+  "Networking, mentorship, and sponsorship: the architecture of a meaningful career",
+  "Leading institutional transformation, merger, and complex organisational change",
+  "Building global partnerships across six continents",
+  "Health equity and the future of the healthcare workforce",
 ]
 
 export function SpeakingTopics() {
@@ -40,7 +40,7 @@ export function SpeakingTopics() {
           <div className="mt-16 p-8 bg-gold-light border border-gold/30 text-center">
             <p className="text-label font-medium mb-2">Past Speaking Engagements</p>
             <p className="text-text-body text-sm">
-              Prof. Tofade has spoken at national pharmacy conferences, HBCU summits, health equity forums, institutional inaugurations, and commencement ceremonies across the United States and internationally.
+              Prof. Tofade has spoken at national and international conferences, leadership summits, health equity forums, institutional inaugurations, and commencement ceremonies across the United States and abroad.
             </p>
           </div>
         </AnimatedSection>

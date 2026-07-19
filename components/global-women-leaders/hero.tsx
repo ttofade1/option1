@@ -33,21 +33,21 @@ export function GWLHero() {
               isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
             }`}
           >
-            Community Service & Women&apos;s Leadership Development
+            Mentorship & Leadership Development
           </p>
           <h1
             className={`font-serif text-4xl sm:text-5xl lg:text-6xl text-cream leading-tight mb-6 transition-all duration-700 delay-100 ${
               isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
             }`}
           >
-            Raising the next generation of women leaders
+            Raising the Next Generation of Leaders
           </h1>
           <p
             className={`text-navy-muted text-lg leading-relaxed transition-all duration-700 delay-200 ${
               isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
             }`}
           >
-            Prof. Tofade has long believed that the measure of a leader is not what she achieves, but what she builds in others. Global Women Leaders Inc. is the organisational expression of that belief, a nonprofit she founded to inspire and equip women around the world to step fully into their leadership capacity.
+            Prof. Tofade has long believed that the measure of a leader is not what she achieves, but what she builds in others. Across her career, through the International Pharmaceutical Federation, executive coaching, and the nonprofit she founded, she has made developing leaders across sectors, generations, and borders her life&apos;s work.
           </p>
         </div>
       </div>

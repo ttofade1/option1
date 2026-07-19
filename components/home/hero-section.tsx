@@ -2,6 +2,9 @@
 
 import Image from "next/image"
 import { useEffect, useState } from "react"
+import { Cite } from "@/components/cite"
+
+const OFFICE = "https://www.acphs.edu/about/people/leadership/office-of-the-president/"
 
 export function HeroSection() {
   const [isLoaded, setIsLoaded] = useState(false)
@@ -33,6 +36,7 @@ export function HeroSection() {
               isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
             }`}
           >
+            President Emerita &middot; Albany College of Pharmacy &amp; Health Sciences
           </p>
 
           {/* Main Headline */}
@@ -63,10 +67,11 @@ export function HeroSection() {
             }`}
           >
             <p className="text-label text-sm font-medium leading-relaxed">
-              10th President (2022–2026), Albany College of Pharmacy and Health Sciences
+              10th President (2022–2026) &middot; Term Concluded June 30, 2026
               <br />
               <span className="text-text-heading font-serif italic">
-                First Black Woman Elected President in the College&apos;s 143-Year History
+                First Black Woman Appointed President in the College&apos;s History
+                <Cite n={1} href={OFFICE} />
               </span>
             </p>
           </div>

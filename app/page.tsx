@@ -3,6 +3,7 @@ import { Footer } from "@/components/footer"
 import { HeroSection } from "@/components/home/hero-section"
 import { IntroSection } from "@/components/home/intro-section"
 import { StatsSection } from "@/components/home/stats-section"
+import { StrategicPlanSection } from "@/components/home/strategic-plan-section"
 import { CTASection } from "@/components/home/cta-section"
 
 export default function HomePage() {
@@ -12,6 +13,7 @@ export default function HomePage() {
       <HeroSection />
       <IntroSection />
       <StatsSection />
+      <StrategicPlanSection />
       <CTASection />
       <Footer />
     </main>

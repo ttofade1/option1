@@ -47,7 +47,7 @@ export function SpeakerHero() {
               isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
             }`}
           >
-            Prof. Toyin Tofade is a sought-after keynote speaker, panelist, and convener for conferences, institutional events, and professional association meetings across pharmacy, health sciences, higher education, and leadership.
+            Prof. Toyin Tofade is a sought-after keynote speaker, panelist, and convener for conferences, institutional events, and professional association meetings across higher education, healthcare, leadership, and global partnerships.
           </p>
         </div>
       </div>
