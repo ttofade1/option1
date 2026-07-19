@@ -4,6 +4,8 @@ import { CareerHero } from "@/components/career/hero"
 import { CareerTimeline } from "@/components/career/timeline"
 import { EducationSection } from "@/components/career/education"
 import { HonorsSection } from "@/components/career/honors"
+import { PageReferences } from "@/components/page-references"
+import { CAREER_KEYS } from "@/components/sources"
 
 export const metadata = {
   title: "Career | Prof. Toyin Tofade",
@@ -18,6 +20,7 @@ export default function CareerPage() {
       <CareerTimeline />
       <EducationSection />
       <HonorsSection />
+      <PageReferences keys={CAREER_KEYS} />
       <Footer />
     </main>
   )

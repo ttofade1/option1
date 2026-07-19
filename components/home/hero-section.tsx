@@ -3,8 +3,7 @@
 import Image from "next/image"
 import { useEffect, useState } from "react"
 import { Cite } from "@/components/cite"
-
-const OFFICE = "https://www.acphs.edu/about/people/leadership/office-of-the-president/"
+import { SOURCES, HOME_KEYS, n } from "@/components/sources"
 
 export function HeroSection() {
   const [isLoaded, setIsLoaded] = useState(false)
@@ -71,7 +70,7 @@ export function HeroSection() {
               <br />
               <span className="text-text-heading font-serif italic">
                 First Black Woman Appointed President in the College&apos;s History
-                <Cite n={1} href={OFFICE} />
+                <Cite n={n(HOME_KEYS, "OFFICE")} href={SOURCES.OFFICE.href} />
               </span>
             </p>
           </div>

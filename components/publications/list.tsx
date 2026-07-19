@@ -2,13 +2,6 @@
 
 import { AnimatedSection } from "@/components/animated-section"
 import { FileText, ExternalLink } from "lucide-react"
-import { Cite, References, type Source } from "@/components/cite"
-
-const RESEARCHGATE = "https://www.researchgate.net/profile/Toyin-Tofade"
-
-const sources: Source[] = [
-  { n: 1, label: "ResearchGate — Toyin Tofade profile (citation and publication counts)", href: RESEARCHGATE },
-]
 
 const publications = [
   {
@@ -128,10 +121,6 @@ export function PublicationsList() {
               <ExternalLink className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </a>
           </div>
-        </AnimatedSection>
-
-        <AnimatedSection>
-          <References sources={sources} variant="light" />
         </AnimatedSection>
       </div>
     </section>

@@ -2,6 +2,8 @@ import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { HerStoryHero } from "@/components/her-story/hero"
 import { HerStoryContent } from "@/components/her-story/content"
+import { PageReferences } from "@/components/page-references"
+import { HERSTORY_KEYS } from "@/components/sources"
 
 export const metadata = {
   title: "Her Story | Prof. Toyin Tofade",
@@ -14,6 +16,7 @@ export default function HerStoryPage() {
       <Navigation />
       <HerStoryHero />
       <HerStoryContent />
+      <PageReferences keys={HERSTORY_KEYS} />
       <Footer />
     </main>
   )

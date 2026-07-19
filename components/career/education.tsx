@@ -2,12 +2,8 @@
 
 import { AnimatedSection } from "@/components/animated-section"
 import { GraduationCap } from "lucide-react"
-import { References, type Source } from "@/components/cite"
-
-const sources: Source[] = [
-  { n: 1, label: "Wikipedia — Toyin Tofade (education)", href: "https://en.wikipedia.org/wiki/Toyin_Tofade" },
-  { n: 2, label: "Toyin Tofade — Curriculum Vitae (Howard University Profiles)", href: "https://profiles.howard.edu/sites/profiles.howard.edu/files/2022-03/Tofade%2520CV-9-22-20%255B3942%255D.pdf" },
-]
+import { Cite } from "@/components/cite"
+import { SOURCES, CAREER_KEYS, n } from "@/components/sources"
 
 const education = [
   { degree: "BPharm", institution: "Obafemi Awolowo University, Ile-Ife, Nigeria (1989)" },

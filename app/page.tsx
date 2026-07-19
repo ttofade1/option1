@@ -5,6 +5,8 @@ import { IntroSection } from "@/components/home/intro-section"
 import { StatsSection } from "@/components/home/stats-section"
 import { StrategicPlanSection } from "@/components/home/strategic-plan-section"
 import { CTASection } from "@/components/home/cta-section"
+import { PageReferences } from "@/components/page-references"
+import { HOME_KEYS } from "@/components/sources"
 
 export default function HomePage() {
   return (
@@ -15,6 +17,7 @@ export default function HomePage() {
       <StatsSection />
       <StrategicPlanSection />
       <CTASection />
+      <PageReferences keys={HOME_KEYS} />
       <Footer />
     </main>
   )

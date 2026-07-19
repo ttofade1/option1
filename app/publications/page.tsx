@@ -4,6 +4,8 @@ import { PublicationsHero } from "@/components/publications/hero"
 import { PublicationsList } from "@/components/publications/list"
 import { PressSection } from "@/components/media/press"
 import { PodcastsSection } from "@/components/media/podcasts"
+import { PageReferences } from "@/components/page-references"
+import { PUBLICATIONS_KEYS } from "@/components/sources"
 
 export const metadata = {
   title: "Publications & Media | Prof. Toyin Tofade",
@@ -18,6 +20,7 @@ export default function PublicationsPage() {
       <PublicationsList />
       <PressSection />
       <PodcastsSection />
+      <PageReferences keys={PUBLICATIONS_KEYS} />
       <Footer />
     </main>
   )

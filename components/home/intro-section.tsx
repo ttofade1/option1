@@ -2,15 +2,8 @@
 
 import Image from "next/image"
 import { AnimatedSection } from "@/components/animated-section"
-import { Cite, References, type Source } from "@/components/cite"
-
-const OFFICE = "https://www.acphs.edu/about/people/leadership/office-of-the-president/"
-const PARTNERSHIPS = "https://www.acphs.edu/news/partnerships-extend-colleges-reach/"
-
-const sources: Source[] = [
-  { n: 1, label: "ACPHS — Office of the President, Prof. Toyin Tofade", href: OFFICE },
-  { n: 2, label: "ACPHS News — Partnerships Extend College's Reach (ACPHS–Russell Sage merger)", href: PARTNERSHIPS },
-]
+import { Cite } from "@/components/cite"
+import { SOURCES, HOME_KEYS, n } from "@/components/sources"
 
 export function IntroSection() {
   return (
@@ -50,16 +43,12 @@ From clinical pharmacist to college president, Dr. Tofade&apos;s career reflects
                   Prof. Toyin Tofade is a transformational college president, global health systems leader, and certified executive coach with over two decades of experience building institutions, forging international partnerships, and developing the next generation of leaders across four distinguished academic institutions.
                 </p>
                 <p>
-                  Over her four-year presidency at Albany College of Pharmacy and Health Sciences, she launched the college&apos;s most ambitious strategic expansion in its 141-year history, earned its first Carnegie Research University classification<Cite n={1} href={OFFICE} />, and co-created a landmark merger with Russell Sage College that will anchor health professions education in New York&apos;s Capital Region for decades.<Cite n={2} href={PARTNERSHIPS} />
+                  Over her four-year presidency at Albany College of Pharmacy and Health Sciences, she launched the college&apos;s most ambitious strategic expansion in its 141-year history, earned its first Carnegie Research University classification<Cite n={n(HOME_KEYS, "OFFICE")} href={SOURCES.OFFICE.href} />, and co-created a landmark merger with Russell Sage College that will anchor health professions education in New York&apos;s Capital Region for decades.<Cite n={n(HOME_KEYS, "PARTNERSHIPS")} href={SOURCES.PARTNERSHIPS.href} />
                 </p>
                 <p>
                   As she concluded her presidential term on June 30, 2026, and continues as President Emerita, an honorary title recognizing her distinguished service and sustaining her connection to the institution she transformed, Prof. Tofade carries forward a legacy of transformation and the conviction that highly impactful work is still ahead.
                 </p>
               </div>
-            </AnimatedSection>
-
-            <AnimatedSection delay={400}>
-              <References sources={sources} variant="light" />
             </AnimatedSection>
           </div>
         </div>

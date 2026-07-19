@@ -43,9 +43,11 @@ with a source — noted below); it is flagged here for you to resolve.
    speculated. ⚠️ Please confirm the intended expansion.
 
 6. **"First Black person to receive the Fred M. Eckel Award"** (Her Story;
-   Career → Honors). ✏️ The award and year (**2019**) are confirmed by the Howard
-   source, but the **"first Black person"** superlative is **not** stated there.
-   Softened to "by her account, the first Black person…". Please confirm.
+   Career → Honors). The award now cites the **UNC Medical Center** Fred Eckel
+   Award page (per owner direction). The award/year (**2019**) is corroborated by
+   Howard's coverage; the **"first Black person"** superlative remains her own
+   account and is phrased as "by her account, the first Black person…". Please
+   confirm the superlative.
 
 7. **Residency match rate** (Her Story → Howard). Site previously read "climbed
    from **36 to more than 50 percent**." ✏️ The provided source (The Dig endowed-
@@ -88,13 +90,23 @@ with a source — noted below); it is flagged here for you to resolve.
 | D | The Dig (Howard) — Departing Dean Establishes Endowed Fund | https://thedig.howard.edu/all-stories/departing-college-pharmacy-dean-toyin-tofade-establishes-endowed-fund-leadership-development |
 | E | The Dig (Howard) — Toyin Tofade Reflects on Her Tenure as Dean | https://thedig.howard.edu/all-stories/toyin-tofade-reflects-her-tenure-dean-college-pharmacy |
 | F | Wikipedia — Toyin Tofade | https://en.wikipedia.org/wiki/Toyin_Tofade |
-| G | Howard Pharmacy — Dean Tofade Honored by UNC (Fred Eckel, 2019) | https://pharmacy.howard.edu/articles/howard-pharmacy-dean-tofade-honored-university-north-carolina |
-| H | Vanguard — Meet Toyin Tofade, first Black female president of a US college | https://www.vanguardngr.com/2025/02/meet-toyin-tofade-first-black-female-president-of-a-us-college/ |
-| I | ResearchGate — Toyin Tofade profile | https://www.researchgate.net/profile/Toyin-Tofade |
+| G | UNC Medical Center — Fred Eckel Pharmacy Leadership Award | https://www.uncmedicalcenter.org/uncmc/professional-education-and-services/pharmacy-residency-programs/overview-fred-eckel-award/ |
+| H | ASHP — Donald E. Francke Medal, Past Recipients | https://www.ashp.org/about-ashp/awards/board-of-directors-awards/ashp-donald-francke-medal/past-recipients?loginreturnUrl=SSOCheckOnly |
+| I | Toyin Tofade — Curriculum Vitae (Howard University Profiles) | https://profiles.howard.edu/sites/profiles.howard.edu/files/2022-03/Tofade%2520CV-9-22-20%255B3942%255D.pdf |
+| J | ResearchGate — Toyin Tofade profile | https://www.researchgate.net/profile/Toyin-Tofade |
+| K | Albany Business Review — Toyin Tofade's calling: To be a leader of leaders | https://www.bizjournals.com/albany/news/2022/11/30/toyin-tofade-albany-college-of-pharmacy.html |
 
-*Not reachable during this pass (blocked / 403):* ResearchGate (I), ASHP Francke
-Medal recipients, Albany Business Review (bizjournals). Where a fact depended on
-these, it is noted below.
+**Source preferences applied:** Fred M. Eckel Award now cites **UNC Medical
+Center (G)** and the Donald E. Francke Medal now cites **ASHP (H)** per owner
+direction. **Wikipedia (F) is deprioritized** — education/degree facts now cite
+the **CV (I)** instead; Wikipedia is retained only where it is the sole source
+for a claim (e.g., FIP Fellow "first Black woman," AACP Council of Deans).
+
+*Not machine-reachable during verification (blocked / 403):* ResearchGate (J),
+ASHP recipients page (H), UNC Medical Center Eckel page (G), Albany Business
+Review (K). These are cited per owner direction / as the canonical source; the
+underlying facts (Francke 2022, Eckel 2019, Power 50, 1,000+ citations) are
+independently corroborated elsewhere in this file.
 
 ---
 
@@ -209,10 +221,11 @@ these, it is noted below.
 - Press items & podcasts — ✅ each links to its source (The Dig, ACPHS, AAPS,
   Connect Nigeria, Capital Region Chamber, Apple Podcasts, YouTube, etc.).
 
-### Global Leaders (`components/global-women-leaders/*`)
+### Global Leaders (`app/global-leaders/`, `components/global-women-leaders/*`)
 - ✏️ Renamed display label "Global Women Leaders" → **"Global Leaders"** (nav,
-  footer, page title, hero). URL slug `/global-women-leaders` unchanged to avoid
-  breaking links.
+  footer, page title, hero) **and the route** `/global-women-leaders` →
+  **`/global-leaders`** (nav + footer links updated). The component folder name
+  (`components/global-women-leaders/`) is unchanged internally.
 - ✏️ Headline → **"Raising the Next Generation of Leaders."**
 - **FFIP (Fellow of the International Pharmaceutical Federation) + President, FIP
   Academic Pharmacy Section** — ✅ Source F [cite 1] (FFIP interpretation, note 5).
@@ -233,14 +246,19 @@ these, it is noted below.
 
 ## CITATION SYSTEM
 
-A single reusable component (`components/cite.tsx`) provides the site-wide,
-palette-consistent pattern:
-- `<Cite n href />` — a small superscript marker (gold `#C6993A`) immediately after
-  a fact, linking **directly** to the source (`target="_blank" rel="noopener
-  noreferrer"`).
-- `<References variant />` — a "Sources & References" list at the bottom of each
-  fact-bearing section (brown `#633806` on cream, gold on navy), each entry
-  linking out.
+Palette-consistent and centralized:
+- `components/sources.ts` is the single source registry (URL + label for every
+  source) plus each page's ordered source list. Inline `<Cite>` numbers and the
+  page's reference list both derive from that one ordering, so they always agree.
+- `<Cite n href />` (`components/cite.tsx`) — a small superscript marker
+  (gold `#C6993A`) right after a fact, linking directly to the source
+  (`target="_blank" rel="noopener noreferrer"`). For the Home statistics, the
+  markers sit next to the **"Key Statistics Under Her Leadership"** heading rather
+  than on each stat.
+- **One consolidated "Sources & References" list per page**, rendered at the
+  bottom of the page above the footer (`components/page-references.tsx`), listing
+  **all** sources cited on that page (brown `#633806`, dotted underline). Pages
+  with no factual claims (Speaker Request, Work With Me) have no list.
 
 No new colors, fonts, or layout patterns were introduced; existing tokens
-(`text-gold`, `text-label`, `text-navy-muted`, `border-divider`) are reused.
+(`text-gold`, `text-label`, `text-text-body`, `border-divider`) are reused.

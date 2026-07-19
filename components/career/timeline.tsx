@@ -1,24 +1,21 @@
 "use client"
 
 import { AnimatedSection } from "@/components/animated-section"
-import { Cite, References, type Source } from "@/components/cite"
-
-const OFFICE = "https://www.acphs.edu/about/people/leadership/office-of-the-president/"
-const ENDOWED = "https://thedig.howard.edu/all-stories/departing-college-pharmacy-dean-toyin-tofade-establishes-endowed-fund-leadership-development"
-const WIKI = "https://en.wikipedia.org/wiki/Toyin_Tofade"
+import { Cite } from "@/components/cite"
+import { SOURCES, CAREER_KEYS, n } from "@/components/sources"
 
 const timelineItems = [
   {
     years: "1994 – 2002",
     title: "Clinical Pharmacist, Specialist & Faculty",
     organization: "UNC Hospitals / UNC Eshelman School of Pharmacy",
-    description:"",
+    description: "",
   },
   {
     years: "2002 – 2011",
     title: "Associate Director & Director, Pharmacotherapy Services",
     organization: "Wake AHEC, Raleigh, NC",
-    description:"",
+    description: "",
   },
   {
     years: "2011 – 2016",
@@ -30,7 +27,7 @@ const timelineItems = [
     years: "2016 – 2022",
     title: "Dean & Professor",
     organization: "Howard University College of Pharmacy, Washington, D.C.",
-    description:"",
+    description: "",
   },
   {
     years: "2022 – 2026",
@@ -39,10 +36,10 @@ const timelineItems = [
     description:
       "• First Black woman appointed president in ACPHS's history. • Launched the 2024–2029 Strategic Plan; earned Carnegie Research University classification (2025). • Nine new degree programs launched across 2024 and 2025, the largest expansion in institutional history. • Introduced ACPHS Online, the college's first digital academic portfolio. • Applications +19%; PharmD year-one deposits +210%; transfer admissions +700%. • Secured a $1.9M FDA contract for CBET. • Led the ACPHS–Russell Sage College merger announcement (April 2025). • Concluding her presidential term June 30, 2026; continuing as President Emerita from July 1, 2026.",
     highlight: true,
+    cite: n(CAREER_KEYS, "OFFICE"),
+    href: SOURCES.OFFICE.href,
   },
 ]
-
-
 
 export function CareerTimeline() {
   return (
@@ -91,18 +88,21 @@ export function CareerTimeline() {
                   <p className="text-gold font-medium text-sm mb-1">{item.years}</p>
                   <h3 className="font-serif text-xl text-text-heading mb-1">
                     {item.title}
+                    {item.highlight && item.cite && item.href && (
+                      <Cite n={item.cite} href={item.href} />
+                    )}
                   </h3>
                   <p className="text-label text-sm mb-3">{item.organization}</p>
-                  <p className="text-text-body text-sm leading-relaxed whitespace-pre-line">
-                    {item.description.replace(/ •/g, '\n•')}
-                  </p>
+                  {item.description && (
+                    <p className="text-text-body text-sm leading-relaxed whitespace-pre-line">
+                      {item.description.replace(/ •/g, '\n•')}
+                    </p>
+                  )}
                 </div>
               </div>
             </AnimatedSection>
           ))}
         </div>
-
-
       </div>
     </section>
   )

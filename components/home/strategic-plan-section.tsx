@@ -1,10 +1,11 @@
 "use client"
 
 import { AnimatedSection } from "@/components/animated-section"
-import { Cite, References, type Source } from "@/components/cite"
+import { Cite } from "@/components/cite"
+import { SOURCES, HOME_KEYS, n } from "@/components/sources"
 import { ArrowRight } from "lucide-react"
 
-const STRATEGIC_PLAN = "https://www.acphs.edu/about/strategic-plan/"
+const STRATEGIC_PLAN = SOURCES.STRATEGIC_PLAN.href
 
 const pillars = [
   "Academic Excellence",
@@ -12,10 +13,6 @@ const pillars = [
   "People and Culture",
   "Engaging with Communities",
   "Financial Strength & Stewardship",
-]
-
-const sources: Source[] = [
-  { n: 1, label: "ACPHS — 2024–2029 Strategic Plan", href: STRATEGIC_PLAN },
 ]
 
 export function StrategicPlanSection() {
@@ -32,7 +29,7 @@ export function StrategicPlanSection() {
             <AnimatedSection delay={100}>
               <h2 className="font-serif text-3xl sm:text-4xl text-text-heading leading-tight mb-6">
                 The 2024&ndash;2029 ACPHS Strategic Plan
-                <Cite n={1} href={STRATEGIC_PLAN} />
+                <Cite n={n(HOME_KEYS, "STRATEGIC_PLAN")} href={SOURCES.STRATEGIC_PLAN.href} />
               </h2>
             </AnimatedSection>
             <AnimatedSection delay={200}>
@@ -73,10 +70,6 @@ export function StrategicPlanSection() {
             </div>
           </AnimatedSection>
         </div>
-
-        <AnimatedSection>
-          <References sources={sources} variant="light" />
-        </AnimatedSection>
       </div>
     </section>
   )

@@ -3,6 +3,8 @@ import { Footer } from "@/components/footer"
 import { GWLHero } from "@/components/global-women-leaders/hero"
 import { GWLContent } from "@/components/global-women-leaders/content"
 import { GWLCta } from "@/components/global-women-leaders/cta"
+import { PageReferences } from "@/components/page-references"
+import { GLOBAL_KEYS } from "@/components/sources"
 
 export const metadata = {
   title: "Global Leaders | Prof. Toyin Tofade",
@@ -16,6 +18,7 @@ export default function GlobalWomenLeadersPage() {
       <GWLHero />
       <GWLContent />
       <GWLCta />
+      <PageReferences keys={GLOBAL_KEYS} />
       <Footer />
     </main>
   )

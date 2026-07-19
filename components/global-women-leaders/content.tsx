@@ -2,16 +2,9 @@
 
 import Image from "next/image"
 import { AnimatedSection } from "@/components/animated-section"
-import { Cite, References, type Source } from "@/components/cite"
+import { Cite } from "@/components/cite"
+import { SOURCES, GLOBAL_KEYS, n } from "@/components/sources"
 import { Target, Users, Heart, Globe } from "lucide-react"
-
-const WIKI = "https://en.wikipedia.org/wiki/Toyin_Tofade"
-const ENDOWED = "https://thedig.howard.edu/all-stories/departing-college-pharmacy-dean-toyin-tofade-establishes-endowed-fund-leadership-development"
-
-const sources: Source[] = [
-  { n: 1, label: "Wikipedia — Toyin Tofade (FIP Fellow; President, FIP Academic Pharmacy Section)", href: WIKI },
-  { n: 2, label: "The Dig, Howard University — Departing Dean Toyin Tofade Establishes Endowed Fund for Leadership Development", href: ENDOWED },
-]
 
 export function GWLContent() {
   return (
@@ -42,7 +35,7 @@ export function GWLContent() {
               <p className="text-text-body leading-relaxed mb-6">
                 As a Fellow of the International Pharmaceutical Federation (FFIP) and President of its
                 Academic Pharmacy Section, Prof. Tofade has shaped how a global federation cultivates
-                its next generation of academic leaders.<Cite n={1} href={WIKI} /> A Certified
+                its next generation of academic leaders.<Cite n={n(GLOBAL_KEYS, "WIKI")} href={SOURCES.WIKI.href} /> A Certified
                 Professional Co-active Coach (CPCC), she brings that same discipline to the individual
                 leaders she mentors, one relationship at a time.
               </p>
@@ -50,7 +43,7 @@ export function GWLContent() {
                 Her belief that leadership must be built in others is embodied in the Alfred and Toyin
                 Tofade Aspiring Leaders Endowed Fund at Howard University, which she established to
                 ensure future faculty, staff, and students have lasting resources for leadership
-                development.<Cite n={2} href={ENDOWED} />
+                development.<Cite n={n(GLOBAL_KEYS, "ENDOWED")} href={SOURCES.ENDOWED.href} />
               </p>
 
               {/* Features */}
@@ -150,10 +143,6 @@ export function GWLContent() {
               </div>
             </div>
           </div>
-        </AnimatedSection>
-
-        <AnimatedSection>
-          <References sources={sources} variant="light" />
         </AnimatedSection>
       </div>
     </section>

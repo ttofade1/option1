@@ -29,7 +29,7 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/global-women-leaders" className="text-navy-muted hover:text-cream text-sm transition-colors">
+                <Link href="/global-leaders" className="text-navy-muted hover:text-cream text-sm transition-colors">
                   Global Leaders
                 </Link>
               </li>
