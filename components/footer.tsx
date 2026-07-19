@@ -80,6 +80,13 @@ export function Footer() {
           <p className="text-navy-muted text-sm">
             &copy; {new Date().getFullYear()} Prof. Toyin Tofade. All rights reserved.
           </p>
+            <Link
+              href="https://favored.digital/"
+              className="text-white text-sm underline"
+              target="_blank"
+            >
+              Website by favored.digital
+            </Link>
         </div>
       </div>
     </footer>
