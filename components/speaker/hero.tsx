@@ -15,12 +15,12 @@ export function SpeakerHero() {
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image
-          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/4eecff39fbc66cedd4cea353d30ff64e-c8bEZjKMGceEmeojVKfJgt76IjQPqj.jpeg"
+          src="ACP_0050.jpg"
           alt="Dr. Tofade at podium"
           fill
-          className="object-cover opacity-70"
+          className="object-cover opacity-90"
           priority
-          style={{objectPosition: "center 10%"}}
+          style={{objectPosition: "center 15%"}}
 
         />
         <div className="absolute inset-0 bg-gradient-to-r from-navy via-navy/55 to-navy/80" />
