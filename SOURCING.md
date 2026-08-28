@@ -74,9 +74,10 @@ with a source — noted below); it is flagged here for you to resolve.
     appointment — consistent with ACPHS's 1881 founding) and **143** (present-day
     references). Both left as-is; standardize if desired.
 
-12. **Howard ranking "98 → 75."** ✅ Confirmed **not present** anywhere on the
-    site, and no ranking figure was found in the sources. No action taken. If you
-    want to add it, a source is required.
+12. **Howard ranking "98 → 75."** ✅ **Added** to the "Raising Leaders at Howard"
+    section of the Her Story page, sourced to the Howard University College of
+    Pharmacy Annual Report, which states the college ranked #75 in the U.S. News
+    Grad School Health Rankings in March 2020, up from #98 in 2016.
 
 ---
 

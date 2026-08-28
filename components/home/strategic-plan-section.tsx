@@ -49,6 +49,26 @@ export function StrategicPlanSection() {
                 Explore the Strategic Plan
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </a>
+              <div className="flex flex-wrap items-center gap-x-6 gap-y-2 mt-4">
+                <a
+                  href="https://issuu.com/acphs/docs/acphs_strategic_plan_report_2025_e72e002ba0d3ba?fr=sYzc1Yzg3MjQyODk"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-navy hover:text-navy/70 font-medium tracking-wide transition-colors duration-200 group"
+                >
+                  View the Year 1 Report
+                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                </a>
+                <a
+                  href="https://www.acphs.edu/wp-content/uploads/2026/06/ACPHS-StrategicPlan-Report_2026_rd3_pages.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-navy hover:text-navy/70 font-medium tracking-wide transition-colors duration-200 group"
+                >
+                  View the Year 2 Report
+                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                </a>
+              </div>
             </AnimatedSection>
           </div>
 
