@@ -65,7 +65,7 @@ export function WorkWithMeForm() {
             Get in Touch
           </p>
           <h2 className="font-serif text-3xl sm:text-4xl text-text-heading text-center mb-4">
-            Submit an Enquiry
+            Submit an Inquiry
           </h2>
           <p className="text-text-body text-center mb-12 max-w-lg mx-auto">
           </p>
@@ -208,7 +208,7 @@ export function WorkWithMeForm() {
               ) : (
                 <>
                   <Send className="w-5 h-5" />
-                  Submit Enquiry
+                  Submit Inquiry
                 </>
               )}
             </button>

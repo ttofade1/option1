@@ -7,7 +7,7 @@ import { HERSTORY_KEYS } from "@/components/sources"
 
 export const metadata = {
   title: "Her Story | Prof. Toyin Tofade",
-  description: "A journey from Ile-Ife, Nigeria to the presidency of Albany College of Pharmacy and Health Sciences.",
+  description: "A journey from her father's footsteps in pharmacy to the presidency of Albany College of Pharmacy and Health Sciences.",
 }
 
 export default function HerStoryPage() {

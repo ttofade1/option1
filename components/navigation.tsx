@@ -15,9 +15,12 @@ export function Navigation() {
       <div className="mx-auto flex max-w-[1240px] flex-wrap items-center justify-between gap-x-6 gap-y-3 px-7 py-3.5 font-lato">
         <Link
           href="/"
-          className="font-baskerville text-lg font-bold tracking-[0.04em] text-brand-navy transition-colors duration-150 hover:text-brand-gold"
+          className="flex flex-col text-brand-navy transition-colors duration-150 hover:text-brand-gold"
         >
-          PROF. TOYIN TOFADE
+          <span className="font-baskerville text-lg font-bold tracking-[0.04em]">PROF. TOYIN TOFADE</span>
+          <span className="mt-0.5 text-[10.5px] font-bold uppercase tracking-[0.22em] text-brand-gold-text">
+            President Emerita
+          </span>
         </Link>
         <nav className="order-3 flex flex-[1_1_100%] flex-wrap gap-x-[22px] gap-y-1.5 text-xs uppercase tracking-[0.08em]">
           {navLinks.map((link) => (

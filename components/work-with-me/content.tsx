@@ -6,15 +6,15 @@ import { Users, Briefcase, Building2, Award, Mic } from "lucide-react"
 
 const offerings = [
   {
-    title: "Executive Leadership Coaching",
+    title: "Executive & Enterprise Coaching",
     subtitle: "For presidents, deans, VPs, and senior leaders in higher education and healthcare",
     icon: Award,
     items: [
-      "Leading institutional transformation, merger, and complex organisational change",
       "Strategic vision, board relations, and governance dynamics",
       "Executive presence, stakeholder communications, and crisis leadership",
       "Building high-performing teams and sustainable leadership cultures",
-      "Leading as a first, a woman, or an underrepresented leader in a traditional institution",
+      "Navigating institutional change and stakeholder management",
+      "Leading institutional transformation, merger, and complex organisational change",
     ],
   },
   {
@@ -22,9 +22,9 @@ const offerings = [
     subtitle: "For leadership teams building alignment and high performance",
     icon: Building2,
     items: [
-      "Strategic planning facilitation for academic and healthcare institutions",
-      "Team culture diagnostics, alignment workshops, and accreditation-ready cultures",
-      "Facilitating retreats",
+      "Strategic planning facilitation and inspiring results",
+      "Team culture diagnostics, leadership development, and accreditation-ready cultures",
+      "Facilitating retreats and alignment workshops",
       "Higher education consulting",
     ],
   },
@@ -33,8 +33,9 @@ const offerings = [
     subtitle: "For boards seeking executive insight at the governance level",
     icon: Briefcase,
     items: [
-      "Institutional strategy, president/CEO evaluation, and health sciences sector expertise",
-      "Strategic partnership and merger evaluation advisory",
+      "Institutional strategy, president/CEO evaluation, assessment, and coaching",
+      "Health sciences sector expertise",
+      "Strategic partnership, execution, and advisory",
     ],
   },
 ]

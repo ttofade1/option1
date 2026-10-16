@@ -21,10 +21,13 @@ export function HerStoryContent() {
             </h2>
             <div className="prose prose-lg max-w-none text-[#5C4A2A]">
               <p className="leading-relaxed mb-4">
-Her father, the late Professor Abayomi Sofowora, was a pioneering pharmacognosist who spent over four decades at Obafemi Awolowo University, including serving as Chairman of the WHO Regional Expert Committee on Traditional Medicine. 
+Her father, the late Professor Abayomi Sofowora, was a pioneering pharmacognosist who spent over four decades at Obafemi Awolowo University, where he served as acting dean and later as dean. He also served as Chairman of the WHO Regional Expert Committee on Traditional Medicine. 
            </p>
               <p className="leading-relaxed mb-4">
- It was watching him work, watching him translate plant science into medicine that reached communities across Africa, that first sparked Toyin&apos;s love of pharmacy. She went on to earn her Bachelor of Pharmacy from OAU, walking the same halls where her father had shaped generations of students.                 </p>
+ It was watching him work, watching him translate plant science into medicine that reached communities across Africa, that first sparked Toyin&apos;s love of pharmacy. She went on to earn her Bachelor of Pharmacy at the same university, walking the same halls where her father had shaped generations of students.</p>
+              <p className="leading-relaxed mb-4">
+                It was there, too, that she first discovered the power of mentorship. Professor Wilson Erhun, host of the Christian Pharmacists Fellowship International chapter at her school, connected her with Professor Fred Eckel of the University of North Carolina, who, she later said, &ldquo;tapped me when I was a nobody.&rdquo; That relationship would span decades, and come full circle when she received the Fred M. Eckel Pharmacy Leadership Award from UNC in 2019.<Cite n={n(HERSTORY_KEYS, "ECKEL_UNCMC")} href={SOURCES.ECKEL_UNCMC.href} />
+              </p>
             </div>
           </AnimatedSection>
 
@@ -46,18 +49,15 @@ Her father, the late Professor Abayomi Sofowora, was a pioneering pharmacognosis
                   A Defining Chapter
                 </h2>
                 <p className="text-[#5C4A2A] leading-relaxed">
-                  In the early 1990s, Toyin crossed an ocean to pursue graduate study at the University of North Carolina at Chapel Hill, the number one ranked pharmacy school in the nation. There, she earned both her Master&apos;s in Pharmacy Practice (1994) and her Doctor of Pharmacy (1997), completing clinical residencies at UNC hospitals along the way.
+                  In the early 1990s, Toyin pursued graduate study at the University of North Carolina at Chapel Hill, the number one ranked pharmacy school in the nation. There, she earned both her Master&apos;s in Pharmacy Practice (1994) and her Doctor of Pharmacy (1997), completing clinical residencies at UNC hospitals along the way.
                 </p>
               </div>
             </div>
             <div className="bg-[#EDE5D4] rounded-xl p-8 gold-bar">
               <p className="font-serif text-xl text-[#2C1A0E] italic">
-                &ldquo;I believe relationships are powerful. I list the touch points of my career in names rather than CV entries.&rdquo;
+                &ldquo;I believe relationships are powerful. I list the touch points of my career in names rather than CV entries. I am grateful for my colleagues, mentors, and mentees around the world who have added value to my life, work, and journey.&rdquo;
               </p>
             </div>
-            <p className="text-[#5C4A2A] leading-relaxed mt-6">
-              Chapel Hill was where she discovered the power of mentorship. It was there that she first crossed paths with Professor Fred Eckel who, she later said, &ldquo;tapped me when I was a nobody in Nigeria.&rdquo; That relationship would span decades, and come full circle when she received the Fred M. Eckel Pharmacy Leadership Award from UNC in 2019.<Cite n={n(HERSTORY_KEYS, "ECKEL_UNCMC")} href={SOURCES.ECKEL_UNCMC.href} />
-            </p>
           </AnimatedSection>
 
 
@@ -170,7 +170,7 @@ Under her leadership the college&apos;s economic and community footprint grew: e
             </p>
 
             <p className="text-[#5C4A2A] leading-relaxed mb-4">
-Global partnerships expanded to India, the Philippines, Nigeria, Brazil, Indonesia, Taiwan, South Korea, and the Grand Bahamas, with more in progress across Asia and Australia.
+Global partnerships expanded to India, the Philippines, Brazil, Indonesia, Taiwan, South Korea, and the Grand Bahamas, with more in progress across Asia and Australia.
             </p>
 
             <p className="text-[#5C4A2A] leading-relaxed">

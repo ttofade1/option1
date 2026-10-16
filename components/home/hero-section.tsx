@@ -22,7 +22,7 @@ export function HeroSection() {
         </div>
 
         <div className="flex-[1_1_460px] pb-[72px] font-lato">
-          <p className="font-baskerville text-[clamp(22px,2.4vw,30px)] font-bold tracking-[0.04em] text-brand-gold">PROF.</p>
+          <p className="font-baskerville text-[clamp(22px,2.4vw,30px)] font-bold tracking-[0.04em] text-brand-gold">PROF. &amp; PRESIDENT EMERITA</p>
           <h1 className="mt-1 font-baskerville text-[clamp(44px,6.4vw,88px)] font-bold leading-none tracking-[-0.01em] text-brand-navy">
             TOYIN TOFADE
           </h1>
@@ -49,7 +49,7 @@ export function HeroSection() {
             <br />
             Creating Lasting Impact.
           </p>
-          <p className="mt-5 text-sm tracking-[0.02em] text-brand-muted">BPharm, MS, CPCC, FFIP</p>
+          <p className="mt-5 text-sm tracking-[0.02em] text-brand-muted">BPharm, MS, PharmD, CPCC, FFIP</p>
 
           <div className="mt-8 flex flex-wrap gap-3">
             <PrimaryButton href="/work-with-me">Work With Prof. Tofade</PrimaryButton>
