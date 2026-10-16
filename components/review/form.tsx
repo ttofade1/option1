@@ -62,6 +62,7 @@ export function ReviewForm() {
             Full Name <span className="text-brand-gold">*</span>
           </label>
           <input id="name" name="name" type="text" required className={field} placeholder="Your full name" />
+          <p className="mt-2 text-[13px] text-brand-muted">Not shown on the website if you choose to be anonymous.</p>
         </div>
 
         <div>
@@ -98,10 +99,26 @@ export function ReviewForm() {
           />
         </div>
 
+        <fieldset>
+          <legend className={label}>
+            How should your review be credited? <span className="text-brand-gold">*</span>
+          </legend>
+          <div className="flex flex-col gap-2.5 text-[15px] text-brand-body">
+            <label className="flex items-center gap-3">
+              <input type="radio" name="credit" value="name_and_title" required defaultChecked className="size-4 accent-brand-navy" />
+              With my name and title
+            </label>
+            <label className="flex items-center gap-3">
+              <input type="radio" name="credit" value="anonymous" className="size-4 accent-brand-navy" />
+              Anonymously
+            </label>
+          </div>
+        </fieldset>
+
         <label className="flex items-start gap-3 text-[15px] leading-[1.6] text-brand-body">
           <input type="checkbox" name="publish_consent" value="yes" required className="mt-1 size-4 accent-brand-navy" />
           <span>
-            I agree that this review, with my name and title, may be published on Prof. Tofade&apos;s website.{" "}
+            I agree that this review may be published on Prof. Tofade&apos;s website, credited as chosen above.{" "}
             <span className="text-brand-gold">*</span>
           </span>
         </label>

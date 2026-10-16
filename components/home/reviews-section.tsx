@@ -11,7 +11,7 @@ export function ReviewsSection() {
       <div className="mt-12 grid grid-cols-[repeat(auto-fill,minmax(min(100%,340px),1fr))] gap-5">
         {reviews.map((review) => (
           <figure
-            key={`${review.name}-${review.quote.slice(0, 24)}`}
+            key={review.quote.slice(0, 48)}
             className="flex flex-col gap-5 rounded-md border border-brand-border bg-white px-[26px] py-7"
           >
             <blockquote className="font-baskerville text-[17px] italic leading-[1.7] text-brand-navy text-pretty">
@@ -20,7 +20,7 @@ export function ReviewsSection() {
             <figcaption className="mt-auto flex items-center gap-3 font-lato">
               <Diamond />
               <span>
-                <span className="block text-sm font-bold text-brand-navy">{review.name}</span>
+                <span className="block text-sm font-bold text-brand-navy">{review.name ?? "Anonymous"}</span>
                 {review.role && <span className="block text-[13px] text-brand-muted">{review.role}</span>}
               </span>
             </figcaption>
