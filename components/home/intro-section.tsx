@@ -6,7 +6,7 @@ export function IntroSection() {
       <div>
         <Eyebrow>A Journey of Purpose</Eyebrow>
         <SectionHeading className="text-brand-navy">
-          Two decades building institutions, strengthening systems, and developing leaders across six continents.
+          Decades building institutions, strengthening systems, and developing leaders across six continents.
         </SectionHeading>
       </div>
       <div className="flex flex-col gap-[18px] font-lato text-[17px] leading-[1.75] text-brand-body">

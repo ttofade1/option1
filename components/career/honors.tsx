@@ -9,6 +9,7 @@ const honors = [
   { year: "2023, 2024, 2025", title: "Albany Business Review Power 50", cite: n(CAREER_KEYS, "OFFICE"), href: SOURCES.OFFICE.href },
   { year: "2022-2023", title: "Chair of the Council of Deans", description: "American Association of Colleges of Pharmacy"},
   { year: "2022", title: "Donald E. Francke Medal: American Society for Health System Pharmacists", description: "For significant international contributions to pharmacy practice", cite: n(CAREER_KEYS, "ASHP_FRANCKE"), href: SOURCES.ASHP_FRANCKE.href },
+  { year: "2023", title: "Francke Medal Award Lecture: “Leading with Heart in Service of Global Initiatives”", description: "Delivered for the 2022 Donald E. Francke Medal; published in the American Journal of Health-System Pharmacy", link: { label: "Read the lecture", href: SOURCES.AJHP_LECTURE.href } },
   { year: "2022", title: "Top 25 Women Leaders in Healthcare Education", description: "Women We Admire" },
   { year: "2021-2025", title: "President", description: "FIP Academic Pharmacy Section" },
   { year: "2021", title: "UNC Eshelman Pharmacy Alumni Distinguished Service Award" },
@@ -48,6 +49,16 @@ export function HonorsSection() {
                   </div>
                   {item.description && (
                     <p className="text-text-body text-sm">{item.description}</p>
+                  )}
+                  {"link" in item && item.link && (
+                    <a
+                      href={item.link.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="mt-2 inline-block text-sm font-medium text-gold hover:underline"
+                    >
+                      {item.link.label} →
+                    </a>
                   )}
                 </div>
               </div>

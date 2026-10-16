@@ -65,6 +65,14 @@ export const SOURCES = {
     href: "https://pharmacy.howard.edu/sites/pharmacy.howard.edu/files/2021-11/HUCOP-AR_2020-2021.pdf",
     label: "Howard University College of Pharmacy — 2020–21 Annual Report",
   },
+  FIP_NANJING: {
+    href: "https://www.fip.org/file/6104",
+    label: "FIP — Nanjing Statements: Shaping pharmacy and pharmaceutical sciences education to 2030 (2024)",
+  },
+  AJHP_LECTURE: {
+    href: "https://www.ovid.com/journals/ajhp/fulltext/10.1093/ajhp/zxac373~leading-with-heart-in-service-of-global-initiatives",
+    label: "Tofade T. Leading with heart in service of global initiatives. Am J Health-Syst Pharm. 2023;80(6):359–364",
+  },
   HU_RANKING: {
     href: "https://pharmacy.howard.edu/sites/pharmacy.howard.edu/files/2020-12/HU-Pharmacy_AR_Hires-rgb%5B6001%5D.pdf",
     label: "Howard University College of Pharmacy — 2019–20 Annual Report",
@@ -74,9 +82,9 @@ export const SOURCES = {
 export type SourceKey = keyof typeof SOURCES
 
 /** Per-page ordered source lists. Reference-list numbers follow this order. */
-export const HOME_KEYS = ["ACPHS_SP_REPORT", "OFFICE", "HU_AR_2021"] as const
+export const HOME_KEYS = ["ACPHS_SP_REPORT", "OFFICE", "HU_AR_2021", "FIP_NANJING"] as const
 export const HERSTORY_KEYS = ["ECKEL_UNCMC", "ENDOWED", "REFLECTS", "OFFICE", "PARTNERSHIPS", "HU_RANKING"] as const
-export const CAREER_KEYS = ["OFFICE", "ECKEL_UNCMC", "ASHP_FRANCKE"] as const
+export const CAREER_KEYS = ["OFFICE", "ECKEL_UNCMC", "ASHP_FRANCKE", "AJHP_LECTURE"] as const
 export const IMPACT_KEYS = ["ENDOWED", "PARTNERSHIPS", "WIKI", "ASHP_FRANCKE", "REFLECTS"] as const
 export const PUBLICATIONS_KEYS = ["RESEARCHGATE"] as const
 export const GLOBAL_KEYS = ["FIP", "ENDOWED"] as const

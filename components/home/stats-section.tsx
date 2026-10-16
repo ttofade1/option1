@@ -44,6 +44,19 @@ const reports: Report[] = [
       { value: "18", label: "International partnerships in 16 countries across 6 continents" },
     ],
   },
+  {
+    category: "Global Policy Leadership",
+    institution: "International Pharmaceutical Federation (FIP)",
+    document: "FIP Nanjing Statements: Shaping Pharmacy and Pharmaceutical Sciences Education to 2030 (2024)",
+    source: "FIP_NANJING",
+    cover: "/reports/fip-nanjing-statements-2024-cover.jpg",
+    coverAlt: "Cover of the FIP Nanjing Statements 2024 guidance document",
+    highlights: [
+      { value: "Co-chair", label: "Of the FIP advisory group that revised the Nanjing Statements on pharmacy education" },
+      { value: "95", label: "Global education statements across 8 domains, from student admissions to research" },
+      { value: "6 of 6", label: "WHO regions represented on the advisory group" },
+    ],
+  },
 ]
 
 export function StatsSection() {
@@ -54,23 +67,23 @@ export function StatsSection() {
         <SectionHeading className="max-w-[720px] text-brand-navy">
           Results across institutions, sectors, and borders
         </SectionHeading>
-        <div className="mt-12 grid grid-cols-[repeat(auto-fit,minmax(min(100%,520px),1fr))] gap-5">
+        <div className="mt-12 grid grid-cols-[repeat(auto-fit,minmax(min(100%,340px),1fr))] gap-5">
           {reports.map((report) => {
             const href = SOURCES[report.source].href
             return (
               <article
                 key={report.source}
-                className="flex flex-wrap gap-7 rounded-md border border-brand-border bg-white p-7 font-lato"
+                className="flex flex-col gap-6 rounded-md border border-brand-border bg-white p-7 font-lato"
               >
                 <a
                   href={href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="relative aspect-[4/5] w-full max-w-[180px] shrink-0 self-start overflow-hidden rounded-[4px] border border-brand-border transition-opacity duration-150 hover:opacity-85"
+                  className="relative aspect-[4/5] w-full max-w-[150px] shrink-0 self-start overflow-hidden rounded-[4px] border border-brand-border transition-opacity duration-150 hover:opacity-85"
                 >
-                  <Image src={withBasePath(report.cover)} alt={report.coverAlt} fill sizes="180px" className="object-cover object-top" />
+                  <Image src={withBasePath(report.cover)} alt={report.coverAlt} fill sizes="150px" className="object-cover object-top" />
                 </a>
-                <div className="flex min-w-[240px] flex-1 flex-col gap-4">
+                <div className="flex flex-1 flex-col gap-4">
                   <div>
                     <p className="text-xs font-bold uppercase tracking-[0.2em] text-brand-gold-text">{report.category}</p>
                     <h3 className="mt-2 font-baskerville text-[21px] font-bold leading-[1.3] text-brand-navy">
@@ -83,8 +96,8 @@ export function StatsSection() {
                   </div>
                   <ul className="flex flex-col gap-3 border-t border-brand-border pt-4">
                     {report.highlights.map((h) => (
-                      <li key={h.label} className="grid grid-cols-[minmax(0,128px)_1fr] items-baseline gap-3">
-                        <span className="font-baskerville text-xl font-bold text-brand-navy">{h.value}</span>
+                      <li key={h.label} className="grid grid-cols-[minmax(0,118px)_1fr] items-baseline gap-3">
+                        <span className="whitespace-nowrap font-baskerville text-lg font-bold text-brand-navy">{h.value}</span>
                         <span className="text-[14.5px] leading-[1.5] text-brand-body">
                           {h.label}
                           {h.cite && <Cite n={n(HOME_KEYS, h.cite)} href={SOURCES[h.cite].href} />}
