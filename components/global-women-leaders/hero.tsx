@@ -2,6 +2,7 @@
 
 import Image from "next/image"
 import { useEffect, useState } from "react"
+import { withBasePath } from "@/lib/base-path"
 
 export function GWLHero() {
   const [isLoaded, setIsLoaded] = useState(false)
@@ -15,12 +16,12 @@ export function GWLHero() {
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image
-          src="withKemi.jpeg"
-          alt="Dr. Tofade speaking"
+          src={withBasePath("/gwl-students-selfie.jpg")}
+          alt="Prof. Tofade with pharmacy students at a conference"
           fill
           className="object-cover opacity-90"
           priority
-          style={{objectPosition: "center 20%"}}
+          style={{objectPosition: "center 12%"}}
 
         />
         <div className="absolute inset-0 bg-gradient-to-r from-navy via-navy/65 to-navy/70" />
