@@ -73,6 +73,10 @@ export const SOURCES = {
     href: "https://www.ovid.com/journals/ajhp/fulltext/10.1093/ajhp/zxac373~leading-with-heart-in-service-of-global-initiatives",
     label: "Tofade T. Leading with heart in service of global initiatives. Am J Health-Syst Pharm. 2023;80(6):359–364",
   },
+  CITY_STATE_TRAILBLAZERS: {
+    href: "https://www.cityandstateny.com/power-lists/2026/05/2026-trailblazers-higher-education/413633/",
+    label: "City & State New York — The 2026 Trailblazers in Higher Education",
+  },
   HU_RANKING: {
     href: "https://pharmacy.howard.edu/sites/pharmacy.howard.edu/files/2020-12/HU-Pharmacy_AR_Hires-rgb%5B6001%5D.pdf",
     label: "Howard University College of Pharmacy — 2019–20 Annual Report",
@@ -84,7 +88,7 @@ export type SourceKey = keyof typeof SOURCES
 /** Per-page ordered source lists. Reference-list numbers follow this order. */
 export const HOME_KEYS = ["ACPHS_SP_REPORT", "OFFICE", "HU_AR_2021", "FIP_NANJING"] as const
 export const HERSTORY_KEYS = ["ECKEL_UNCMC", "ENDOWED", "REFLECTS", "OFFICE", "PARTNERSHIPS", "HU_RANKING"] as const
-export const CAREER_KEYS = ["OFFICE", "ECKEL_UNCMC", "ASHP_FRANCKE", "AJHP_LECTURE"] as const
+export const CAREER_KEYS = ["OFFICE", "ECKEL_UNCMC", "ASHP_FRANCKE", "AJHP_LECTURE", "CITY_STATE_TRAILBLAZERS"] as const
 export const IMPACT_KEYS = ["ENDOWED", "PARTNERSHIPS", "WIKI", "ASHP_FRANCKE", "REFLECTS"] as const
 export const PUBLICATIONS_KEYS = ["RESEARCHGATE"] as const
 export const GLOBAL_KEYS = ["FIP", "ENDOWED"] as const

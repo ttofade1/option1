@@ -6,6 +6,7 @@ import { Cite } from "@/components/cite"
 import { SOURCES, CAREER_KEYS, n } from "@/components/sources"
 
 const honors = [
+  { year: "2026", title: "City & State New York: 2026 Trailblazers in Higher Education", link: { label: "View the list", href: SOURCES.CITY_STATE_TRAILBLAZERS.href } },
   { year: "2023, 2024, 2025", title: "Albany Business Review Power 50", cite: n(CAREER_KEYS, "OFFICE"), href: SOURCES.OFFICE.href },
   { year: "2022-2023", title: "Chair of the Council of Deans", description: "American Association of Colleges of Pharmacy"},
   { year: "2022", title: "Donald E. Francke Medal: American Society for Health System Pharmacists", description: "For significant international contributions to pharmacy practice", cite: n(CAREER_KEYS, "ASHP_FRANCKE"), href: SOURCES.ASHP_FRANCKE.href },
