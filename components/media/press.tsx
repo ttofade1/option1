@@ -25,11 +25,6 @@ const pressItems = [
     link: "https://www.aapsnewsmagazine.org/aapsnewsmagazine/articles/new-page2/mar24/career-success-mar24b",
   },
   {
-  outlet: "Connect Nigeria",
-  title: "Nigerian Scholar, Toyin Tofade, Emerges First Black Female President In American College",
-  link: "https://articles.connectnigeria.com/nigerian-scholar-toyin-tofade-emerges-first-black-female-president-in-american-college/",
-  },
-  {
     outlet: "Capital Region Chamber",
     title: "New President Selected at Albany College of Pharmacy and Health Sciences",
     link: "https://capitalregionchamber.com/news/new-president-selected-at-albany-college-of-pharmacy-and-health-sciences/",

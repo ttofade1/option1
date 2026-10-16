@@ -1,6 +1,7 @@
 "use client"
 import { AnimatedSection } from "@/components/animated-section"
 import Image from "next/image"
+import { withBasePath } from "@/lib/base-path"
 import { Quote } from "lucide-react"
 import { Cite } from "@/components/cite"
 import { SOURCES, HERSTORY_KEYS, n } from "@/components/sources"
@@ -77,10 +78,11 @@ Her father, the late Professor Abayomi Sofowora, was a pioneering pharmacognosis
               
               <div className="relative aspect-[4/4] rounded-xl overflow-hidden shadow-lg">
                 <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/tofade-toyinacphs10mw-11162201-r99A1N9T0FLkqziixpOjNU93NmEno6.jpg"
-                  alt="Dr. Tofade with students"
+                  src={withBasePath("/ACP_0050.jpg")}
+                  alt="Prof. Tofade teaching in a lecture hall"
                   fill
                   className="object-cover"
+                  style={{ objectPosition: "85% center" }}
                 />
               </div>
             </div>
