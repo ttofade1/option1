@@ -66,7 +66,7 @@ export const SOURCES = {
 export type SourceKey = keyof typeof SOURCES
 
 /** Per-page ordered source lists. Reference-list numbers follow this order. */
-export const HOME_KEYS = ["OFFICE", "PARTNERSHIPS", "BUSINESS", "REFLECTS", "STRATEGIC_PLAN"] as const
+export const HOME_KEYS = ["OFFICE", "BUSINESS", "REFLECTS"] as const
 export const HERSTORY_KEYS = ["ECKEL_UNCMC", "ENDOWED", "REFLECTS", "OFFICE", "PARTNERSHIPS", "HU_RANKING"] as const
 export const CAREER_KEYS = ["OFFICE", "ECKEL_UNCMC", "ASHP_FRANCKE"] as const
 export const IMPACT_KEYS = ["ENDOWED", "PARTNERSHIPS", "WIKI", "ASHP_FRANCKE", "REFLECTS"] as const

@@ -1,11 +1,6 @@
-"use client"
-
 import Link from "next/link"
-import { useState } from "react"
-import { Menu, X } from "lucide-react"
 
 const navLinks = [
-  { href: "/", label: "Home" },
   { href: "/her-story", label: "Her Story" },
   { href: "/career", label: "Career" },
   { href: "/impact", label: "Impact" },
@@ -15,73 +10,33 @@ const navLinks = [
 ]
 
 export function Navigation() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
-
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-navy/95 backdrop-blur-sm">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20">
-          {/* Logo */}
-          <Link href="/" className="flex items-center">
-            <span className="text-cream font-serif text-xl tracking-wide">
-              Prof. Toyin Tofade
-            </span>
-          </Link>
-
-          {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center gap-8">
-            {navLinks.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className="text-navy-muted hover:text-cream text-sm tracking-wide transition-colors duration-200"
-              >
-                {link.label}
-              </Link>
-            ))}
+    <header className="sticky top-0 z-10 border-b border-brand-border bg-[rgba(251,250,247,0.94)] backdrop-blur-[8px]">
+      <div className="mx-auto flex max-w-[1240px] flex-wrap items-center justify-between gap-x-6 gap-y-3 px-7 py-3.5 font-lato">
+        <Link
+          href="/"
+          className="font-baskerville text-lg font-bold tracking-[0.04em] text-brand-navy transition-colors duration-150 hover:text-brand-gold"
+        >
+          PROF. TOYIN TOFADE
+        </Link>
+        <nav className="order-3 flex flex-[1_1_100%] flex-wrap gap-x-[22px] gap-y-1.5 text-xs uppercase tracking-[0.08em]">
+          {navLinks.map((link) => (
             <Link
-              href="/speaker-request"
-              className="bg-gold hover:bg-gold/90 text-text-heading px-5 py-2.5 text-sm font-medium tracking-wide transition-colors duration-200"
+              key={link.href}
+              href={link.href}
+              className="text-brand-navy transition-colors duration-150 hover:text-brand-gold"
             >
-             Speaker Request Form
+              {link.label}
             </Link>
-          </div>
-
-          {/* Mobile menu button */}
-          <button
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="lg:hidden text-cream p-2"
-            aria-label="Toggle menu"
-          >
-            {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-          </button>
-        </div>
+          ))}
+        </nav>
+        <Link
+          href="/speaker-request"
+          className="rounded-full bg-brand-navy px-[18px] py-2.5 text-xs font-bold uppercase tracking-[0.12em] text-white transition-colors duration-150 hover:bg-brand-gold"
+        >
+          Request to Speak
+        </Link>
       </div>
-
-      {/* Mobile Navigation */}
-      {mobileMenuOpen && (
-        <div className="lg:hidden bg-navy border-t border-navy-muted/20">
-          <div className="px-4 py-6 space-y-4">
-            {navLinks.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                onClick={() => setMobileMenuOpen(false)}
-                className="block text-navy-muted hover:text-cream text-base tracking-wide transition-colors duration-200"
-              >
-                {link.label}
-              </Link>
-            ))}
-            <Link
-              href="/speaker-request"
-              onClick={() => setMobileMenuOpen(false)}
-              className="block bg-gold hover:bg-gold/90 text-text-heading px-5 py-3 text-center font-medium tracking-wide transition-colors duration-200 mt-4"
-            >
-              Speaker Request Form
-            </Link>
-          </div>
-        </div>
-      )}
-    </nav>
+    </header>
   )
 }

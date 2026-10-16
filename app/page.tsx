@@ -1,21 +1,51 @@
+import type { Metadata, Viewport } from "next"
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { HeroSection } from "@/components/home/hero-section"
 import { IntroSection } from "@/components/home/intro-section"
+import { ImpactAreasSection } from "@/components/home/impact-areas-section"
+import { CoreValuesSection } from "@/components/home/core-values-section"
 import { StatsSection } from "@/components/home/stats-section"
-import { StrategicPlanSection } from "@/components/home/strategic-plan-section"
+import { GallerySection } from "@/components/home/gallery-section"
 import { CTASection } from "@/components/home/cta-section"
 import { PageReferences } from "@/components/page-references"
 import { HOME_KEYS } from "@/components/sources"
 
+export const metadata: Metadata = {
+  title: "Prof. Toyin Tofade | Global Executive & Transformational Leader",
+  description:
+    "Prof. Toyin Tofade is a global executive and transformational leader in higher education, governance, global leadership, and healthcare.",
+  keywords: [
+    "Toyin Tofade",
+    "Executive Coach",
+    "Governance",
+    "Board Leadership",
+    "Higher Education Leadership",
+    "Global Health",
+    "Healthcare Strategy",
+  ],
+  openGraph: {
+    title: "Prof. Toyin Tofade | Global Executive & Transformational Leader",
+    description:
+      "A global executive and transformational leader in higher education, governance, global leadership, and healthcare.",
+    type: "website",
+  },
+}
+
+export const viewport: Viewport = {
+  themeColor: "#0B2A5B",
+}
+
 export default function HomePage() {
   return (
-    <main className="min-h-screen bg-cream">
+    <main className="min-h-screen bg-brand-bg text-brand-ink">
       <Navigation />
       <HeroSection />
       <IntroSection />
+      <ImpactAreasSection />
+      <CoreValuesSection />
       <StatsSection />
-      <StrategicPlanSection />
+      <GallerySection />
       <CTASection />
       <PageReferences keys={HOME_KEYS} />
       <Footer />

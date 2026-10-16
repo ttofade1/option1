@@ -10,7 +10,7 @@ export function MediaHero() {
   }, [])
 
   return (
-    <section className="relative pt-20 bg-navy">
+    <section className="relative bg-navy">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 text-center">
         <p
           className={`text-gold text-sm tracking-[0.2em] uppercase mb-6 transition-all duration-700 ${

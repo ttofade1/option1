@@ -83,6 +83,26 @@
   --color-divider: var(--divider);
   --color-text-body: var(--text-body);
   --color-text-heading: var(--text-heading);
+
+  /* Brand refresh (homepage) */
+  --font-baskerville: var(--font-libre-baskerville), Georgia, serif;
+  --font-lato: var(--font-lato-sans), system-ui, sans-serif;
+  --color-brand-navy: #0B2A5B;
+  --color-brand-ink: #14254A;
+  --color-brand-body: #33405E;
+  --color-brand-muted: #4A5672;
+  --color-brand-gold: #B8862F;
+  --color-brand-gold-text: #9A6E22;
+  --color-brand-gold-on-navy: #D9B56E;
+  --color-brand-gold-rule: #C9A15A;
+  --color-brand-gold-sep: #D6C29A;
+  --color-brand-bg: #FBFAF7;
+  --color-brand-cream: #F3F0E8;
+  --color-brand-border: #E7E1D3;
+  --color-brand-border-strong: #E0D6BF;
+  --color-brand-border-soft: #EFE8D8;
+  --color-brand-on-navy: #C9D2E4;
+  --color-brand-on-navy-muted: #8F9CB8;
 }
 
 @layer base {

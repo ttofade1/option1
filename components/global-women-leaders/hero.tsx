@@ -11,7 +11,7 @@ export function GWLHero() {
   }, [])
 
   return (
-    <section className="relative pt-20 bg-navy overflow-hidden">
+    <section className="relative bg-navy overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image

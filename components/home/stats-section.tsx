@@ -1,81 +1,41 @@
-"use client"
-
-import { AnimatedSection } from "@/components/animated-section"
 import { Cite } from "@/components/cite"
+import { Eyebrow, SectionHeading } from "@/components/home/brand"
 import { SOURCES, HOME_KEYS, n } from "@/components/sources"
 
 const stats = [
-  {
-    year: "2025",
-    value: "Carnegie",
-    label: "Carnegie Research University classification for ACPHS",
-  },
-  {
-    year: "2024, 2025",
-    value: "9",
-    label: "new academic programs launched in two years",
-  },
-  {
-    year: "2025",
-    value: "61%",
-    label: "increase in giving & increased alumni engagement",
-  },
-  {
-    year: "2025",
-    value: "80%",
-    label: "medical school placement rate for students",
-  },
-  {
-    year: "2023, 2024, 2025",
-    value: "Power 50 × 3",
-    label: "Albany Business Review Power 50 three consecutive years",
-  },
-  {
-    year: "Since 2002",
-    value: "20+ Years",
-    label: "Building High-Performing Teams",
-  },
-  {
-    year: "2024",
-    value: "210%",
-    label: "Year-over-year increase in PharmD Year-1 deposits since 2022",
-  },
-  {
-    year: "2016–2022",
-    value: "6 Continents",
-    label: "International partnerships built at Howard, spanning every inhabited continent",
-  },
+  { value: "Carnegie", label: "Carnegie Research University classification for ACPHS", category: "2025" },
+  { value: "9", label: "New academic programs launched in two years", category: "2024, 2025" },
+  { value: "61%", label: "Increase in giving & increased alumni engagement", category: "2025" },
+  { value: "80%", label: "Medical school placement rate for students", category: "2025" },
+  { value: "Power 50 × 3", label: "Albany Business Review Power 50 three consecutive years", category: "2023, 2024, 2025" },
+  { value: "20+ Years", label: "Building high-performing teams", category: "Since 2002" },
+  { value: "210%", label: "Year-over-year increase in PharmD Year-1 deposits since 2022", category: "2024" },
+  { value: "6 Continents", label: "International partnerships built at Howard, spanning every inhabited continent", category: "2016–2022" },
 ]
 
 export function StatsSection() {
   return (
-    <section className="py-20 bg-navy">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <AnimatedSection>
-          <p className="text-gold text-sm tracking-[0.15em] uppercase text-center mb-4">
-            By The Numbers
-          </p>
-          <h2 className="font-serif text-3xl sm:text-4xl text-cream text-center mb-16">
-            Key Statistics Under Her Leadership
-            <Cite n={n(HOME_KEYS, "OFFICE")} href={SOURCES.OFFICE.href} />
-            <Cite n={n(HOME_KEYS, "BUSINESS")} href={SOURCES.BUSINESS.href} />
-            <Cite n={n(HOME_KEYS, "REFLECTS")} href={SOURCES.REFLECTS.href} />
-          </h2>
-        </AnimatedSection>
-
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {stats.map((stat, index) => (
-            <AnimatedSection key={stat.label} delay={index * 50}>
-              <div className="text-center p-6 border border-navy-muted/20 hover:border-gold/50 transition-colors duration-300 h-full flex flex-col justify-start">
-                <p className="text-gold/70 text-xs font-medium mb-2">{stat.year}</p>
-                <p className="font-serif text-3xl lg:text-4xl text-gold mb-3">
-                  {stat.value}
-                </p>
-                <p className="text-navy-muted text-sm leading-relaxed">
-                  {stat.label}
-                </p>
-              </div>
-            </AnimatedSection>
+    <section className="bg-brand-cream">
+      <div className="mx-auto max-w-[1240px] px-7 py-24">
+        <Eyebrow>Track Record</Eyebrow>
+        <SectionHeading className="max-w-[720px] text-brand-navy">
+          Results across institutions, sectors, and borders
+          <Cite n={n(HOME_KEYS, "OFFICE")} href={SOURCES.OFFICE.href} />
+          <Cite n={n(HOME_KEYS, "BUSINESS")} href={SOURCES.BUSINESS.href} />
+          <Cite n={n(HOME_KEYS, "REFLECTS")} href={SOURCES.REFLECTS.href} />
+        </SectionHeading>
+        <div className="mt-12 grid grid-cols-[repeat(auto-fill,minmax(min(100%,240px),1fr))] gap-5">
+          {stats.map((stat) => (
+            <div
+              key={stat.value}
+              className="flex flex-col gap-2.5 rounded-md border border-brand-border bg-white px-[26px] py-7 font-lato"
+            >
+              <p className="font-baskerville text-4xl font-bold leading-[1.1] text-brand-navy">{stat.value}</p>
+              <p className="text-[15px] leading-[1.55] text-brand-body">{stat.label}</p>
+              <p className="mt-auto pt-2 text-xs font-bold uppercase tracking-[0.12em] text-brand-gold-text">
+                {stat.category}
+              </p>
+            </div>
           ))}
         </div>
       </div>

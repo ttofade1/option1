@@ -1,7 +1,8 @@
 import type { Metadata } from 'next'
-import { Playfair_Display, Inter } from 'next/font/google'
+import { Playfair_Display, Inter, Libre_Baskerville, Lato } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
+import { withBasePath } from "@/lib/base-path"
 
 const playfair = Playfair_Display({ 
   subsets: ["latin"],
@@ -15,21 +16,36 @@ const inter = Inter({
   display: 'swap',
 })
 
+const libreBaskerville = Libre_Baskerville({
+  subsets: ["latin"],
+  weight: ['400', '700'],
+  style: ['normal', 'italic'],
+  variable: '--font-libre-baskerville',
+  display: 'swap',
+})
+
+const lato = Lato({
+  subsets: ["latin"],
+  weight: ['300', '400', '700'],
+  variable: '--font-lato-sans',
+  display: 'swap',
+})
+
 export const metadata: Metadata = {
   title: 'Prof. Toyin Tofade | Healthcare Leader, Academic President, Executive Coach',
   description: 'Prof. Toyin Tofade is a visionary leader at the intersection of healthcare and higher education. 10th President of Albany College of Pharmacy and Health Sciences.',
   icons: {
     icon: [
       {
-        url: '/option1/favicon.ico',
+        url: withBasePath("/favicon.ico"),
         media: '(prefers-color-scheme: light)',
       },
       {
-        url: '/option1/favicon.ico',
+        url: withBasePath("/favicon.ico"),
         media: '(prefers-color-scheme: dark)',
       },
       {
-        url: '/option1/favicon.svg',
+        url: withBasePath("/favicon.svg"),
         type: 'image/svg+xml',
       },
     ],
@@ -52,7 +68,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={`${playfair.variable} ${inter.variable}`}>
+    <html lang="en" className={`${playfair.variable} ${inter.variable} ${libreBaskerville.variable} ${lato.variable}`}>
       <body className="font-sans antialiased">
         {children}
         <Analytics />

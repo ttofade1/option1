@@ -1,89 +1,59 @@
-"use client"
-
 import Image from "next/image"
-import { useEffect, useState } from "react"
-import { Cite } from "@/components/cite"
-import { SOURCES, HOME_KEYS, n } from "@/components/sources"
+import { Diamond, PrimaryButton, SecondaryButton } from "@/components/home/brand"
+import { withBasePath } from "@/lib/base-path"
+
+const domains = ["Higher Education", "Governance", "Global Leadership", "Healthcare"]
 
 export function HeroSection() {
-  const [isLoaded, setIsLoaded] = useState(false)
-
-  useEffect(() => {
-    setIsLoaded(true)
-  }, [])
-
   return (
-    <section className="relative min-h-screen bg-navy overflow-hidden">
-      {/* Background Image */}
-      <div className="absolute inset-0">
-        <Image
-          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/4eecff39fbc66cedd4cea353d30ff64e-c8bEZjKMGceEmeojVKfJgt76IjQPqj.jpeg"
-          alt="Dr. Toyin Tofade at the presidential podium"
-          fill
-          className="object-cover object-top opacity-70"
-          priority
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-navy via-navy/60 to-navy/40" />
-      </div>
-
-      {/* Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-20 min-h-screen flex flex-col justify-center">
-        <div className="max-w-3xl">
-          {/* Eyebrow */}
-          <p
-            className={`text-gold text-sm tracking-[0.2em] uppercase mb-6 transition-all duration-700 ${
-              isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
-            }`}
-          >
-            President Emerita &middot; Albany College of Pharmacy &amp; Health Sciences
-          </p>
-
-          {/* Main Headline */}
-          <h1
-            className={`font-serif text-4xl sm:text-5xl lg:text-6xl text-cream leading-tight mb-6 transition-all duration-700 delay-100 ${
-              isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
-            }`}
-          >
-            <br />
-            <span className="text-gold italic">Called to lead.</span>
-            <br />
-            <span className="text-gold italic">Called to serve.</span>
-          </h1>
-
-          {/* Description */}
-          <p
-            className={`text-navy-muted text-lg sm:text-xl leading-relaxed mb-8 max-w-2xl transition-all duration-700 delay-200 ${
-              isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
-            }`}
-          >
-            Prof. Toyin Tofade, BPharm, MS, CPCC, FFIP
-          </p>
-
-          {/* Sub-headline Badge */}
-          <div
-            className={`inline-block bg-gold-light/90 px-6 py-4 transition-all duration-700 delay-300 ${
-              isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
-            }`}
-          >
-            <p className="text-label text-sm font-medium leading-relaxed">
-              10th President (2022–2026) &middot; Term Concluded June 30, 2026
-              <br />
-              <span className="text-text-heading font-serif italic">
-                First Black Woman Appointed President in the College&apos;s History
-                <Cite n={n(HOME_KEYS, "OFFICE")} href={SOURCES.OFFICE.href} />
-              </span>
-            </p>
+    <section className="border-b-4 border-brand-gold bg-[linear-gradient(180deg,#FFFFFF_0%,#F3F0E8_100%)]">
+      <div className="mx-auto flex max-w-[1240px] flex-wrap items-end gap-12 px-7 pt-[72px]">
+        <div className="max-w-[440px] flex-[1_1_300px] self-end">
+          <div className="relative aspect-[4/5] overflow-hidden rounded-t-[220px] border border-b-0 border-brand-border-strong bg-brand-border">
+            <Image
+              src={withBasePath("/gray.jpg")}
+              alt="Prof. Toyin Tofade"
+              fill
+              priority
+              sizes="(max-width: 768px) 100vw, 440px"
+              className="object-cover"
+            />
           </div>
         </div>
 
-        {/* Scroll indicator */}
-        <div
-          className={`absolute bottom-10 left-1/2 -translate-x-1/2 transition-all duration-700 delay-500 ${
-            isLoaded ? "opacity-100" : "opacity-0"
-          }`}
-        >
-          <div className="w-6 h-10 border-2 border-navy-muted/50 rounded-full flex justify-center">
-            <div className="w-1.5 h-3 bg-gold rounded-full mt-2 animate-bounce" />
+        <div className="flex-[1_1_460px] pb-[72px] font-lato">
+          <p className="font-baskerville text-[clamp(22px,2.4vw,30px)] font-bold tracking-[0.04em] text-brand-gold">PROF.</p>
+          <h1 className="mt-1 font-baskerville text-[clamp(44px,6.4vw,88px)] font-bold leading-none tracking-[-0.01em] text-brand-navy">
+            TOYIN TOFADE
+          </h1>
+          <p className="mt-[18px] text-[clamp(13px,1.3vw,17px)] font-bold uppercase tracking-[0.28em] text-brand-ink">
+            Global Executive &amp; Transformational Leader
+          </p>
+
+          <div aria-hidden className="my-6 flex items-center gap-3">
+            <span className="h-px flex-1 bg-brand-gold-rule" />
+            <Diamond />
+            <span className="h-px flex-1 bg-brand-gold-rule" />
+          </div>
+
+          <ul className="flex flex-wrap gap-x-[18px] gap-y-2.5 text-[13px] font-bold uppercase tracking-[0.16em] text-brand-gold-text">
+            {domains.map((domain, i) => (
+              <li key={domain} className={i > 0 ? "border-l border-brand-gold-sep pl-[18px]" : undefined}>
+                {domain}
+              </li>
+            ))}
+          </ul>
+
+          <p className="mt-8 font-baskerville text-[clamp(20px,2vw,26px)] italic leading-[1.5] text-brand-navy">
+            Leading. Transforming. Empowering.
+            <br />
+            Creating Lasting Impact.
+          </p>
+          <p className="mt-5 text-sm tracking-[0.02em] text-brand-muted">BPharm, MS, CPCC, FFIP</p>
+
+          <div className="mt-8 flex flex-wrap gap-3">
+            <PrimaryButton href="/work-with-me">Work With Prof. Tofade</PrimaryButton>
+            <SecondaryButton href="/her-story">Her Story</SecondaryButton>
           </div>
         </div>
       </div>
