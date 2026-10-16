@@ -13,7 +13,7 @@ import { PageReferences } from "@/components/page-references"
 import { HOME_KEYS } from "@/components/sources"
 
 export const metadata: Metadata = {
-  title: "Prof. Toyin Tofade | Global Executive & Transformational Leader",
+  title: "Prof. Toyin Tofade | President Emerita, Board Strategist/Advisor, Executive Coach, Enterprise Consultant, Health Care Association Leader",
   description:
     "Prof. Toyin Tofade is a global executive and transformational leader in higher education, governance, global leadership, and healthcare.",
   keywords: [
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     "Healthcare Strategy",
   ],
   openGraph: {
-    title: "Prof. Toyin Tofade | Global Executive & Transformational Leader",
+    title: "Prof. Toyin Tofade | President Emerita, Board Strategist/Advisor, Executive Coach, Enterprise Consultant, Health Care Association Leader",
     description:
       "A global executive and transformational leader in higher education, governance, global leadership, and healthcare.",
     type: "website",

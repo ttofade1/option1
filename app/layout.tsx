@@ -32,7 +32,7 @@ const lato = Lato({
 })
 
 export const metadata: Metadata = {
-  title: 'Prof. Toyin Tofade | Healthcare Leader, Academic President, Executive Coach',
+  title: 'Prof. Toyin Tofade | President Emerita, Board Strategist/Advisor, Executive Coach, Enterprise Consultant, Health Care Association Leader',
   description: 'Prof. Toyin Tofade is a visionary leader at the intersection of healthcare and higher education. 10th President of Albany College of Pharmacy and Health Sciences.',
   icons: {
     icon: [
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
   },
   keywords: ['Prof. Toyin Tofade', 'ACPHS President', 'Healthcare Leadership', 'Pharmacy Education', 'Women in Leadership'],
   openGraph: {
-    title: 'Prof. Toyin Tofade | Healthcare Leader, Academic President, Executive Coach',
+    title: 'Prof. Toyin Tofade | President Emerita, Board Strategist/Advisor, Executive Coach, Enterprise Consultant, Health Care Association Leader',
     description: 'A visionary leader at the intersection of healthcare and higher education.',
     type: 'website',
   },
