@@ -21,6 +21,10 @@ export const SOURCES = {
     href: "https://www.acphs.edu/news/partnerships-extend-colleges-reach/",
     label: "ACPHS News — Partnerships Extend College's Reach (ACPHS–Russell Sage merger)",
   },
+  ACPHS_SP_REPORT: {
+    href: "https://www.acphs.edu/wp-content/uploads/2026/06/ACPHS-StrategicPlan-Report_2026_rd3_pages.pdf",
+    label: "ACPHS — Strategic Plan 2024–29, Year 2 Progress Report (July 2025 – June 2026)",
+  },
   STRATEGIC_PLAN: {
     href: "https://www.acphs.edu/about/strategic-plan/",
     label: "ACPHS — 2024–2029 Strategic Plan",
@@ -57,16 +61,20 @@ export const SOURCES = {
     href: "https://www.fip.org/academic-pharmacy",
     label: "FIP Academic Pharmacy Section",
   },
+  HU_AR_2021: {
+    href: "https://pharmacy.howard.edu/sites/pharmacy.howard.edu/files/2021-11/HUCOP-AR_2020-2021.pdf",
+    label: "Howard University College of Pharmacy — 2020–21 Annual Report",
+  },
   HU_RANKING: {
     href: "https://pharmacy.howard.edu/sites/pharmacy.howard.edu/files/2020-12/HU-Pharmacy_AR_Hires-rgb%5B6001%5D.pdf",
-    label: "Howard University College of Pharmacy — Annual Report (U.S. News Grad School Health Rankings: #98 in 2016 to #75 in 2020)",
+    label: "Howard University College of Pharmacy — 2019–20 Annual Report",
   },
 } as const
 
 export type SourceKey = keyof typeof SOURCES
 
 /** Per-page ordered source lists. Reference-list numbers follow this order. */
-export const HOME_KEYS = ["OFFICE", "BUSINESS", "REFLECTS"] as const
+export const HOME_KEYS = ["ACPHS_SP_REPORT", "OFFICE", "HU_AR_2021"] as const
 export const HERSTORY_KEYS = ["ECKEL_UNCMC", "ENDOWED", "REFLECTS", "OFFICE", "PARTNERSHIPS", "HU_RANKING"] as const
 export const CAREER_KEYS = ["OFFICE", "ECKEL_UNCMC", "ASHP_FRANCKE"] as const
 export const IMPACT_KEYS = ["ENDOWED", "PARTNERSHIPS", "WIKI", "ASHP_FRANCKE", "REFLECTS"] as const
