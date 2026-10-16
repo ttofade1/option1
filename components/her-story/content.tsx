@@ -212,11 +212,11 @@ As she turns toward her next chapter Prof. Tofade carries forward more than four
             </p>
           </AnimatedSection>
 
-                    <AnimatedSection className="bg-[#3D1854] rounded-2xl p-8 md:p-12 text-center">
+                    <AnimatedSection className="bg-[#0C3050] rounded-2xl p-8 md:p-12 text-center">
             <Quote className="w-10 h-10 text-[#C6993A] mx-auto mb-4 rotate-180" />
             <blockquote className="font-serif text-xl md:text-2xl text-white leading-relaxed mb-4">
             Together, we will broaden horizons, expand opportunities, and empower our students to thrive.            </blockquote>
-            <cite className="text-[#C9A0E8] text-sm not-italic">
+            <cite className="text-white/80 text-sm not-italic">
               Prof. Toyin Tofade, on the ACPHS–Russell Sage merger, April 2025
             </cite>
           </AnimatedSection>
