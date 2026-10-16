@@ -4,9 +4,7 @@ import { Footer } from "@/components/footer"
 import { HeroSection } from "@/components/home/hero-section"
 import { IntroSection } from "@/components/home/intro-section"
 import { ImpactAreasSection } from "@/components/home/impact-areas-section"
-import { CoreValuesSection } from "@/components/home/core-values-section"
 import { StatsSection } from "@/components/home/stats-section"
-import { GallerySection } from "@/components/home/gallery-section"
 import { ReviewsSection } from "@/components/home/reviews-section"
 import { CTASection } from "@/components/home/cta-section"
 import { PageReferences } from "@/components/page-references"
@@ -44,9 +42,7 @@ export default function HomePage() {
       <HeroSection />
       <IntroSection />
       <ImpactAreasSection />
-      <CoreValuesSection />
       <StatsSection />
-      <GallerySection />
       <ReviewsSection />
       <CTASection />
       <PageReferences keys={HOME_KEYS} />
