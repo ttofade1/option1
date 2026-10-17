@@ -50,7 +50,7 @@ Her father, the late Professor Abayomi Sofowora, was a pioneering pharmacognosis
                   A Defining Chapter
                 </h2>
                 <p className="text-[#5C4A2A] leading-relaxed">
-                  In the early 1990s, Toyin pursued graduate study at the University of North Carolina at Chapel Hill, the number one ranked pharmacy school in the nation. There, she earned both her Master&apos;s in Pharmacy Practice (1994) and her Doctor of Pharmacy (1997), completing clinical residencies at UNC hospitals along the way.
+                  In the early 1990s, Toyin pursued graduate study at the University of North Carolina at Chapel Hill, the number one ranked pharmacy school in the nation. There, she earned both her Master&apos;s in Pharmacy Practice (1994) and her Doctor of Pharmacy (1997), completing a residency with an emphasis on clinical pharmacokinetics and an ASHP-accredited residency at UNC Hospitals along the way.
                 </p>
               </div>
             </div>
@@ -138,6 +138,22 @@ At Maryland, she rose from Associate Professor and Associate Director to Assista
             </p>
           </AnimatedSection>
 
+          {/* Pharmacy Leadership */}
+          <AnimatedSection className="mb-16">
+            <h2 className="font-serif text-3xl font-bold text-[#2C1A0E] mb-6">
+              A Voice for Pharmacy, at Home and Abroad
+            </h2>
+            <p className="text-[#5C4A2A] leading-relaxed mb-4">
+              Alongside her campus roles, Dr. Tofade has helped lead the profession itself. She is Vice President and a board member of the International Pharmaceutical Federation (FIP), a global federation representing more than five million pharmacists and pharmaceutical scientists. From 2021 to 2025 she served as president of FIP&apos;s Academic Pharmacy Section, the first Black woman to hold that office in the section&apos;s 50-plus years. In 2018, she became the first Black woman named an FIP Fellow, an honor recognizing international leadership and contributions to the advancement of pharmaceutical sciences and practice.
+            </p>
+            <p className="text-[#5C4A2A] leading-relaxed mb-4">
+              In the United States, she served three years on the board of the American Association of Colleges of Pharmacy Council of Deans, as chair-elect, chair, and immediate past chair, representing the deans of every U.S. school and college of pharmacy. She has served on national diversity, equity, and inclusion task forces, and in Washington, D.C., she convened industry leaders and joined pharmacy coalition efforts to advance provider status for pharmacists.
+            </p>
+            <p className="text-[#5C4A2A] leading-relaxed">
+              She has never stopped learning to lead. She holds a certificate in public leadership from the Harvard Kennedy School, completed the Management Development Program at the Harvard Graduate School of Education and the Academic Leadership Academy of Penn State&apos;s Academic Leadership Institute, and is a Certified Professional Co-active Coach, coaching and mentoring leaders and organizations across the globe.
+            </p>
+          </AnimatedSection>
+
           {/* Albany */}
           <AnimatedSection className="mb-3">
             <div className="grid md:grid-cols-2 gap-8 items-center mb-8">
@@ -165,10 +181,10 @@ At Maryland, she rose from Associate Professor and Associate Director to Assista
               On July 1, 2022, Dr. Toyin Tofade became the 10th President of Albany College of Pharmacy and Health Sciences and the first Black woman to hold that office in the college&apos;s 141-year history.
             </p>
             <p className="text-[#5C4A2A] leading-relaxed mb-4">
-Under her leadership, ACPHS launched its boldest strategic plan in a generation, earned the Carnegie Research University classification (2025),<Cite n={n(HERSTORY_KEYS, "OFFICE")} href={SOURCES.OFFICE.href} /> a designation held by only four institutions in the Capital Region, and introduced its first online academic portfolio. Nine new degree programs launched across 2024 and 2025, including bachelor&apos;s programs in health sciences, psychology, forensic science, and biology; graduate programs in biomedical sciences, cytotechnology, and health data science; and a bachelor&apos;s in nursing offered as a 1+2+1 partnership with St. Peter&apos;s Health Partners, the largest expansion in the college&apos;s history. Applications rose 19&#37;, deposits 35&#37;, PharmD year-one deposits 210&#37;, and transfer admissions more than 700&#37;.<Cite n={n(HERSTORY_KEYS, "OFFICE")} href={SOURCES.OFFICE.href} /> Industrial fellowships for recent graduates doubled, giving increased 61&#37;, and the college achieved an 80&#37; placement rate for students pursuing medical school.
+Under her leadership, ACPHS crafted a bold new vision in December 2022 and launched its boldest strategic plan in a generation in January 2024. She built a high-performing leadership team, introduced a leadership program and entrepreneurial practices across the institution, and restructured the academic unit to position the college for growth. The college earned the Carnegie Research University classification (2025),<Cite n={n(HERSTORY_KEYS, "OFFICE")} href={SOURCES.OFFICE.href} /> a designation held by only four institutions in the Capital Region, and introduced its first online academic portfolio, ACPHS Online, in March 2024. Nine new degree programs launched across 2024 and 2025, including bachelor&apos;s programs in health sciences, psychology, clinical psychology, forensic science, and biology; graduate programs in biomedical sciences, cytotechnology, and health data science; and a bachelor&apos;s in nursing offered as a 1+2+1 partnership with St. Peter&apos;s Health Partners, the largest expansion in the college&apos;s history. Applications rose 19&#37;, deposits 35&#37;, PharmD year-one deposits 210&#37;, and transfer admissions more than 700&#37;.<Cite n={n(HERSTORY_KEYS, "OFFICE")} href={SOURCES.OFFICE.href} /> Industrial fellowships for recent graduates doubled, giving increased 61&#37;, and the college achieved an 80&#37; placement rate for students pursuing medical school. On the field, ACPHS celebrated two national championships, in men&apos;s track and women&apos;s soccer.
 </p>
             <p className="text-[#5C4A2A] leading-relaxed mb-4">
-Under her leadership the college&apos;s economic and community footprint grew: expanding CBET, backed by a Empire State Development grant and a FDA contract, and growing the Collaboratory in Albany&apos;s South End. The School of Pharmacy earned eight years of full accreditation and Health Sciences programs maintained a 100&#37; licensure rate. She and her team successfully advocated at the federal and state level for student-centered legislative reforms and for revisions to MSCHE accreditation processes to better support institutional mergers across higher education, a contribution with implications well beyond ACPHS.
+Under her leadership the college&apos;s economic and community footprint grew: expanding CBET, backed by a Empire State Development grant and a FDA contract, and growing the Collaboratory in Albany&apos;s South End. The School of Pharmacy earned eight years of full accreditation and Health Sciences programs maintained a 100&#37; licensure rate. She and her team successfully advocated at the federal and state level for student-centered legislative reforms and for revisions to MSCHE accreditation processes to better support institutional mergers across higher education, a contribution with implications well beyond ACPHS. In the Capital Region, she serves on the boards of St. Peter&apos;s Health Partners, the Commission on Independent Colleges and Universities, the Center for Economic Growth, WMHT, and Capitalize Albany, and is a member of The 50 Group, FEW, and the Women Presidents&apos; Organization Saratoga Chapter.
             </p>
 
             <p className="text-[#5C4A2A] leading-relaxed mb-4">
@@ -176,7 +192,7 @@ Global partnerships expanded to India, the Philippines, Brazil, Indonesia, Taiwa
             </p>
 
             <p className="text-[#5C4A2A] leading-relaxed">
-  In April 2025, she led the announcement of a historic merger with Russell Sage College, a merger of equals, that upon completion in Fall 2027 will create a comprehensive institution of approximately 4,000 students with combined assets of &#36;246 million and the broadest health professions curriculum in the Capital Region.<Cite n={n(HERSTORY_KEYS, "PARTNERSHIPS")} href={SOURCES.PARTNERSHIPS.href} />
+  In April 2025, she led the announcement of a historic merger with Russell Sage College, a merger of equals, that upon completion in Fall 2027 will create a comprehensive university of approximately 4,000 students, with schools of business, education, arts and sciences, pharmacy, and health sciences, combined assets of &#36;246 million, and the broadest health professions curriculum in the Capital Region.<Cite n={n(HERSTORY_KEYS, "PARTNERSHIPS")} href={SOURCES.PARTNERSHIPS.href} />
 </p>
           </AnimatedSection>
 
@@ -198,7 +214,7 @@ In her message to the community she wrote: "It has been my honor to serve you as
             </p>
 
             <p className="text-[#5C4A2A] leading-relaxed mb-3">
-As she turns toward her next chapter Prof. Tofade carries forward more than four years of institution-building, a 141-year legacy preserved, and a merger that will anchor health professions education in New York's Capital Region for decades.
+As she turns toward her next chapter Prof. Tofade carries forward more than four years of institution-building, a 141-year legacy preserved, and a merger that will anchor health professions education in New York's Capital Region for decades. She remains a global healthcare executive, academic leader, and executive coach, known for driving institutional transformation, building high-performing teams, creating high-impact partnerships, and advancing healthcare education and practice at local, regional, national, and global levels.
             </p>
             <p className="text-[#5C4A2A] leading-relaxed mb-3">
               Read more about the ACPHS&ndash;Russell Sage College merger and the partnerships extending the college&apos;s reach in the{" "}
@@ -209,6 +225,15 @@ As she turns toward her next chapter Prof. Tofade carries forward more than four
                 className="text-label underline decoration-dotted underline-offset-2 hover:text-gold transition-colors"
               >
                 official ACPHS announcement
+              </a>
+              , and her accomplishments, priorities, and progress as president on{" "}
+              <a
+                href="https://www.acphs.edu/president-toyin-tofade"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-label underline decoration-dotted underline-offset-2 hover:text-gold transition-colors"
+              >
+                the ACPHS president&apos;s page
               </a>
               .
             </p>
