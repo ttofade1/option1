@@ -7,8 +7,6 @@ import { ImpactAreasSection } from "@/components/home/impact-areas-section"
 import { StatsSection } from "@/components/home/stats-section"
 import { ReviewsSection } from "@/components/home/reviews-section"
 import { CTASection } from "@/components/home/cta-section"
-import { PageReferences } from "@/components/page-references"
-import { HOME_KEYS } from "@/components/sources"
 
 export const metadata: Metadata = {
   title: "Prof. Toyin Tofade | President Emerita, Board Strategist/Advisor, Executive Coach, Enterprise Consultant, Health Care Association Leader",
@@ -45,7 +43,6 @@ export default function HomePage() {
       <StatsSection />
       <ReviewsSection />
       <CTASection />
-      <PageReferences keys={HOME_KEYS} />
       <Footer />
     </main>
   )

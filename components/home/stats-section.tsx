@@ -1,10 +1,9 @@
 import Image from "next/image"
-import { Cite } from "@/components/cite"
 import { Eyebrow, SectionHeading } from "@/components/home/brand"
-import { SOURCES, HOME_KEYS, n, type SourceKey } from "@/components/sources"
+import { SOURCES, type SourceKey } from "@/components/sources"
 import { withBasePath } from "@/lib/base-path"
 
-type Highlight = { value: string; label: string; cite?: SourceKey }
+type Highlight = { value: string; label: string }
 
 type Report = {
   category: string
@@ -16,7 +15,6 @@ type Report = {
   highlights: Highlight[]
 }
 
-// Each highlight comes from its report, except where `cite` points elsewhere.
 const reports: Report[] = [
   {
     category: "Strategic Plan Execution",
@@ -26,7 +24,7 @@ const reports: Report[] = [
     cover: "/reports/acphs-strategic-plan-2026-cover.jpg",
     coverAlt: "Cover of the ACPHS Strategic Plan 2024–29 Year 2 Progress Report",
     highlights: [
-      { value: "61%", label: "Increase in giving, 2025", cite: "OFFICE" },
+      { value: "61%", label: "Increase in giving, 2025" },
       { value: "First in NY", label: "Accelerated Pathway to MD program, launched with Western Atlantic University School of Medicine" },
       { value: "Approved", label: "NYSED Board of Regents approval of the ACPHS–Russell Sage merger" },
     ],
@@ -91,7 +89,6 @@ export function StatsSection() {
                     </h3>
                     <p className="mt-1 text-sm text-brand-muted">
                       {report.document}
-                      <Cite n={n(HOME_KEYS, report.source)} href={href} />
                     </p>
                   </div>
                   <ul className="flex flex-col gap-3 border-t border-brand-border pt-4">
@@ -100,7 +97,6 @@ export function StatsSection() {
                         <span className="whitespace-nowrap font-baskerville text-lg font-bold text-brand-navy">{h.value}</span>
                         <span className="text-[14.5px] leading-[1.5] text-brand-body">
                           {h.label}
-                          {h.cite && <Cite n={n(HOME_KEYS, h.cite)} href={SOURCES[h.cite].href} />}
                         </span>
                       </li>
                     ))}
