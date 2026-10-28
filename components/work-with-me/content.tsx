@@ -7,7 +7,7 @@ import { Users, Briefcase, Building2, Award, Mic } from "lucide-react"
 const offerings = [
   {
     title: "Executive & Enterprise Coaching",
-    subtitle: "For presidents, deans, VPs, and senior leaders in higher education and healthcare",
+    subtitle: "For CEOs, presidents, deans, VPs, and senior leaders in business, higher education, and healthcare",
     icon: Award,
     items: [
       "Strategic vision, board relations, and governance dynamics",
@@ -48,7 +48,7 @@ export function WorkWithMeContent() {
         <AnimatedSection>
           <div className="mb-16">
             <p className="text-text-body text-lg leading-relaxed mb-0">
-              Prof. Toyin Tofade is a Certified Professional Co-active Coach (CPCC) with over two decades of executive leadership experience across higher education, healthcare, and global policy. She has led an institutional merger, secured public-private partnerships, built high-performing teams across multiple institutions, and navigated the full complexity of senior academic and healthcare administration.
+              Prof. Toyin Tofade is a Certified Professional Co-active Coach (CPCC) with over two decades of executive leadership experience across business, higher education, healthcare, and global policy. She has guided an institution through a merger and navigated the full complexity of senior academic and healthcare administration. Under her leadership, teams across multiple institutions have secured public-private partnerships and grown into high-performing organizations.
             </p>
           </div>
         </AnimatedSection>

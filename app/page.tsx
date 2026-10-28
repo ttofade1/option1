@@ -2,8 +2,10 @@ import type { Metadata, Viewport } from "next"
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { HeroSection } from "@/components/home/hero-section"
-import { IntroSection } from "@/components/home/intro-section"
 import { ImpactAreasSection } from "@/components/home/impact-areas-section"
+import { GiftStorySection } from "@/components/home/gift-story-section"
+import { LeadershipCarouselSection } from "@/components/home/leadership-carousel-section"
+import { CoreValuesSection } from "@/components/home/core-values-section"
 import { StatsSection } from "@/components/home/stats-section"
 import { ReviewsSection } from "@/components/home/reviews-section"
 import { CTASection } from "@/components/home/cta-section"
@@ -38,8 +40,10 @@ export default function HomePage() {
     <main className="min-h-screen bg-brand-bg text-brand-ink">
       <Navigation />
       <HeroSection />
-      <IntroSection />
       <ImpactAreasSection />
+      <GiftStorySection />
+      <LeadershipCarouselSection />
+      <CoreValuesSection />
       <StatsSection />
       <ReviewsSection />
       <CTASection />

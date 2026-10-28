@@ -17,16 +17,16 @@ type Report = {
 
 const reports: Report[] = [
   {
-    category: "Strategic Plan Execution",
-    institution: "Albany College of Pharmacy and Health Sciences",
-    document: "Strategic Plan 2024–29 · Year 2 Progress Report (2025–26)",
-    source: "ACPHS_SP_REPORT",
-    cover: "/reports/acphs-strategic-plan-2026-cover.jpg",
-    coverAlt: "Cover of the ACPHS Strategic Plan 2024–29 Year 2 Progress Report",
+    category: "Global Policy Leadership",
+    institution: "International Pharmaceutical Federation (FIP)",
+    document: "FIP Nanjing Statements: Shaping Pharmacy and Pharmaceutical Sciences Education to 2030 (2024)",
+    source: "FIP_NANJING",
+    cover: "/reports/fip-nanjing-statements-2024-cover.jpg",
+    coverAlt: "Cover of the FIP Nanjing Statements 2024 guidance document",
     highlights: [
-      { value: "61%", label: "Increase in giving, 2025" },
-      { value: "First in NY", label: "Accelerated Pathway to MD program, launched with Western Atlantic University School of Medicine" },
-      { value: "Approved", label: "NYSED Board of Regents approval of the ACPHS–Russell Sage merger" },
+      { value: "Co-chair", label: "Of the FIP advisory group that revised the Nanjing Statements on pharmacy education" },
+      { value: "95", label: "Global education statements across 8 domains, from student admissions to research" },
+      { value: "6 of 6", label: "WHO regions represented on the advisory group" },
     ],
   },
   {
@@ -43,16 +43,16 @@ const reports: Report[] = [
     ],
   },
   {
-    category: "Global Policy Leadership",
-    institution: "International Pharmaceutical Federation (FIP)",
-    document: "FIP Nanjing Statements: Shaping Pharmacy and Pharmaceutical Sciences Education to 2030 (2024)",
-    source: "FIP_NANJING",
-    cover: "/reports/fip-nanjing-statements-2024-cover.jpg",
-    coverAlt: "Cover of the FIP Nanjing Statements 2024 guidance document",
+    category: "Strategic Plan Execution",
+    institution: "Albany College of Pharmacy and Health Sciences",
+    document: "Strategic Plan 2024–29 · Year 2 Progress Report (2025–26)",
+    source: "ACPHS_SP_REPORT",
+    cover: "/reports/acphs-strategic-plan-2026-cover.jpg",
+    coverAlt: "Cover of the ACPHS Strategic Plan 2024–29 Year 2 Progress Report",
     highlights: [
-      { value: "Co-chair", label: "Of the FIP advisory group that revised the Nanjing Statements on pharmacy education" },
-      { value: "95", label: "Global education statements across 8 domains, from student admissions to research" },
-      { value: "6 of 6", label: "WHO regions represented on the advisory group" },
+      { value: "61%", label: "Increase in giving, 2025" },
+      { value: "First in NY", label: "Accelerated Pathway to MD program, launched with Western Atlantic University School of Medicine" },
+      { value: "Approved", label: "NYSED Board of Regents approval of the ACPHS–Russell Sage merger" },
     ],
   },
 ]

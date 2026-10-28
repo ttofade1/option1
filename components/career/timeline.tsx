@@ -1,8 +1,10 @@
 "use client"
 
+import Image from "next/image"
 import { AnimatedSection } from "@/components/animated-section"
 import { Cite } from "@/components/cite"
 import { SOURCES, CAREER_KEYS, n } from "@/components/sources"
+import { withBasePath } from "@/lib/base-path"
 
 const timelineItems = [
   {
@@ -28,14 +30,19 @@ const timelineItems = [
     title: "Dean & Professor",
     organization: "Howard University College of Pharmacy, Washington, D.C.",
     description: "",
+    images: [
+      { src: "/howard-sign.jpeg", alt: "Howard University College of Pharmacy sign" },
+      { src: "/howard-highlights-banner.jpeg", alt: "Howard University College of Pharmacy highlights banner" },
+    ],
   },
   {
     years: "2022 – 2026",
     title: "10th President",
     organization: "Albany College of Pharmacy and Health Sciences, Albany, NY",
     description:
-      "• First Black woman appointed president in ACPHS's history. • Launched the 2024–2029 Strategic Plan; earned Carnegie Research University classification (2025). • Nine new degree programs launched across 2024 and 2025, the largest expansion in institutional history. • Introduced ACPHS Online, the college's first digital academic portfolio. • Applications +19%; PharmD year-one deposits +210%; transfer admissions +700%. • Secured a $1.9M FDA contract for CBET. • Led the ACPHS–Russell Sage College merger announcement (April 2025). • Concluding her presidential term June 30, 2026; continuing as President Emerita from July 1, 2026.",
+      "• First Black woman appointed president in ACPHS's history. • Under her leadership, ACPHS launched the 2024–2029 Strategic Plan and earned Carnegie Research University classification (2025). • Nine new degree programs launched across 2024 and 2025, the largest expansion in institutional history. • The college introduced ACPHS Online, its first digital academic portfolio. • Applications +19%; PharmD year-one deposits +210%; transfer admissions +700%. • The college secured a $1.9M FDA contract for CBET. • Announced the ACPHS–Russell Sage College merger (April 2025). • Concluding her presidential term June 30, 2026; continuing as President Emerita from July 1, 2026.",
     highlight: true,
+    images: [{ src: "/albany-president.jpeg", alt: "Prof. Tofade at the Albany College of Pharmacy and Health Sciences podium" }],
     cite: n(CAREER_KEYS, "OFFICE"),
     href: SOURCES.OFFICE.href,
   },
@@ -97,6 +104,21 @@ export function CareerTimeline() {
                     <p className="text-text-body text-sm leading-relaxed whitespace-pre-line">
                       {item.description.replace(/ •/g, '\n•')}
                     </p>
+                  )}
+                  {item.images && (
+                    <div className={`mt-4 grid gap-2 ${item.images.length > 1 ? "grid-cols-2" : ""}`}>
+                      {item.images.map((image) => (
+                        <div key={image.src} className="relative aspect-[4/3] overflow-hidden">
+                          <Image
+                            src={withBasePath(image.src)}
+                            alt={image.alt}
+                            fill
+                            sizes={item.images.length > 1 ? "200px" : "400px"}
+                            className="object-cover object-[center_20%]"
+                          />
+                        </div>
+                      ))}
+                    </div>
                   )}
                 </div>
               </div>

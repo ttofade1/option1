@@ -5,6 +5,13 @@ import { AnimatedSection } from "@/components/animated-section"
 import { Cite } from "@/components/cite"
 import { SOURCES, GLOBAL_KEYS, n } from "@/components/sources"
 import { Target, Users, Heart, Globe } from "lucide-react"
+import { withBasePath } from "@/lib/base-path"
+
+const photos = [
+  { src: "/fip-leadership-workshop.jpeg", alt: "FIP Young Pharmacists Group Leadership Development Workshop, Glasgow" },
+  { src: "/next-generation-leaders.jpeg", alt: "Developing the next generation of leaders" },
+  { src: "/with-student-leader.jpeg", alt: "With a student leader" },
+]
 
 export function GWLContent() {
   return (
@@ -86,6 +93,26 @@ export function GWLContent() {
               </div>
             </div>
           </AnimatedSection>
+        </div>
+
+        {/* Photo strip */}
+        <div className="grid sm:grid-cols-3 gap-4 mb-24">
+          {photos.map((photo, index) => (
+            <AnimatedSection key={photo.src} delay={index * 75}>
+              <figure>
+                <div className="relative aspect-[4/5] overflow-hidden">
+                  <Image
+                    src={withBasePath(photo.src)}
+                    alt={photo.alt}
+                    fill
+                    sizes="(max-width: 640px) 100vw, 370px"
+                    className="object-cover"
+                  />
+                </div>
+                <figcaption className="mt-2 text-sm text-text-body">{photo.alt}</figcaption>
+              </figure>
+            </AnimatedSection>
+          ))}
         </div>
 
         {/* Global Women Leaders Inc. (demoted sub-section) */}

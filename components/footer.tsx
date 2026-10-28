@@ -8,7 +8,7 @@ const contactLinks = [
 ]
 
 const exploreLinks = [
-  { href: "/her-story", label: "Her Story" },
+  { href: "/my-story", label: "My Story" },
   { href: "/career", label: "Career" },
   { href: "/global-leaders", label: "Global Leaders" },
   { href: "/speaker-request", label: "Speaker Request" },

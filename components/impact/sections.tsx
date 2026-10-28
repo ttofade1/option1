@@ -1,6 +1,7 @@
 "use client"
 
 import Image from "next/image"
+import Link from "next/link"
 import { AnimatedSection } from "@/components/animated-section"
 import { Cite } from "@/components/cite"
 import { SOURCES, IMPACT_KEYS, n, type SourceKey } from "@/components/sources"
@@ -13,11 +14,13 @@ const impactAreas: {
   image: string
   imageAlt: string
   citeKeys: SourceKey[]
+  storyHref?: string
 }[] = [
   {
     icon: Users,
     title: "On Students",
-    content: `In 2017, at the end of her first year as Howard Dean, a student placed a wrapped gift and a handwritten letter on her desk, calling her 'a ray of sunshine' and 'a stunning example of leadership.' She kept it wrapped for years as a daily reminder that students must remain 'top of mind, top of heart, top of focus in every decision.' She opened it only when she felt she had truly earned it.`,
+    content: `In 2017, a student left a wrapped gift on her desk that she would not open for years: a daily reminder that students must remain top of mind, top of heart, and top of focus in every decision.`,
+    storyHref: "/#gift",
     image: "QUA51096.jpg",
     imageAlt: "Prof. Tofade with students at inauguration",
     citeKeys: ["REFLECTS"],
@@ -25,17 +28,17 @@ const impactAreas: {
   {
     icon: Globe,
     title: "On the Pharmacy Profession",
-    content: `As the first Black woman President of the FIP Academic Pharmacy Section, Prof. Tofade shaped pharmacy education policy for a global federation representing over five million pharmacists. As Chair of the AACP Council of Deans, she advanced accreditation standards across U.S. institutions. As recipient of the ASHP Donald E. Francke Medal, the field's highest honour for international contributions, she is recognized as someone who moved the entire profession forward. She has led two institutions to achieve the maximum possible accreditation years for their programs.`,
-    image: "FIP.jpeg",
-    imageAlt: "Prof. Tofade with pharmacy professionals",
+    content: `As the first Black woman President of the FIP Academic Pharmacy Section, Prof. Tofade shaped pharmacy education policy for a global federation representing over five million pharmacists. As Chair of the AACP Council of Deans, she advanced accreditation standards across U.S. institutions. As recipient of the ASHP Donald E. Francke Medal, the field's highest honour for international contributions, she is recognized as someone who moved the entire profession forward. Under her leadership, two institutions achieved the maximum possible accreditation terms for their programs.`,
+    image: "francke-medal.jpeg",
+    imageAlt: "Prof. Tofade with the ASHP Donald E. Francke Medal",
     citeKeys: ["FIP", "ASHP_FRANCKE"],
   },
   {
     icon: Heart,
     title: "On Economic Development & Community",
-    content: `Prof. Tofade believes institutions do not end at their walls. At ACPHS she expanded: the Collaboratory in Albany's South End, addressing health disparities in a medically underserved neighbourhood; and the Stack Family Center for Biopharmaceutical Education and Training (CBET), backed by Empire State Development funding and an FDA contract, building Albany's biopharma workforce pipeline.
+    content: `Prof. Tofade believes institutions do not end at their walls. Under her leadership, ACPHS expanded the Collaboratory in Albany's South End, addressing health disparities in a medically underserved neighbourhood; and the Stack Family Center for Biopharmaceutical Education and Training (CBET), backed by Empire State Development funding and an FDA contract, building Albany's biopharma workforce pipeline.
 
-Her leadership of the ACPHS–Russell Sage merger represents her single largest contribution to regional economic development: a comprehensive university of ~4,000 students with $246M in combined assets, positioned to anchor health professions education in the Capital Region for decades.`,
+The ACPHS–Russell Sage merger, announced under her leadership, is the college’s single largest contribution to regional economic development: a comprehensive university of ~4,000 students with $246M in combined assets, positioned to anchor health professions education in the Capital Region for decades.`,
     image: "writing.jpeg",
     imageAlt: "Prof. Tofade at community event",
     citeKeys: ["PARTNERSHIPS"],
@@ -44,8 +47,8 @@ Her leadership of the ACPHS–Russell Sage merger represents her single largest 
     icon: Lightbulb,
     title: "On Mentorship & Leadership Development",
     content: `She honors the mentors who invested in her when she was early in her career, and pays that investment forward through direct coaching, the Tofade Aspiring Leaders Endowed Fund at Howard, Global Women Leaders Inc., and two decades of quietly shaping professionals who now lead institutions of their own.`,
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Students-stand-together-with-Toyin-at-Inauguration-ceremony-1220x686-ne6iam4kURqbv93swDaNZvZqgqBWQD.jpg",
-    imageAlt: "Prof. Tofade mentoring",
+    image: "FIP.jpeg",
+    imageAlt: "Prof. Tofade with pharmacy professionals",
     citeKeys: ["ENDOWED"],
   },
 ]
@@ -78,6 +81,14 @@ export function ImpactSections() {
                   {area.citeKeys.map((key) => (
                     <Cite key={key} n={n(IMPACT_KEYS, key)} href={SOURCES[key].href} />
                   ))}
+                  {area.storyHref && (
+                    <Link
+                      href={area.storyHref}
+                      className="mt-4 block text-sm font-medium uppercase tracking-[0.14em] text-label hover:text-gold transition-colors"
+                    >
+                      Read the story →
+                    </Link>
+                  )}
                 </div>
               </AnimatedSection>
 

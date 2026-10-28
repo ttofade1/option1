@@ -44,6 +44,13 @@ export function GWLHero() {
             Raising the Next Generation of Leaders
           </h1>
           <p
+            className={`font-serif italic text-xl sm:text-2xl text-gold leading-snug mb-6 transition-all duration-700 delay-150 ${
+              isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
+            }`}
+          >
+            Inspiring and developing leaders across sectors, generations, and borders.
+          </p>
+          <p
             className={`text-navy-muted text-lg leading-relaxed transition-all duration-700 delay-200 ${
               isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
             }`}

@@ -31,7 +31,7 @@ export function CareerHero() {
             isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
           }`}
         >
-          From clinical practice in North Carolina to the deanship at Howard and the presidency at Albany, Prof. Tofade has built institutions and partnerships across six continents. She is a leader whose reach extends well beyond any single profession or country.
+          From clinical practice in North Carolina to the deanship at Howard and the presidency at Albany, Prof. Tofade has led institutions whose partnerships, built under her leadership, span six continents. She is a leader whose reach extends well beyond any single profession or country.
         </p>
       </div>
     </section>
