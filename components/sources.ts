@@ -29,10 +29,6 @@ export const SOURCES = {
     href: "https://www.acphs.edu/about/strategic-plan/",
     label: "ACPHS — 2024–2029 Strategic Plan",
   },
-  ENDOWED: {
-    href: "https://thedig.howard.edu/all-stories/departing-college-pharmacy-dean-toyin-tofade-establishes-endowed-fund-leadership-development",
-    label: "The Dig, Howard University — Departing Dean Establishes Endowed Fund for Leadership Development",
-  },
   REFLECTS: {
     href: "https://thedig.howard.edu/all-stories/toyin-tofade-reflects-her-tenure-dean-college-pharmacy",
     label: "The Dig, Howard University — Toyin Tofade Reflects on Her Tenure as Dean of the College of Pharmacy",
@@ -87,9 +83,9 @@ export type SourceKey = keyof typeof SOURCES
 
 /** Per-page ordered source lists. Reference-list numbers follow this order. */
 export const CAREER_KEYS = ["OFFICE", "ECKEL_UNCMC", "ASHP_FRANCKE", "AJHP_LECTURE", "CITY_STATE_TRAILBLAZERS"] as const
-export const IMPACT_KEYS = ["ENDOWED", "PARTNERSHIPS", "WIKI", "ASHP_FRANCKE", "REFLECTS"] as const
+export const IMPACT_KEYS = ["PARTNERSHIPS", "WIKI", "FIP", "ASHP_FRANCKE", "REFLECTS"] as const
 export const PUBLICATIONS_KEYS = ["RESEARCHGATE"] as const
-export const GLOBAL_KEYS = ["FIP", "ENDOWED"] as const
+export const GLOBAL_KEYS = ["FIP"] as const
 
 /** 1-based number for `key` within the given page ordering. */
 export function n(keys: readonly SourceKey[], key: SourceKey): number {

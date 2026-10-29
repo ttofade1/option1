@@ -39,7 +39,7 @@ export function GWLContent() {
               <h2 className="font-serif text-3xl sm:text-4xl text-text-heading mb-8">
                 Developing leaders across sectors, generations, and borders
               </h2>
-              <p className="text-text-body leading-relaxed mb-6">
+              <p className="text-text-body leading-relaxed mb-8">
                 As a Fellow of the{" "}
                 <a href="https://www.fip.org" target="_blank" rel="noopener noreferrer" className="underline decoration-gold underline-offset-2 hover:text-gold">
                   International Pharmaceutical Federation
@@ -49,12 +49,6 @@ export function GWLContent() {
                 its next generation of academic leaders.<Cite n={n(GLOBAL_KEYS, "FIP")} href={SOURCES.FIP.href} /> A Certified
                 Professional Co-active Coach (CPCC), she brings that same discipline to the individual
                 leaders she mentors, one relationship at a time.
-              </p>
-              <p className="text-text-body leading-relaxed mb-8">
-                Her belief that leadership must be built in others is embodied in the Alfred and Toyin
-                Tofade Aspiring Leaders Endowed Fund at Howard University, which she established to
-                ensure future faculty, staff, and students have lasting resources for leadership
-                development.<Cite n={n(GLOBAL_KEYS, "ENDOWED")} href={SOURCES.ENDOWED.href} />
               </p>
 
               {/* Features */}
@@ -83,17 +77,6 @@ export function GWLContent() {
                   </div>
                 </div>
 
-                <div className="flex gap-4">
-                  <div className="w-12 h-12 bg-gold-light flex items-center justify-center shrink-0">
-                    <Heart className="w-6 h-6 text-label" />
-                  </div>
-                  <div>
-                    <h3 className="font-serif text-lg text-text-heading mb-1">Endowed Investment</h3>
-                    <p className="text-text-body text-sm">
-                      Permanent resources for leadership development, ensuring the work continues for generations.
-                    </p>
-                  </div>
-                </div>
               </div>
             </div>
           </AnimatedSection>

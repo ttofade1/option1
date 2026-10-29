@@ -10,11 +10,6 @@ const pressItems = [
     link: "https://influentialwomen.com/connect/toyin-tofade",
   },
   {
-    outlet: "Howard University's News & Stories Hub",
-    title: "Departing College of Pharmacy Dean Toyin Tofade Establishes Endowed Fund for Leadership Development",
-    link: "https://thedig.howard.edu/all-stories/departing-college-pharmacy-dean-toyin-tofade-establishes-endowed-fund-leadership-development",
-  },
-  {
     outlet: "Albany Business Review",
     title: "Toyin Tofade's calling: To be a leader of leaders",
     link: "https://www.bizjournals.com/albany/news/2022/11/30/toyin-tofade-albany-college-of-pharmacy.html",

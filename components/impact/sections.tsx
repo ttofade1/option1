@@ -46,10 +46,10 @@ The ACPHSâ€“Russell Sage merger, announced under her leadership, is the collegeâ
   {
     icon: Lightbulb,
     title: "On Mentorship & Leadership Development",
-    content: `She honors the mentors who invested in her when she was early in her career, and pays that investment forward through direct coaching, the Tofade Aspiring Leaders Endowed Fund at Howard, Global Women Leaders Inc., and two decades of quietly shaping professionals who now lead institutions of their own.`,
+    content: `She honors the mentors who invested in her when she was early in her career, and pays that investment forward through direct coaching, Global Women Leaders Inc., and two decades of quietly shaping professionals who now lead institutions of their own.`,
     image: "FIP.jpeg",
     imageAlt: "Prof. Tofade with pharmacy professionals",
-    citeKeys: ["ENDOWED"],
+    citeKeys: [],
   },
 ]
 
