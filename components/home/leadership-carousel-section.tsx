@@ -8,7 +8,7 @@ import { withBasePath } from "@/lib/base-path"
 /** `contain` letterboxes photos on navy instead of cropping them; `position` sets object-position for cropped ones. */
 const slides: { src: string; caption: string; contain?: boolean; position?: string }[] = [
   { src: "/taiwan-partnership.jpeg", caption: "Signing an international partnership with a Taiwanese institution", contain: true },
-  { src: "/hyderabad-honoree-shawl.jpg", caption: "Honored at the Leadership Educators’ Summit, Hyderabad, 2025", position: "center 30%" },
+  { src: "/hyderabad-honoree-shawl.jpg", caption: "Honored at the Leadership Educators’ Summit, Hyderabad, 2025", position: "center 20%" },
   { src: "/aacp-council-of-deans.jpeg", caption: "AACP Council of Deans", contain: true },
   { src: "/brisbane-leadership-workshop.jpeg", caption: "Co-leading the FIP ECPG Leadership Development Program, Brisbane, 2023", contain: true },
   { src: "/next-generation-leaders.jpeg", caption: "Developing the next generation of leaders", contain: true },
