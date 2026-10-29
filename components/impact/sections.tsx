@@ -10,7 +10,7 @@ import { Users, Globe, Heart, Lightbulb } from "lucide-react"
 const impactAreas: {
   icon: typeof Users
   title: string
-  content: string
+  content: React.ReactNode
   image: string
   imageAlt: string
   citeKeys: SourceKey[]
@@ -28,7 +28,7 @@ const impactAreas: {
   {
     icon: Globe,
     title: "On the Pharmacy Profession",
-    content: `As the first Black woman President of the FIP Academic Pharmacy Section, Prof. Tofade shaped pharmacy education policy for a global federation representing over five million pharmacists. As Chair of the AACP Council of Deans, she advanced accreditation standards across U.S. institutions. As recipient of the ASHP Donald E. Francke Medal, the field's highest honour for international contributions, she is recognized as someone who moved the entire profession forward. Under her leadership, two institutions achieved the maximum possible accreditation terms for their programs.`,
+    content: <>As the first Black woman President of the <a href="https://www.fip.org" target="_blank" rel="noopener noreferrer" className="underline decoration-gold underline-offset-2 hover:text-gold">FIP</a> Academic Pharmacy Section, Prof. Tofade shaped pharmacy education policy for a global federation representing over five million pharmacists. As Chair of the AACP Council of Deans, she advanced accreditation standards across U.S. institutions. As recipient of the ASHP Donald E. Francke Medal, the field's highest honour for international contributions, she is recognized as someone who moved the entire profession forward. Under her leadership, two institutions achieved the maximum possible accreditation terms for their programs.</>,
     image: "francke-medal.jpeg",
     imageAlt: "Prof. Tofade with the ASHP Donald E. Francke Medal",
     citeKeys: ["FIP", "ASHP_FRANCKE"],

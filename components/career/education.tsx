@@ -6,7 +6,7 @@ import { Cite } from "@/components/cite"
 import { SOURCES, CAREER_KEYS, n } from "@/components/sources"
 
 const education = [
-  { degree: "BPharm", institution: "Obafemi Awolowo University, Ile-Ife, Nigeria (1989)" },
+  { degree: "BPharm", institution: "Obafemi Awolowo University, Ile-Ife (1989)" },
   { degree: "MS in Pharmacy Practice", institution: "UNC Eshelman School of Pharmacy, Chapel Hill (1994)" },
   { degree: "Doctor of Pharmacy (PharmD)", institution: "UNC Eshelman School of Pharmacy, Chapel Hill (1997)" },
   { degree: "Clinical Pharmacokinetics Residency", institution: "UNC Chapel Hill (1994)" },

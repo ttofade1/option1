@@ -1,5 +1,5 @@
 const education = [
-  { title: "Bachelor of Pharmacy (BPharm)", school: "Obafemi Awolowo University, Nigeria" },
+  { title: "Bachelor of Pharmacy (BPharm)", school: "Obafemi Awolowo University, Ile-Ife" },
   { title: "MS in Pharmacy Practice · Doctor of Pharmacy", school: "UNC Eshelman School of Pharmacy, Chapel Hill" },
   { title: "Certificate in Public Leadership", school: "Harvard Kennedy School" },
   {
@@ -16,6 +16,9 @@ const honors = [
   { title: "FIP Fellow — first Black woman named", year: "2018" },
 ]
 
+const inlineLink =
+  "text-brand-navy underline decoration-brand-gold-rule underline-offset-[3px] transition-colors duration-150 hover:text-brand-gold"
+
 const listHeading = "text-xs font-bold uppercase tracking-[0.22em] text-brand-gold-text"
 
 export function MyStoryBio() {
@@ -24,18 +27,26 @@ export function MyStoryBio() {
       <div className="mx-auto grid max-w-[1240px] grid-cols-[repeat(auto-fit,minmax(min(100%,420px),1fr))] gap-16 px-7 py-[88px] font-lato">
         <div className="flex max-w-[640px] flex-col gap-[22px] text-lg leading-[1.8] text-brand-body">
           <p className="text-pretty">
-            I trained at Obafemi Awolowo University and then at the University of North Carolina at Chapel Hill, where
-            mentors took a chance on me when I was, in my words, &ldquo;a nobody in Nigeria.&rdquo; I have spent my career
+            I trained at Obafemi Awolowo University in Ile-Ife and then at the University of North Carolina at Chapel
+            Hill, where mentors took a chance on me when I was, in my words, &ldquo;a nobody.&rdquo; I have spent my career
             paying that investment forward.
           </p>
           <p className="text-pretty">
             For more than two decades I have worked across health systems, higher education, workforce development, and
             international policy — as a clinical pharmacist at UNC Hospitals, an assistant dean at the University of
-            Maryland, Dean of Howard University College of Pharmacy, and a college president. I am now President Emerita
-            and Professor at Albany College of Pharmacy and Health Sciences.
+            Maryland, Dean of Howard University College of Pharmacy, then President and Professor at Albany College of
+            Pharmacy and Health Sciences (ACPHS). I am currently{" "}
+            <a href="https://www.acphs.edu/about/people/leadership/office-of-the-president/" target="_blank" rel="noopener noreferrer" className={inlineLink}>
+              President Emerita
+            </a>{" "}
+            (ACPHS) and Professor.
           </p>
           <p className="text-pretty">
-            Globally, I serve as Vice President of the International Pharmaceutical Federation (FIP), which represents
+            Globally, I serve as Vice President of the{" "}
+            <a href="https://www.fip.org" target="_blank" rel="noopener noreferrer" className={inlineLink}>
+              International Pharmaceutical Federation (FIP)
+            </a>
+            , which represents
             more than five million pharmacists and pharmaceutical scientists. I was the first Black woman named an FIP
             Fellow and the first Black woman to lead its Academic Pharmacy Section.
           </p>

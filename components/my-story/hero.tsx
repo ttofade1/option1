@@ -11,8 +11,8 @@ export function MyStoryHero() {
           From Ile-Ife to the world
         </h1>
         <p className="mt-7 font-lato text-[19px] leading-[1.7] text-pretty text-brand-body">
-          I grew up in Nigeria watching my father, the late Professor Abayomi Sofowora, turn plant science into medicine
-          for communities across Africa. That is where my love of pharmacy began — and where I learned that knowledge is
+          I am a citizen of Durham, NC, who grew up in Ile-Ife watching my father, the late Professor Abayomi Sofowora,
+          turn plant science into medicine for communities across Africa. That is where my love of pharmacy began — and where I learned that knowledge is
           meant to serve.
         </p>
         <p className="mt-8 border-l-2 border-brand-gold pl-[22px] font-baskerville text-[clamp(19px,1.8vw,23px)] italic leading-[1.5] text-brand-navy">

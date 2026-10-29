@@ -41,10 +41,10 @@ export default function HomePage() {
       <Navigation />
       <HeroSection />
       <ImpactAreasSection />
+      <StatsSection />
       <GiftStorySection />
       <LeadershipCarouselSection />
       <CoreValuesSection />
-      <StatsSection />
       <ReviewsSection />
       <CTASection />
       <Footer />

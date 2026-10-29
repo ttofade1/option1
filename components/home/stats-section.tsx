@@ -8,6 +8,7 @@ type Highlight = { value: string; label: string }
 type Report = {
   category: string
   institution: string
+  institutionHref?: string
   document: string
   source: SourceKey
   cover: string
@@ -19,6 +20,7 @@ const reports: Report[] = [
   {
     category: "Global Policy Leadership",
     institution: "International Pharmaceutical Federation (FIP)",
+    institutionHref: "https://www.fip.org",
     document: "FIP Nanjing Statements: Shaping Pharmacy and Pharmaceutical Sciences Education to 2030 (2024)",
     source: "FIP_NANJING",
     cover: "/reports/fip-nanjing-statements-2024-cover.jpg",
@@ -85,7 +87,18 @@ export function StatsSection() {
                   <div>
                     <p className="text-xs font-bold uppercase tracking-[0.2em] text-brand-gold-text">{report.category}</p>
                     <h3 className="mt-2 font-baskerville text-[21px] font-bold leading-[1.3] text-brand-navy">
-                      {report.institution}
+                      {report.institutionHref ? (
+                        <a
+                          href={report.institutionHref}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="transition-colors duration-150 hover:text-brand-gold"
+                        >
+                          {report.institution}
+                        </a>
+                      ) : (
+                        report.institution
+                      )}
                     </h3>
                     <p className="mt-1 text-sm text-brand-muted">
                       {report.document}

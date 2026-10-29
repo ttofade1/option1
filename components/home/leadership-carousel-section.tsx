@@ -5,16 +5,17 @@ import { useEffect, useState } from "react"
 import { Eyebrow, SectionHeading } from "@/components/home/brand"
 import { withBasePath } from "@/lib/base-path"
 
-/** `contain` letterboxes portrait-shaped photos on navy instead of cropping them. */
-const slides: { src: string; caption: string; contain?: boolean }[] = [
-  { src: "/mena-summit-panel.jpeg", caption: "Panelist, THE MENA Universities Summit" },
-  { src: "/culture-of-leadership-talk.jpeg", caption: "“Building a Culture of Leadership,” Leadership Educators’ Summit, Hyderabad" },
-  { src: "/fip-leadership-workshop.jpeg", caption: "FIP Young Pharmacists Group Leadership Development Workshop, Glasgow" },
+/** `contain` letterboxes photos on navy instead of cropping them; `position` sets object-position for cropped ones. */
+const slides: { src: string; caption: string; contain?: boolean; position?: string }[] = [
   { src: "/taiwan-partnership.jpeg", caption: "Signing an international partnership with a Taiwanese institution", contain: true },
-  { src: "/abcf-congress.jpeg", caption: "Speaking at the VII ABCF Congress, Brazil, 2024", contain: true },
-  { src: "/arab-universities-summit.jpeg", caption: "With university leaders at the MENA Universities Summit" },
-  { src: "/iacp-summit-honor.jpeg", caption: "Honored by the Indian Association of Colleges of Pharmacy" },
+  { src: "/hyderabad-speaking-wave.jpg", caption: "Addressing the International Leadership Summit, Hyderabad, 2025", position: "center 30%" },
+  { src: "/hyderabad-honoree-shawl.jpg", caption: "Honored at the Leadership Educators’ Summit, Hyderabad, 2025", position: "center 30%" },
+  { src: "/aacp-council-of-deans.jpeg", caption: "AACP Council of Deans", contain: true },
+  { src: "/brisbane-leadership-workshop.jpeg", caption: "Co-leading the FIP ECPG Leadership Development Program, Brisbane, 2023", contain: true },
   { src: "/next-generation-leaders.jpeg", caption: "Developing the next generation of leaders", contain: true },
+  { src: "/women-presidents-organization.jpeg", caption: "Women Presidents Organization", contain: true },
+  { src: "/ihe-us-universities-summit-2025.jpeg", caption: "Inside Higher Ed US Universities Summit, 2025", position: "center 75%" },
+  { src: "/ncoda.jpeg", caption: "With NCODA leaders", contain: true },
 ]
 
 const AUTOPLAY_MS = 5000
@@ -71,6 +72,7 @@ export function LeadershipCarouselSection() {
                 priority={i === 0}
                 sizes="(max-width: 1240px) 100vw, 1184px"
                 className={slide.contain ? "object-contain" : "object-cover"}
+                style={slide.position ? { objectPosition: slide.position } : undefined}
               />
             </div>
           ))}

@@ -2,6 +2,7 @@ import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { CareerHero } from "@/components/career/hero"
 import { CareerTimeline } from "@/components/career/timeline"
+import { CareerGallery } from "@/components/career/gallery"
 import { EducationSection } from "@/components/career/education"
 import { HonorsSection } from "@/components/career/honors"
 import { PageReferences } from "@/components/page-references"
@@ -18,6 +19,7 @@ export default function CareerPage() {
       <Navigation />
       <CareerHero />
       <CareerTimeline />
+      <CareerGallery />
       <EducationSection />
       <HonorsSection />
       <PageReferences keys={CAREER_KEYS} />

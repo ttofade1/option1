@@ -33,7 +33,7 @@ export function GiftStorySection() {
             She called me &ldquo;a ray of sunshine&rdquo; and &ldquo;a stunning example of leadership.&rdquo;
           </p>
           <p className="text-pretty">
-            I didn&rsquo;t open it. For years it sat on my desk, still wrapped — a daily reminder that the people I serve
+            I didn&rsquo;t open it. For about 5 years it sat on my desk, still wrapped — a daily reminder that the people I serve
             must remain top of mind, top of heart, and top of focus in every decision.
           </p>
           <p className="text-pretty">I opened it only when I felt I had truly earned it.</p>

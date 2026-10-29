@@ -20,13 +20,13 @@ export function ImpactHero() {
           fill
           className="object-cover opacity-95"
           priority
-          style={{objectPosition: "center 10%"}}
+          style={{objectPosition: "center 15%"}}
 
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-navy via-navy/60 to-navy/70" />
+        <div className="absolute inset-0 bg-gradient-to-b from-navy/20 via-navy/55 to-navy/95" />
       </div>
 
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-[clamp(150px,15vw,240px)] pb-14">
         <div className="max-w-2xl">
           <p
             className={`text-gold text-sm tracking-[0.2em] uppercase mb-6 transition-all duration-700 ${

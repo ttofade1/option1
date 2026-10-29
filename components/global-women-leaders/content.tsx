@@ -7,9 +7,10 @@ import { SOURCES, GLOBAL_KEYS, n } from "@/components/sources"
 import { Target, Users, Heart, Globe } from "lucide-react"
 import { withBasePath } from "@/lib/base-path"
 
-const photos = [
+const photos: { src: string; alt: string; position?: string }[] = [
   { src: "/fip-leadership-workshop.jpeg", alt: "FIP Young Pharmacists Group Leadership Development Workshop, Glasgow" },
   { src: "/next-generation-leaders.jpeg", alt: "Developing the next generation of leaders" },
+  { src: "/women-presidents-organization.jpeg", alt: "Women Presidents Organization", position: "15% center" },
   { src: "/with-student-leader.jpeg", alt: "With a student leader" },
 ]
 
@@ -40,7 +41,11 @@ export function GWLContent() {
                 Developing leaders across sectors, generations, and borders
               </h2>
               <p className="text-text-body leading-relaxed mb-6">
-                As a Fellow of the International Pharmaceutical Federation (FFIP) and President of its
+                As a Fellow of the{" "}
+                <a href="https://www.fip.org" target="_blank" rel="noopener noreferrer" className="underline decoration-gold underline-offset-2 hover:text-gold">
+                  International Pharmaceutical Federation
+                </a>{" "}
+                (FFIP) and President of its
                 Academic Pharmacy Section, Prof. Tofade has shaped how a global federation cultivates
                 its next generation of academic leaders.<Cite n={n(GLOBAL_KEYS, "FIP")} href={SOURCES.FIP.href} /> A Certified
                 Professional Co-active Coach (CPCC), she brings that same discipline to the individual
@@ -96,7 +101,7 @@ export function GWLContent() {
         </div>
 
         {/* Photo strip */}
-        <div className="grid sm:grid-cols-3 gap-4 mb-24">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-24">
           {photos.map((photo, index) => (
             <AnimatedSection key={photo.src} delay={index * 75}>
               <figure>
@@ -105,8 +110,9 @@ export function GWLContent() {
                     src={withBasePath(photo.src)}
                     alt={photo.alt}
                     fill
-                    sizes="(max-width: 640px) 100vw, 370px"
+                    sizes="(max-width: 1024px) 50vw, 280px"
                     className="object-cover"
+                    style={photo.position ? { objectPosition: photo.position } : undefined}
                   />
                 </div>
                 <figcaption className="mt-2 text-sm text-text-body">{photo.alt}</figcaption>

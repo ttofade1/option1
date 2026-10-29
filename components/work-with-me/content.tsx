@@ -1,5 +1,7 @@
 "use client"
 
+import Image from "next/image"
+import { withBasePath } from "@/lib/base-path"
 import { AnimatedSection } from "@/components/animated-section"
 import { Users, Briefcase, Building2, Award, Mic } from "lucide-react"
 
@@ -46,7 +48,24 @@ export function WorkWithMeContent() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Introduction */}
         <AnimatedSection>
-          <div className="mb-16">
+          <div className="mb-16 grid md:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] gap-10 items-start">
+            <figure>
+              <div className="relative aspect-[4/5] overflow-hidden">
+                <Image
+                  src={withBasePath("/portrait-gray-jacket.jpg")}
+                  alt="Portrait of Prof. Toyin Tofade"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 430px"
+                  className="object-cover"
+                />
+              </div>
+              <blockquote className="mt-6 border-l-2 border-brand-gold pl-5 font-baskerville text-[clamp(24px,2.4vw,28px)] italic leading-[1.4] text-brand-navy">
+                &ldquo;How can I serve you today?&rdquo;
+              </blockquote>
+              <figcaption className="mt-2 pl-5 font-lato text-sm text-brand-muted">
+                — the question I ask everyone I meet
+              </figcaption>
+            </figure>
             <p className="text-text-body text-lg leading-relaxed mb-0">
               Prof. Toyin Tofade is a Certified Professional Co-active Coach (CPCC) with over two decades of executive leadership experience across business, higher education, healthcare, and global policy. She has guided an institution through a merger and navigated the full complexity of senior academic and healthcare administration. Under her leadership, teams across multiple institutions have secured public-private partnerships and grown into high-performing organizations.
             </p>
@@ -97,7 +116,7 @@ export function WorkWithMeContent() {
           <div className="mt-16 p-8 bg-gold-light border border-gold/30 text-center">
             <p className="text-label font-medium mb-2">A Note on Availability</p>
             <p className="text-text-body text-sm max-w-2xl mx-auto">
-              Prof. Tofade maintains a selective coaching practice alongside her ongoing advisory commitments. Engagements are accepted on a limited basis to ensure depth and genuine impact.
+              Prof. Tofade maintains a selective coaching practice alongside her ongoing duties and advisory commitments. Engagements are accepted on a limited basis to ensure depth and genuine impact.
             </p>
           </div>
         </AnimatedSection>

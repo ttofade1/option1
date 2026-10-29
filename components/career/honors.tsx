@@ -12,7 +12,7 @@ const honors = [
   { year: "2022", title: "Donald E. Francke Medal: American Society for Health System Pharmacists", description: "For significant international contributions to pharmacy practice", cite: n(CAREER_KEYS, "ASHP_FRANCKE"), href: SOURCES.ASHP_FRANCKE.href },
   { year: "2023", title: "Francke Medal Award Lecture: “Leading with Heart in Service of Global Initiatives”", description: "Delivered for the 2022 Donald E. Francke Medal; published in the American Journal of Health-System Pharmacy", link: { label: "Read the lecture", href: SOURCES.AJHP_LECTURE.href } },
   { year: "2022", title: "Top 25 Women Leaders in Healthcare Education", description: "Women We Admire" },
-  { year: "2021-2025", title: "President", description: "FIP Academic Pharmacy Section" },
+  { year: "2021-2025", title: "President", description: "FIP Academic Pharmacy Section", descriptionHref: "https://www.fip.org" },
   { year: "2021", title: "UNC Eshelman Pharmacy Alumni Distinguished Service Award" },
   { year: "2020", title: "A. Richard Bliss Jr. Grand Council Citation of Appreciation", description: "Kappa Psi Pharmaceutical Fraternity" },
   { year: "2019", title: "Fred M. Eckel Pharmacy Leadership Award", description: "By her account, the first Black person to receive this honor", cite: n(CAREER_KEYS, "ECKEL_UNCMC"), href: SOURCES.ECKEL_UNCMC.href },
@@ -49,7 +49,15 @@ export function HonorsSection() {
                     <span className="text-gold text-sm font-medium shrink-0">{item.year}</span>
                   </div>
                   {item.description && (
-                    <p className="text-text-body text-sm">{item.description}</p>
+                    <p className="text-text-body text-sm">
+                      {"descriptionHref" in item && item.descriptionHref ? (
+                        <a href={item.descriptionHref} target="_blank" rel="noopener noreferrer" className="underline decoration-gold underline-offset-2 hover:text-gold">
+                          {item.description}
+                        </a>
+                      ) : (
+                        item.description
+                      )}
+                    </p>
                   )}
                   {"link" in item && item.link && (
                     <a

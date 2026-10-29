@@ -1,5 +1,7 @@
 "use client"
 
+import Image from "next/image"
+import { withBasePath } from "@/lib/base-path"
 import { useEffect, useState } from "react"
 
 export function CareerHero() {
@@ -10,8 +12,21 @@ export function CareerHero() {
   }, [])
 
   return (
-    <section className="relative bg-navy">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 text-center">
+    <section className="relative bg-navy overflow-hidden">
+      {/* Background Image */}
+      <div className="absolute inset-0">
+        <Image
+          src={withBasePath("/inauguration-phylicia-rashad.jpeg")}
+          alt="Prof. Tofade at her inauguration with Phylicia Rashad"
+          fill
+          className="object-cover opacity-95"
+          priority
+          style={{objectPosition: "center 45%"}}
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-navy/20 via-navy/55 to-navy/95" />
+      </div>
+
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-[clamp(150px,15vw,240px)] pb-14 text-center">
         <p
           className={`text-gold text-sm tracking-[0.2em] uppercase mb-6 transition-all duration-700 ${
             isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
