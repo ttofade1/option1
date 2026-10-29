@@ -1,5 +1,5 @@
-// GitHub Pages serves this project site from /option1; local dev runs at the root.
-const basePath = process.env.NODE_ENV === 'production' ? '/option1' : ''
+// Served at the root of toyintofade.com (GitHub Pages custom domain), same as local dev.
+const basePath = ''
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
