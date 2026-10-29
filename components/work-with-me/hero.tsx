@@ -32,7 +32,7 @@ export function WorkWithMeHero() {
             isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
           }`}
         >
-          Executive Coaching & Board Advisory
+          Executive and Enterprise Coaching
         </p>
         <h1
           className={`font-serif text-4xl sm:text-5xl lg:text-6xl text-cream leading-tight mb-0 transition-all duration-700 delay-100 ${

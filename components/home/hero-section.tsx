@@ -11,12 +11,12 @@ export function HeroSection() {
         <div className="max-w-[460px] flex-[1_1_300px] self-end">
           <div className="relative aspect-[4/5] overflow-hidden rounded-t-[230px] border border-b-0 border-brand-border-strong bg-brand-navy">
             <Image
-              src={withBasePath("/speaking-lecture-hall.jpg")}
-              alt="Prof. Toyin Tofade addressing a lecture hall"
+              src={withBasePath("/hyderabad-speaking-mic.jpg")}
+              alt="Prof. Toyin Tofade speaking at a leadership summit"
               fill
               priority
               sizes="(max-width: 768px) 100vw, 460px"
-              className="object-cover object-[72%_center]"
+              className="object-cover object-[82%_center]"
             />
           </div>
         </div>

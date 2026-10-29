@@ -1,11 +1,9 @@
-const education = [
-  { title: "Bachelor of Pharmacy (BPharm)", school: "Obafemi Awolowo University, Ile-Ife" },
-  { title: "MS in Pharmacy Practice · Doctor of Pharmacy", school: "UNC Eshelman School of Pharmacy, Chapel Hill" },
+const education: { title: string; school?: string }[] = [
   { title: "Certificate in Public Leadership", school: "Harvard Kennedy School" },
-  {
-    title: "Certified Professional Co-active Coach (CPCC)",
-    school: "Plus Penn State Academic Leadership Academy & Harvard GSE Management Development Program",
-  },
+  { title: "Certified Professional Co-active Coach (CPCC)" },
+  { title: "Doctorate", school: "University of North Carolina at Chapel Hill" },
+  { title: "Master of Science", school: "University of North Carolina at Chapel Hill" },
+  { title: "Bachelor’s Degree", school: "Obafemi Awolowo University, Ile-Ife" },
 ]
 
 const honors = [
@@ -29,7 +27,8 @@ export function MyStoryBio() {
           <p className="text-pretty">
             I trained at Obafemi Awolowo University in Ile-Ife and then at the University of North Carolina at Chapel
             Hill, where mentors took a chance on me when I was, in my words, &ldquo;a nobody.&rdquo; I have spent my career
-            paying that investment forward.
+            paying that investment forward. Along the way, I completed executive education through the Harvard Graduate
+            School of Education Management Development Program and the Penn State Academic Leadership Academy.
           </p>
           <p className="text-pretty">
             For more than two decades I have worked across health systems, higher education, workforce development, and
@@ -42,7 +41,22 @@ export function MyStoryBio() {
             (ACPHS) and Professor.
           </p>
           <p className="text-pretty">
-            Globally, I serve as Vice President of the{" "}
+            I serve on the boards of{" "}
+            <a href="https://www.sphp.com" target="_blank" rel="noopener noreferrer" className={inlineLink}>
+              St. Peter&rsquo;s Health Partners of Trinity Health NY
+            </a>
+            ,{" "}
+            <a href="https://www.wmht.org" target="_blank" rel="noopener noreferrer" className={inlineLink}>
+              WMHT
+            </a>
+            , and{" "}
+            <a href="https://www.capitalizealbany.com" target="_blank" rel="noopener noreferrer" className={inlineLink}>
+              Capitalize Albany Corporation
+            </a>
+            .
+          </p>
+          <p className="text-pretty">
+            Globally, I serve as a board member and Vice President of the{" "}
             <a href="https://www.fip.org" target="_blank" rel="noopener noreferrer" className={inlineLink}>
               International Pharmaceutical Federation (FIP)
             </a>
@@ -59,12 +73,12 @@ export function MyStoryBio() {
 
         <div className="flex flex-col gap-9">
           <div>
-            <h2 className={listHeading}>Education</h2>
+            <h2 className={listHeading}>Selected Education</h2>
             <ul className="mt-3.5 border-t border-brand-border">
               {education.map((item) => (
                 <li key={item.title} className="flex flex-col gap-1 border-b border-brand-border py-3.5">
                   <span className="font-baskerville text-base font-bold text-brand-navy">{item.title}</span>
-                  <span className="text-sm text-brand-muted">{item.school}</span>
+                  {item.school && <span className="text-sm text-brand-muted">{item.school}</span>}
                 </li>
               ))}
             </ul>

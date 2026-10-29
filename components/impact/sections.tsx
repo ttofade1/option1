@@ -21,8 +21,8 @@ const impactAreas: {
     title: "On Students",
     content: `In 2017, a student left a wrapped gift on her desk that she would not open for years: a daily reminder that students must remain top of mind, top of heart, and top of focus in every decision.`,
     storyHref: "/#gift",
-    image: "QUA51096.jpg",
-    imageAlt: "Prof. Tofade with students at inauguration",
+    image: "students-selfie.jpg",
+    imageAlt: "Prof. Tofade with pharmacy students at a conference",
     citeKeys: ["REFLECTS"],
   },
   {

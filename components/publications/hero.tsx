@@ -17,17 +17,14 @@ export function PublicationsHero() {
     <section className="relative bg-navy overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0">
-        {/* Extends above the section so the faces sit higher than the text. */}
-        <div className="absolute inset-x-0 -top-[clamp(80px,9vw,140px)] bottom-0">
-          <Image
-            src={withBasePath("/fip-academic-pharmacy-section.jpeg")}
-            alt="Prof. Tofade with colleagues from the FIP Academic Pharmacy Section"
-            fill
-            className="object-cover opacity-95"
-            priority
-            style={{objectPosition: "center top"}}
-          />
-        </div>
+        <Image
+          src={withBasePath("/research-poster-session.jpeg")}
+          alt="Prof. Tofade with students and faculty at a research poster session"
+          fill
+          className="object-cover opacity-95"
+          priority
+          style={{objectPosition: "center 58%"}}
+        />
         <div className="absolute inset-0 bg-gradient-to-b from-navy/20 via-navy/55 to-navy/95" />
       </div>
 

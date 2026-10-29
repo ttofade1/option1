@@ -7,9 +7,13 @@ const topics = [
   "Leadership and building high-performing teams",
   "Women in leadership: breaking barriers across generations",
   "Networking, mentorship, and sponsorship: the architecture of a meaningful career",
-  "Leading institutional transformation, merger, and complex organisational change",
+  "Leading institutional transformation, mergers and acquisitions, and complex organisational change",
   "Building and sustaining global partnerships",
   "Building an international presence/global brand",
+  "Understanding your true colors",
+  "Shaping the future",
+  "Understanding different personalities",
+  "Inspiring the next generation to lead",
 ]
 
 export function SpeakingTopics() {

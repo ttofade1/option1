@@ -9,7 +9,6 @@ import { withBasePath } from "@/lib/base-path"
 
 const photos: { src: string; alt: string; position?: string }[] = [
   { src: "/fip-leadership-workshop.jpeg", alt: "FIP Young Pharmacists Group Leadership Development Workshop, Glasgow" },
-  { src: "/next-generation-leaders.jpeg", alt: "Developing the next generation of leaders" },
   { src: "/women-presidents-organization.jpeg", alt: "Women Presidents Organization", position: "15% center" },
   { src: "/with-student-leader.jpeg", alt: "With a student leader" },
 ]
@@ -23,8 +22,8 @@ export function GWLContent() {
           <AnimatedSection animation="slide-left">
             <div className="relative aspect-[4/5] max-w-md">
               <Image
-                src="SF_PBweb-14.jpg"
-                alt="Prof. Tofade"
+                src={withBasePath("/leadership-development-2023.jpeg")}
+                alt="Participants at a 2023 leadership development session"
                 fill
                 className="object-cover"
               />
@@ -101,7 +100,7 @@ export function GWLContent() {
         </div>
 
         {/* Photo strip */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-24">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-24">
           {photos.map((photo, index) => (
             <AnimatedSection key={photo.src} delay={index * 75}>
               <figure>

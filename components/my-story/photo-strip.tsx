@@ -4,7 +4,7 @@ import Image from "next/image"
 import { useEffect, useState } from "react"
 import { withBasePath } from "@/lib/base-path"
 
-/** `posA`/`posB` set object-position where Prof. Tofade is near the edge of a photo. */
+/** `posA`/`posB` set object-position for photos whose subject is near an edge. */
 const pairs: { a: string; b: string; caption: string; posA?: string; posB?: string }[] = [
   { a: "/howard-colleagues-3.jpeg", b: "/howard-colleagues-7.jpeg", posB: "left center", caption: "With fellow academic leaders at Howard University" },
   {
@@ -13,7 +13,7 @@ const pairs: { a: string; b: string; caption: string; posA?: string; posB?: stri
     caption: "ASHP Donald E. Francke Medal, 2022 — and a gift for students, with my husband Alfred",
   },
   { a: "/fip-workshop-facilitators.jpeg", b: "/colleagues-selfie.jpeg", caption: "Building leaders with colleagues around the world" },
-  { a: "/howard-highlights-banner.jpeg", posA: "left center", b: "/howard-faculty-group.jpeg", caption: "Howard University College of Pharmacy" },
+  { a: "/howard-highlights-banner.jpeg", posA: "right center", b: "/howard-faculty-group.jpeg", caption: "Howard University College of Pharmacy" },
 ]
 
 const FLIP_MS = 4500

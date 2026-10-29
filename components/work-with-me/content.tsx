@@ -16,7 +16,7 @@ const offerings = [
       "Executive presence, stakeholder communications, and crisis leadership",
       "Building high-performing teams and sustainable leadership cultures",
       "Navigating institutional change and stakeholder management",
-      "Leading institutional transformation, merger, and complex organisational change",
+      "Leading institutional transformation, mergers and acquisitions, and complex organisational change",
     ],
   },
   {
@@ -50,10 +50,10 @@ export function WorkWithMeContent() {
         <AnimatedSection>
           <div className="mb-16 grid md:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] gap-10 items-start">
             <figure>
-              <div className="relative aspect-[4/5] overflow-hidden">
+              <div className="relative aspect-[2000/1625] overflow-hidden">
                 <Image
-                  src={withBasePath("/portrait-gray-jacket.jpg")}
-                  alt="Portrait of Prof. Toyin Tofade"
+                  src={withBasePath("/SF_PBweb-14.jpg")}
+                  alt="Prof. Toyin Tofade seated in a brown armchair"
                   fill
                   sizes="(max-width: 768px) 100vw, 430px"
                   className="object-cover"
