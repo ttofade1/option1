@@ -36,19 +36,10 @@ export const metadata: Metadata = {
   description: 'Prof. Toyin Tofade is a visionary leader at the intersection of healthcare and higher education. 10th President of Albany College of Pharmacy and Health Sciences.',
   icons: {
     icon: [
-      {
-        url: withBasePath("/favicon.ico"),
-        media: '(prefers-color-scheme: light)',
-      },
-      {
-        url: withBasePath("/favicon.ico"),
-        media: '(prefers-color-scheme: dark)',
-      },
-      {
-        url: withBasePath("/favicon.svg"),
-        type: 'image/svg+xml',
-      },
+      { url: withBasePath("/favicon.ico"), sizes: "any" },
+      { url: withBasePath("/favicon-96x96.png"), type: "image/png", sizes: "96x96" },
     ],
+    apple: withBasePath("/apple-icon.png"),
   },
   keywords: ['Prof. Toyin Tofade', 'ACPHS President', 'Healthcare Leadership', 'Pharmacy Education', 'Women in Leadership'],
   openGraph: {

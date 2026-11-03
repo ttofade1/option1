@@ -13,7 +13,7 @@ const photos: { src: string; caption: string; position?: string }[] = [
   { src: "/mou-signing-telangana.jpg", caption: "Signing an international MOU for ACPHS, Telangana, 2025" },
   { src: "/fip-ecpg-group.jpeg", caption: "With the FIP Early Career Pharmaceutical Group" },
   { src: "/hyderabad-honoree-clock.jpg", caption: "Honored at the Leadership Educators’ Summit, Hyderabad, 2025" },
-  { src: "/hyderabad-presenting-dr-suresh.jpg", caption: "Presenting an award to Dr. B. Suresh, Pro Chancellor, JSS AHER, at the Leadership Educators’ Summit, Hyderabad, 2025", position: "center 30%" },
+  { src: "/hyderabad-honoree-shawl.jpg", caption: "Honored at the Leadership Educators’ Summit, Hyderabad, 2025", position: "center 25%" },
 ]
 
 export function CareerGallery() {
