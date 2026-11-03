@@ -62,7 +62,7 @@ export function ReviewForm() {
             Full Name <span className="text-brand-gold">*</span>
           </label>
           <input id="name" name="name" type="text" required className={field} placeholder="Your full name" />
-          <p className="mt-2 text-[13px] text-brand-muted">Not shown on the website if you choose to be anonymous.</p>
+          <p className="mt-2 text-[13px] text-brand-muted">Not shown on the website if you choose profession and state only.</p>
         </div>
 
         <div>
@@ -76,6 +76,35 @@ export function ReviewForm() {
             className={field}
             placeholder="As you'd like it to appear"
           />
+        </div>
+
+        <div>
+          <label htmlFor="profession" className={label}>
+            Profession or Job Title <span className="text-brand-gold">*</span>
+          </label>
+          <input
+            id="profession"
+            name="profession"
+            type="text"
+            required
+            className={field}
+            placeholder="e.g. Lawyer, Academic Administrator"
+          />
+        </div>
+
+        <div className="grid gap-6 sm:grid-cols-2">
+          <div>
+            <label htmlFor="city" className={label}>
+              City <span className="text-brand-gold">*</span>
+            </label>
+            <input id="city" name="city" type="text" required className={field} placeholder="e.g. Columbus" />
+          </div>
+          <div>
+            <label htmlFor="state" className={label}>
+              State <span className="text-brand-gold">*</span>
+            </label>
+            <input id="state" name="state" type="text" required className={field} placeholder="e.g. Ohio" />
+          </div>
         </div>
 
         <div>
@@ -109,8 +138,8 @@ export function ReviewForm() {
               With my name and title
             </label>
             <label className="flex items-center gap-3">
-              <input type="radio" name="credit" value="anonymous" className="size-4 accent-brand-navy" />
-              Anonymously
+              <input type="radio" name="credit" value="profession_and_state" className="size-4 accent-brand-navy" />
+              With my profession and state only (e.g. Lawyer, Ohio)
             </label>
           </div>
         </fieldset>

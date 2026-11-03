@@ -36,9 +36,9 @@ const impactAreas: {
   {
     icon: Heart,
     title: "On Economic Development & Community",
-    content: `Prof. Tofade believes institutions do not end at their walls. Under her leadership, ACPHS expanded the Collaboratory in Albany's South End, addressing health disparities in a medically underserved neighbourhood; and the Stack Family Center for Biopharmaceutical Education and Training (CBET), backed by Empire State Development funding and an FDA contract, building Albany's biopharma workforce pipeline.
+    content: <>{`Prof. Tofade believes institutions do not end at their walls. Under her leadership, ACPHS expanded the Collaboratory in Albany's South End, addressing health disparities in a medically underserved neighbourhood; and the Stack Family Center for Biopharmaceutical Education and Training (CBET), backed by Empire State Development funding and an FDA contract, building Albany's biopharma workforce pipeline.
 
-The ACPHS–Russell Sage merger, announced under her leadership, is the college’s single largest contribution to regional economic development: a comprehensive university of ~4,000 students with $246M in combined assets, positioned to anchor health professions education in the Capital Region for decades.`,
+The `}<a href="https://acphs.sage.edu" target="_blank" rel="noopener noreferrer" className="underline decoration-gold underline-offset-2 hover:text-gold">ACPHS–Russell Sage merger</a>{`, announced under her leadership, is the college’s single largest contribution to regional economic development: a comprehensive university of ~4,000 students with $246M in combined assets, positioned to anchor health professions education in the Capital Region for decades.`}</>,
     image: "writing.jpeg",
     imageAlt: "Prof. Tofade at community event",
     citeKeys: ["PARTNERSHIPS"],

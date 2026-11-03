@@ -20,8 +20,8 @@ export function ReviewsSection() {
             <figcaption className="mt-auto flex items-center gap-3 font-lato">
               <Diamond />
               <span>
-                <span className="block text-sm font-bold text-brand-navy">{review.name ?? "Anonymous"}</span>
-                {review.role && <span className="block text-[13px] text-brand-muted">{review.role}</span>}
+                <span className="block text-sm font-bold text-brand-navy">{review.name ?? review.role}</span>
+                {review.name && review.role && <span className="block text-[13px] text-brand-muted">{review.role}</span>}
               </span>
             </figcaption>
           </figure>

@@ -1,6 +1,6 @@
 const education: { title: string; school?: string }[] = [
   { title: "Certificate in Public Leadership", school: "Harvard Kennedy School" },
-  { title: "Certified Professional Co-active Coach (CPCC)" },
+  { title: "Certified Professional Co-active Coach (CPCC)", school: "Coaches Training Institute (CTI), San Rafael, California" },
   { title: "Doctorate", school: "University of North Carolina at Chapel Hill" },
   { title: "Master of Science", school: "University of North Carolina at Chapel Hill" },
   { title: "Bachelor’s Degree", school: "Obafemi Awolowo University, Ile-Ife" },

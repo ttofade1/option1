@@ -52,9 +52,12 @@ const reports: Report[] = [
     cover: "/reports/acphs-strategic-plan-2026-cover.jpg",
     coverAlt: "Cover of the ACPHS Strategic Plan 2024–29 Year 2 Progress Report",
     highlights: [
+      { value: "9", label: "New degree programs in 2024 and 2025, the largest expansion of programs since inception" },
+      { value: "+19%", label: "Applications, with deposits up 35%, PharmD year-one deposits up 210%, and transfer admissions up more than 700%" },
       { value: "61%", label: "Increase in giving, 2025" },
       { value: "First in NY", label: "Accelerated Pathway to MD program, launched with Western Atlantic University School of Medicine" },
-      { value: "Approved", label: "NYSED Board of Regents approval of the ACPHS–Russell Sage merger" },
+      { value: "Improved", label: "Culture scores, as measured by Energage" },
+      { value: "Reduced", label: "Institutional debt" },
     ],
   },
 ]

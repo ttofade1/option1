@@ -72,7 +72,7 @@ export function GWLContent() {
                   <div>
                     <h3 className="font-serif text-lg text-text-heading mb-1">One-on-One Coaching</h3>
                     <p className="text-text-body text-sm">
-                      Certified executive coaching for emerging and established leaders across academia, healthcare, and public service.
+                      Certified executive coaching for emerging and established leaders across academia, healthcare, business, public service, and their chosen careers.
                     </p>
                   </div>
                 </div>

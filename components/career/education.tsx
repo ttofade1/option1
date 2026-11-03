@@ -14,6 +14,7 @@ const education = [
   { degree: "Academic Leadership Academy", institution: "The Pennsylvania State University (2016)" },
   { degree: "Management Development Programme", institution: "Harvard Graduate School of Education (2017)" },
   { degree: "Certificate in Public Leadership", institution: "Harvard Kennedy School (2023)" },
+  { degree: "Certified Professional Co-active Coach (CPCC)", institution: "Coaches Training Institute (CTI), San Rafael, California" },
 ]
 
 export function EducationSection() {

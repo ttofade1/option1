@@ -63,7 +63,7 @@ export function WorkWithMeContent() {
                 &ldquo;How can I serve you today?&rdquo;
               </blockquote>
               <figcaption className="mt-2 pl-5 font-lato text-sm text-brand-muted">
-                — the question I ask everyone I meet
+                — the question I ask almost everyone during meetings with me
               </figcaption>
             </figure>
             <p className="text-text-body text-lg leading-relaxed mb-0">

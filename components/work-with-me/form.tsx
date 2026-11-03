@@ -133,6 +133,11 @@ export function WorkWithMeForm() {
                 <option value="executive-coaching">Executive Coaching</option>
                 <option value="organizational">Organisational Development</option>
                 <option value="board-advisory">Board Advisory</option>
+                <option value="enterprise-consulting">Enterprise Consulting</option>
+                <option value="strategic-planning">Strategic Planning</option>
+                <option value="team-building">Team Building</option>
+                <option value="speaking-engagement">Speaking Engagement</option>
+                <option value="workshop-facilitation">Workshop Facilitation</option>
                 <option value="other">Other</option>
               </select>
             </div>
