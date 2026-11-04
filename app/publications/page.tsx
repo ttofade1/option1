@@ -1,5 +1,6 @@
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
+import { pageMetadata } from "@/lib/seo"
 import { PublicationsHero } from "@/components/publications/hero"
 import { PublicationsList } from "@/components/publications/list"
 import { PressSection } from "@/components/media/press"
@@ -7,10 +8,12 @@ import { PodcastsSection } from "@/components/media/podcasts"
 import { PageReferences } from "@/components/page-references"
 import { PUBLICATIONS_KEYS } from "@/components/sources"
 
-export const metadata = {
+export const metadata = pageMetadata({
   title: "Publications & Media | Prof. Toyin Tofade",
-  description: "Research publications, press coverage, podcasts, and media appearances by Prof. Toyin Tofade spanning pharmacy practice, pharmaceutical education, and health sciences leadership.",
-}
+  description:
+    "Research publications, press coverage, podcasts, and media appearances by Prof. Toyin Tofade spanning pharmacy practice, pharmaceutical education, and health sciences leadership.",
+  path: "/publications",
+})
 
 export default function PublicationsPage() {
   return (
