@@ -75,12 +75,13 @@ const personJsonLd = {
   ],
 }
 
-// Lets Google show "Prof. Toyin Tofade" as the site name in search results.
+// Lets Google show "Toyin Tofade" as the site name in search results.
 const websiteJsonLd = {
   '@type': 'WebSite',
   '@id': `${SITE_URL}/#website`,
   url: SITE_URL,
   name: SITE_NAME,
+  alternateName: 'Prof. Toyin Tofade',
   publisher: { '@id': `${SITE_URL}/#person` },
 }
 

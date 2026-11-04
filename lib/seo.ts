@@ -1,7 +1,7 @@
 import type { Metadata } from "next"
 
 export const SITE_URL = "https://toyintofade.com"
-export const SITE_NAME = "Prof. Toyin Tofade"
+export const SITE_NAME = "Toyin Tofade"
 
 const OG_IMAGE = {
   url: "/og-hero.jpg",
