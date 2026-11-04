@@ -1,7 +1,7 @@
 "use client"
 
 import { AnimatedSection } from "@/components/animated-section"
-import { FullPhoto } from "@/components/full-photo"
+import { Photo, PhotoRow } from "@/components/photo"
 
 const photos: { src: string; caption: string }[] = [
   { src: "/faculty-of-pharmacy-ile-ife.jpeg", caption: "Faculty of Pharmacy, Ile-Ife" },
@@ -15,6 +15,9 @@ const photos: { src: string; caption: string }[] = [
   { src: "/hyderabad-honoree-shawl.jpg", caption: "Honored at the Leadership Educators’ Summit, Hyderabad, 2025" },
 ]
 
+const PER_ROW = 3
+const rows = Array.from({ length: Math.ceil(photos.length / PER_ROW) }, (_, i) => photos.slice(i * PER_ROW, (i + 1) * PER_ROW))
+
 export function CareerGallery() {
   return (
     <section className="py-24 bg-cream-card">
@@ -23,15 +26,21 @@ export function CareerGallery() {
           <p className="text-label text-sm tracking-[0.15em] uppercase text-center mb-4">Moments</p>
           <h2 className="font-serif text-3xl sm:text-4xl text-text-heading text-center mb-16">Along the Way</h2>
         </AnimatedSection>
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
-          {photos.map((photo, index) => (
-            <AnimatedSection key={photo.src} delay={index * 50}>
-              <figure>
-                <div className="relative aspect-[4/3] overflow-hidden bg-brand-border">
-                  <FullPhoto src={photo.src} alt={photo.caption} sizes="(max-width: 1024px) 50vw, 280px" />
-                </div>
-                <figcaption className="mt-2 text-sm text-text-body">{photo.caption}</figcaption>
-              </figure>
+        {/* Rows of three; each photo keeps its own shape so nobody is cropped out. */}
+        <div className="flex flex-col gap-8">
+          {rows.map((row, r) => (
+            <AnimatedSection key={row[0].src} delay={r * 50}>
+              <PhotoRow
+                items={row.map((photo) => ({
+                  src: photo.src,
+                  render: (
+                    <figure>
+                      <Photo src={photo.src} alt={photo.caption} sizes="(max-width: 640px) 100vw, 400px" />
+                      <figcaption className="mt-2 text-sm text-text-body">{photo.caption}</figcaption>
+                    </figure>
+                  ),
+                }))}
+              />
             </AnimatedSection>
           ))}
         </div>

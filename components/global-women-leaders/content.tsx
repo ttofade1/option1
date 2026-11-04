@@ -3,8 +3,8 @@
 import { AnimatedSection } from "@/components/animated-section"
 import { Cite } from "@/components/cite"
 import { SOURCES, GLOBAL_KEYS, n } from "@/components/sources"
-import { Target, Users, Heart, Globe } from "lucide-react"
-import { FullPhoto } from "@/components/full-photo"
+import { Users, Globe } from "lucide-react"
+import { Photo, PhotoRow } from "@/components/photo"
 
 const photos: { src: string; alt: string }[] = [
   { src: "/fip-leadership-workshop.jpeg", alt: "FIP Young Pharmacists Group Leadership Development Workshop, Glasgow" },
@@ -19,8 +19,8 @@ export function GWLContent() {
         {/* Mentorship & the Next Generation of Leaders (primary) */}
         <div className="grid lg:grid-cols-2 gap-16 items-center mb-24">
           <AnimatedSection animation="slide-left">
-            <div className="relative aspect-[4/5] max-w-md">
-              <FullPhoto
+            <div className="relative max-w-md">
+              <Photo
                 src="/leadership-development-2023.jpeg"
                 alt="Participants at a 2023 leadership development session"
                 sizes="(max-width: 1024px) 100vw, 448px"
@@ -81,74 +81,18 @@ export function GWLContent() {
         </div>
 
         {/* Photo strip */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-24">
-          {photos.map((photo, index) => (
-            <AnimatedSection key={photo.src} delay={index * 75}>
-              <figure>
-                <div className="relative aspect-[4/5] overflow-hidden">
-                  <FullPhoto src={photo.src} alt={photo.alt} sizes="(max-width: 1024px) 50vw, 280px" />
-                </div>
-                <figcaption className="mt-2 text-sm text-text-body">{photo.alt}</figcaption>
-              </figure>
-            </AnimatedSection>
-          ))}
-        </div>
-
-        {/* Global Women Leaders Inc. (demoted sub-section) */}
         <AnimatedSection>
-          <div className="bg-cream-card border border-border p-8 md:p-12">
-            <p className="text-label text-sm tracking-[0.15em] uppercase mb-3">
-              A Dedicated Initiative
-            </p>
-            <h2 className="font-serif text-2xl sm:text-3xl text-text-heading mb-4">
-              Global Women Leaders Inc.
-            </h2>
-            <p className="text-text-body leading-relaxed mb-8 max-w-3xl">
-              Global Women Leaders Inc. is the nonprofit Prof. Tofade founded to inspire and equip
-              women around the world to step fully into their leadership capacity. The organisation
-              focuses on training, mentorship, and community-building. Providing women across
-              sectors with the tools, models, and networks they need to lead with confidence,
-              competence, and sustained impact.
-            </p>
-
-            <div className="grid md:grid-cols-3 gap-6">
-              <div className="flex gap-4">
-                <div className="w-10 h-10 bg-gold-light flex items-center justify-center shrink-0">
-                  <Target className="w-5 h-5 text-label" />
-                </div>
-                <div>
-                  <h3 className="font-serif text-base text-text-heading mb-1">Mission</h3>
-                  <p className="text-text-body text-sm">
-                    To inspire and train women internationally to maximise their leadership potential across academia, healthcare, public service, and professional life.
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex gap-4">
-                <div className="w-10 h-10 bg-gold-light flex items-center justify-center shrink-0">
-                  <Users className="w-5 h-5 text-label" />
-                </div>
-                <div>
-                  <h3 className="font-serif text-base text-text-heading mb-1">Who We Serve</h3>
-                  <p className="text-text-body text-sm">
-                    Women at every stage of their professional journey. Those entering leadership for the first time, those navigating senior positions, and those ready to invest in the next generation.
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex gap-4">
-                <div className="w-10 h-10 bg-gold-light flex items-center justify-center shrink-0">
-                  <Heart className="w-5 h-5 text-label" />
-                </div>
-                <div>
-                  <h3 className="font-serif text-base text-text-heading mb-1">Get Involved</h3>
-                  <p className="text-text-body text-sm">
-                    Whether you are a woman ready to grow, an organisation seeking to partner, or a donor committed to multiplying women&apos;s leadership impact globally, we want to hear from you.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+          <PhotoRow
+            items={photos.map((photo) => ({
+              src: photo.src,
+              render: (
+                <figure>
+                  <Photo src={photo.src} alt={photo.alt} sizes="(max-width: 640px) 100vw, 400px" />
+                  <figcaption className="mt-2 text-sm text-text-body">{photo.alt}</figcaption>
+                </figure>
+              ),
+            }))}
+          />
         </AnimatedSection>
       </div>
     </section>

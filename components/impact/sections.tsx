@@ -1,6 +1,6 @@
 "use client"
 
-import { FullPhoto } from "@/components/full-photo"
+import { Photo } from "@/components/photo"
 import Link from "next/link"
 import { AnimatedSection } from "@/components/animated-section"
 import { Cite } from "@/components/cite"
@@ -98,9 +98,12 @@ export function ImpactSections() {
                 delay={100}
                 className={index % 2 === 1 ? "lg:order-1" : ""}
               >
-                <div className="relative aspect-[4/3]">
-                  <FullPhoto src={area.image} alt={area.imageAlt} sizes="(max-width: 1024px) 100vw, 560px" />
-                </div>
+                <Photo
+                  src={area.image}
+                  alt={area.imageAlt}
+                  sizes="(max-width: 1024px) 100vw, 560px"
+                  className="mx-auto h-auto max-h-[480px] w-auto max-w-full"
+                />
               </AnimatedSection>
             </div>
           </div>

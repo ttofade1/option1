@@ -3,7 +3,7 @@
 import { AnimatedSection } from "@/components/animated-section"
 import { Cite } from "@/components/cite"
 import { SOURCES, CAREER_KEYS, n } from "@/components/sources"
-import { FullPhoto } from "@/components/full-photo"
+import { Photo, PhotoRow } from "@/components/photo"
 
 const timelineItems = [
   {
@@ -111,13 +111,13 @@ export function CareerTimeline() {
                     </p>
                   )}
                   {item.images && (
-                    <div className={`mt-4 grid gap-2 ${item.images.length > 1 ? "grid-cols-2" : ""}`}>
-                      {item.images.map((image) => (
-                        <div key={image.src} className="relative aspect-[4/3] overflow-hidden">
-                          <FullPhoto src={image.src} alt={image.alt} sizes={item.images.length > 1 ? "200px" : "400px"} />
-                        </div>
-                      ))}
-                    </div>
+                    <PhotoRow
+                      className="mt-4"
+                      items={item.images.map((image) => ({
+                        src: image.src,
+                        render: <Photo src={image.src} alt={image.alt} sizes={item.images.length > 1 ? "200px" : "400px"} />,
+                      }))}
+                    />
                   )}
                 </div>
               </div>
