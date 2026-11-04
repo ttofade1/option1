@@ -4,10 +4,10 @@ export const SITE_URL = "https://toyintofade.com"
 export const SITE_NAME = "Prof. Toyin Tofade"
 
 const OG_IMAGE = {
-  url: "/og-image.jpg",
+  url: "/og-hero.jpg",
   width: 1200,
   height: 630,
-  alt: "Prof. Toyin Tofade, President Emerita of Albany College of Pharmacy and Health Sciences",
+  alt: "Prof. Toyin Tofade speaking at a leadership summit",
 }
 
 /** Per-page metadata with a canonical URL and matching Open Graph / Twitter tags. */

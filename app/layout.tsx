@@ -56,7 +56,7 @@ const personJsonLd = {
   honorificPrefix: 'Prof.',
   honorificSuffix: 'BPharm, MS, PharmD, CPCC, FFIP',
   url: SITE_URL,
-  image: `${SITE_URL}/og-image.jpg`,
+  image: `${SITE_URL}/og-hero.jpg`,
   jobTitle: 'President Emerita and Professor',
   description: 'Global healthcare executive, academic leader, executive coach and transformational university president.',
   email: 'mailto:toyin@toyintofade.com',
