@@ -12,9 +12,9 @@ import { ReviewsSection } from "@/components/home/reviews-section"
 import { CTASection } from "@/components/home/cta-section"
 
 export const metadata: Metadata = pageMetadata({
-  title: "Prof. Toyin Tofade | President Emerita, Executive Coach & Board Advisor",
+  title: "Prof. Toyin Tofade | President Emerita, Executive Coach & Advisor",
   description:
-    "Prof. Toyin Tofade is a global executive and transformational leader in higher education, governance, global leadership, and healthcare. President Emerita of Albany College of Pharmacy and Health Sciences.",
+    "Prof. Toyin Tofade is President Emerita of Albany College of Pharmacy and Health Sciences, an executive coach, board advisor, and global healthcare leader.",
   path: "/",
 })
 

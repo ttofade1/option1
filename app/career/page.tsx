@@ -12,7 +12,7 @@ import { CAREER_KEYS } from "@/components/sources"
 export const metadata = pageMetadata({
   title: "Career | Prof. Toyin Tofade",
   description:
-    "Prof. Toyin Tofade's career, from clinical pharmacist at UNC Hospitals to Dean of Howard University College of Pharmacy and 10th President of Albany College of Pharmacy and Health Sciences.",
+    "Prof. Toyin Tofade's career: clinical pharmacist at UNC Hospitals, Dean of Howard University College of Pharmacy, and 10th President of ACPHS.",
   path: "/career",
 })
 

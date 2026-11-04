@@ -8,7 +8,7 @@ import { WorkWithMeForm } from "@/components/work-with-me/form"
 export const metadata = pageMetadata({
   title: "Work With Me | Prof. Toyin Tofade",
   description:
-    "Executive coaching, leadership advisory, and speaking engagements with Prof. Toyin Tofade. Certified Professional Co-active Coach (CPCC) with over two decades of executive leadership experience.",
+    "Executive coaching, board advisory, and team development with Prof. Toyin Tofade, a Certified Professional Co-Active Coach (CPCC) and former college president.",
   path: "/work-with-me",
 })
 

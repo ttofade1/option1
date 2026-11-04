@@ -11,7 +11,7 @@ import { PUBLICATIONS_KEYS } from "@/components/sources"
 export const metadata = pageMetadata({
   title: "Publications & Media | Prof. Toyin Tofade",
   description:
-    "Research publications, press coverage, podcasts, and media appearances by Prof. Toyin Tofade spanning pharmacy practice, pharmaceutical education, and health sciences leadership.",
+    "Research, press coverage, and podcasts by Prof. Toyin Tofade on pharmacy practice, pharmaceutical education, and health sciences leadership.",
   path: "/publications",
 })
 
