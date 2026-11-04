@@ -1,6 +1,5 @@
 import type { Metadata } from 'next'
 import { Playfair_Display, Inter, Libre_Baskerville, Lato } from 'next/font/google'
-import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 import { withBasePath } from "@/lib/base-path"
 import { SITE_NAME, SITE_URL } from "@/lib/seo"
@@ -50,8 +49,8 @@ export const metadata: Metadata = {
 
 // Structured data so search engines can tie the site to Prof. Tofade as a person (knowledge panel, rich results).
 const personJsonLd = {
-  '@context': 'https://schema.org',
   '@type': 'Person',
+  '@id': `${SITE_URL}/#person`,
   name: 'Toyin Tofade',
   honorificPrefix: 'Prof.',
   honorificSuffix: 'BPharm, MS, PharmD, CPCC, FFIP',
@@ -76,6 +75,17 @@ const personJsonLd = {
   ],
 }
 
+// Lets Google show "Prof. Toyin Tofade" as the site name in search results.
+const websiteJsonLd = {
+  '@type': 'WebSite',
+  '@id': `${SITE_URL}/#website`,
+  url: SITE_URL,
+  name: SITE_NAME,
+  publisher: { '@id': `${SITE_URL}/#person` },
+}
+
+const jsonLd = { '@context': 'https://schema.org', '@graph': [personJsonLd, websiteJsonLd] }
+
 export const viewport = {
   themeColor: '#0C3050',
 }
@@ -88,9 +98,8 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${playfair.variable} ${inter.variable} ${libreBaskerville.variable} ${lato.variable}`}>
       <body className="font-sans antialiased">
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
         {children}
-        <Analytics />
       </body>
     </html>
   )
