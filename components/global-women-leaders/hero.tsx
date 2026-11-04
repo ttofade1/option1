@@ -46,7 +46,7 @@ export function GWLHero() {
               isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
             }`}
           >
-            Prof. Tofade has long believed that the measure of a leader is not what she achieves, but what she builds in others. Across her career, through the International Pharmaceutical Federation, executive coaching, and the nonprofit she founded, she has made developing leaders across sectors, generations, and borders her life&apos;s work.
+            Prof. Tofade has long believed that the measure of a leader is not what she achieves, but what she builds in others. Across her career, through the International Pharmaceutical Federation and executive coaching, she has made developing leaders across sectors, generations, and borders her life&apos;s work.
           </p>
         </div>
       </div>

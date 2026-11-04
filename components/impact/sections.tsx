@@ -46,7 +46,7 @@ The `}<a href="https://acphs.sage.edu" target="_blank" rel="noopener noreferrer"
   {
     icon: Lightbulb,
     title: "On Mentorship & Leadership Development",
-    content: `She honors the mentors who invested in her when she was early in her career, and pays that investment forward through direct coaching, Global Women Leaders Inc., and two decades of quietly shaping professionals who now lead institutions of their own.`,
+    content: `She honors the mentors who invested in her when she was early in her career, and pays that investment forward through direct coaching and two decades of quietly shaping professionals who now lead institutions of their own.`,
     image: "FIP.jpeg",
     imageAlt: "Prof. Tofade with pharmacy professionals",
     citeKeys: [],

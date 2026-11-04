@@ -54,7 +54,7 @@ export const PHOTO_SIZES: Record<string, [number, number]> = {
   "/unc-kohn-award.jpeg": [1600, 1200],
   "/unc-kohn-lecture-audience.jpeg": [1280, 719],
   "/unc-kohn-lecture-stage.jpeg": [1280, 719],
-  "/with-student-leader.jpeg": [1200, 1600],
+  "/with-student-leader.jpeg": [700, 1060],
   "/withKemi.jpeg": [1600, 1280],
   "/women-presidents-organization.jpeg": [1600, 983],
   "/writing.jpeg": [800, 600],
