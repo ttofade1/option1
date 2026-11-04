@@ -68,10 +68,29 @@ const personJsonLd = {
     { '@type': 'CollegeOrUniversity', name: 'University of North Carolina at Chapel Hill' },
   ],
   memberOf: { '@type': 'Organization', name: 'International Pharmaceutical Federation (FIP)' },
-  knowsAbout: ['Higher education leadership', 'Pharmacy education', 'Executive coaching', 'Board governance', 'Global health', 'Healthcare strategy'],
+  knowsAbout: [
+    'Higher education leadership',
+    'Pharmacy education',
+    'Executive coaching',
+    'Board governance',
+    'Global health',
+    'Healthcare strategy',
+    'Institutional transformation and mergers',
+    'Women in leadership',
+    'Mentorship and sponsorship',
+  ],
+  award: [
+    'City & State New York Trailblazers in Higher Education (2026)',
+    'Albany Business Review Power 50 (2023, 2024, 2025)',
+    'ASHP Donald E. Francke Medal (2022)',
+    'UNC Eshelman Pharmacy Alumni Distinguished Service Award (2021)',
+    'Fred M. Eckel Pharmacy Leadership Award (2019)',
+    'FIP Fellow (2018)',
+  ],
   sameAs: [
     'https://www.linkedin.com/in/toyin-tofade-a604181a/',
     'https://en.wikipedia.org/wiki/Toyin_Tofade',
+    'https://www.wikidata.org/wiki/Q111366725',
   ],
 }
 
