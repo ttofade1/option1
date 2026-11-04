@@ -5,19 +5,20 @@ import { useEffect, useState } from "react"
 import { Eyebrow, SectionHeading } from "@/components/home/brand"
 import { withBasePath } from "@/lib/base-path"
 
-/** `contain` letterboxes photos on navy instead of cropping them; `position` sets object-position for cropped ones. */
-const slides: { src: string; caption: string; contain?: boolean; position?: string }[] = [
-  { src: "/taiwan-partnership.jpeg", caption: "Signing an international partnership with a Taiwanese institution", contain: true },
-  { src: "/hyderabad-presenting-dr-suresh.jpg", caption: "Presenting an award to Dr. B. Suresh, Pro Chancellor, JSS AHER, at the Leadership Educators’ Summit, Hyderabad, 2025", contain: true },
-  { src: "/aacp-council-of-deans.jpeg", caption: "AACP Council of Deans", contain: true },
-  { src: "/brisbane-leadership-workshop.jpeg", caption: "Co-leading the FIP ECPG Leadership Development Program, Brisbane, 2023", contain: true },
-  { src: "/next-generation-leaders.jpeg", caption: "Developing the next generation of leaders", contain: true },
-  { src: "/women-presidents-organization.jpeg", caption: "Women Presidents Organization", contain: true },
-  { src: "/ihe-us-universities-summit-2025.jpeg", caption: "Inside Higher Ed US Universities Summit, 2025", position: "center 75%" },
+/** Photos are letterboxed on navy (object-contain) so nobody is cropped out. */
+const slides: { src: string; caption: string }[] = [
+  { src: "/taiwan-partnership.jpeg", caption: "Signing an international partnership with a Taiwanese institution" },
+  { src: "/hyderabad-presenting-dr-suresh.jpg", caption: "Presenting an award to Dr. B. Suresh, Pro Chancellor, JSS AHER, at the Leadership Educators’ Summit, Hyderabad, 2025" },
+  { src: "/aacp-council-of-deans.jpeg", caption: "AACP Council of Deans" },
+  { src: "/brisbane-leadership-workshop.jpeg", caption: "Co-leading the FIP ECPG Leadership Development Program, Brisbane, 2023" },
+  { src: "/next-generation-leaders.jpeg", caption: "Developing the next generation of leaders" },
+  { src: "/women-presidents-organization.jpeg", caption: "Women Presidents Organization" },
+  { src: "/ihe-us-universities-summit-2025.jpeg", caption: "Inside Higher Ed US Universities Summit, 2025" },
   { src: "/unc-kohn-lecture-stage.jpeg", caption: "Delivering the Harold and Carol Kohn Distinguished Alumni Lecture, UNC Chapel Hill, 2026" },
   { src: "/unc-kohn-lecture-audience.jpeg", caption: "Harold and Carol Kohn Distinguished Alumni Lecture, UNC Chapel Hill, 2026" },
-  { src: "/abcf-congress.jpeg", caption: "Speaking at the VII ABCF Congress, Brazil, 2024", contain: true },
-  { src: "/ncoda.jpeg", caption: "With NCODA leaders", contain: true },
+  { src: "/unc-kohn-award.jpeg", caption: "Receiving the Harold and Carol Kohn Distinguished Alumni Lecturer award, UNC Eshelman School of Pharmacy, 2026" },
+  { src: "/abcf-congress.jpeg", caption: "Speaking at the VII ABCF Congress, Brazil, 2024" },
+  { src: "/ncoda.jpeg", caption: "With NCODA leaders" },
 ]
 
 const AUTOPLAY_MS = 5000
@@ -73,8 +74,7 @@ export function LeadershipCarouselSection() {
                 fill
                 priority={i === 0}
                 sizes="(max-width: 1240px) 100vw, 1184px"
-                className={slide.contain ? "object-contain" : "object-cover"}
-                style={slide.position ? { objectPosition: slide.position } : undefined}
+                className="object-contain"
               />
             </div>
           ))}

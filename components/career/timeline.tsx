@@ -1,10 +1,9 @@
 "use client"
 
-import Image from "next/image"
 import { AnimatedSection } from "@/components/animated-section"
 import { Cite } from "@/components/cite"
 import { SOURCES, CAREER_KEYS, n } from "@/components/sources"
-import { withBasePath } from "@/lib/base-path"
+import { FullPhoto } from "@/components/full-photo"
 
 const timelineItems = [
   {
@@ -14,9 +13,15 @@ const timelineItems = [
     description: "",
   },
   {
-    years: "2002 – 2011",
-    title: "Associate Director & Director, Pharmacotherapy Services",
-    organization: "Wake AHEC, Raleigh, NC",
+    years: "2002 – 2005",
+    title: "Associate Director, Pharmacotherapy Services",
+    organization: "Wake Area Health Education Center (Wake AHEC), Raleigh, NC",
+    description: "",
+  },
+  {
+    years: "2005 – 2011",
+    title: "Director, Pharmacotherapy Services",
+    organization: "Wake Area Health Education Center (Wake AHEC), Raleigh, NC",
     description: "",
   },
   {
@@ -109,13 +114,7 @@ export function CareerTimeline() {
                     <div className={`mt-4 grid gap-2 ${item.images.length > 1 ? "grid-cols-2" : ""}`}>
                       {item.images.map((image) => (
                         <div key={image.src} className="relative aspect-[4/3] overflow-hidden">
-                          <Image
-                            src={withBasePath(image.src)}
-                            alt={image.alt}
-                            fill
-                            sizes={item.images.length > 1 ? "200px" : "400px"}
-                            className="object-cover object-[center_20%]"
-                          />
+                          <FullPhoto src={image.src} alt={image.alt} sizes={item.images.length > 1 ? "200px" : "400px"} />
                         </div>
                       ))}
                     </div>

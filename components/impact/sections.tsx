@@ -1,6 +1,6 @@
 "use client"
 
-import Image from "next/image"
+import { FullPhoto } from "@/components/full-photo"
 import Link from "next/link"
 import { AnimatedSection } from "@/components/animated-section"
 import { Cite } from "@/components/cite"
@@ -99,13 +99,7 @@ export function ImpactSections() {
                 className={index % 2 === 1 ? "lg:order-1" : ""}
               >
                 <div className="relative aspect-[4/3]">
-                  <Image
-                    src={area.image}
-                    alt={area.imageAlt}
-                    fill
-                    className="object-cover"
-                    style={{objectPosition: "center 10%"}}
-                  />
+                  <FullPhoto src={area.image} alt={area.imageAlt} sizes="(max-width: 1024px) 100vw, 560px" />
                 </div>
               </AnimatedSection>
             </div>

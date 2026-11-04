@@ -4,14 +4,17 @@
  * been approved for publication. The homepage section stays hidden while
  * this list is empty.
  *
- * For a reviewer who chose "profession and state only" on the form, leave
- * out `name` and set `role` to e.g. "Lawyer, Ohio"; the review is then
- * credited to that line alone.
+ * Credit each review as the reviewer chose on the form:
+ * - "first name, last initial, title, and organization": set `name` to e.g.
+ *   "Jane D." and `role` to e.g. "Provost, Example University".
+ * - "title and location only": leave out `name` and set `role` to e.g.
+ *   "Lawyer, Columbus, Ohio".
+ * - "anonymously": leave out both `name` and `role`.
  */
 export type Review = {
   quote: string
   name?: string
-  /** Title and organization, e.g. "Provost, Example University", or profession and state, e.g. "Lawyer, Ohio" */
+  /** Title and organization, e.g. "Provost, Example University", or title and location, e.g. "Lawyer, Columbus, Ohio" */
   role?: string
 }
 

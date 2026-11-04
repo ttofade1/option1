@@ -1,6 +1,6 @@
 "use client"
 
-import Image from "next/image"
+import { FullPhoto } from "@/components/full-photo"
 import { useEffect, useState } from "react"
 
 export function ImpactHero() {
@@ -14,15 +14,7 @@ export function ImpactHero() {
     <section className="relative bg-navy overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0">
-        <Image
-          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ACPHS-Leadership-at-Commencement-1540x866-7nRBd4I5tozVjoDecjgyDvWKIL3N9b.jpg"
-          alt="ACPHS Leadership at Commencement"
-          fill
-          className="object-cover opacity-95"
-          priority
-          style={{objectPosition: "center 15%"}}
-
-        />
+        <FullPhoto src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ACPHS-Leadership-at-Commencement-1540x866-7nRBd4I5tozVjoDecjgyDvWKIL3N9b.jpg" alt="ACPHS Leadership at Commencement" sizes="100vw" priority />
         <div className="absolute inset-0 bg-gradient-to-b from-navy/20 via-navy/55 to-navy/95" />
       </div>
 

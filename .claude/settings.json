@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx tsc --noEmit)",
+      "Bash(npm run lint)",
+      "mcp__claude_ai_Wix__ReadFullDocsArticle",
+      "mcp__claude_ai_Wix__SearchWixRESTDocumentation",
+      "mcp__claude_ai_Wix__ListWixSites"
+    ]
+  }
+}

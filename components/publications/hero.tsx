@@ -1,7 +1,6 @@
 "use client"
 
-import Image from "next/image"
-import { withBasePath } from "@/lib/base-path"
+import { FullPhoto } from "@/components/full-photo"
 import { useEffect, useState } from "react"
 import { Cite } from "@/components/cite"
 import { SOURCES, PUBLICATIONS_KEYS, n } from "@/components/sources"
@@ -17,14 +16,7 @@ export function PublicationsHero() {
     <section className="relative bg-navy overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0">
-        <Image
-          src={withBasePath("/research-poster-session.jpeg")}
-          alt="Prof. Tofade with students and faculty at a research poster session"
-          fill
-          className="object-cover opacity-95"
-          priority
-          style={{objectPosition: "center 58%"}}
-        />
+        <FullPhoto src="/research-poster-session.jpeg" alt="Prof. Tofade with students and faculty at a research poster session" sizes="100vw" priority />
         <div className="absolute inset-0 bg-gradient-to-b from-navy/20 via-navy/55 to-navy/95" />
       </div>
 

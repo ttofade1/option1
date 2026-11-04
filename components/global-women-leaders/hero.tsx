@@ -1,8 +1,7 @@
 "use client"
 
-import Image from "next/image"
+import { FullPhoto } from "@/components/full-photo"
 import { useEffect, useState } from "react"
-import { withBasePath } from "@/lib/base-path"
 
 export function GWLHero() {
   const [isLoaded, setIsLoaded] = useState(false)
@@ -15,17 +14,7 @@ export function GWLHero() {
     <section className="relative bg-navy overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0">
-        {/* Extends above the section so the faces sit higher than the text. */}
-        <div className="absolute inset-x-0 -top-[clamp(80px,9vw,140px)] bottom-0">
-          <Image
-            src={withBasePath("/fip-academic-pharmacy-section.jpeg")}
-            alt="Prof. Tofade with colleagues from the FIP Academic Pharmacy Section"
-            fill
-            className="object-cover opacity-95"
-            priority
-            style={{objectPosition: "center top"}}
-          />
-        </div>
+        <FullPhoto src="/fip-academic-pharmacy-section.jpeg" alt="Prof. Tofade with colleagues from the FIP Academic Pharmacy Section" sizes="100vw" priority />
         <div className="absolute inset-0 bg-gradient-to-b from-navy/20 via-navy/55 to-navy/95" />
       </div>
 

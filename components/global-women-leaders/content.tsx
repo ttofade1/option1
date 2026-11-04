@@ -1,15 +1,14 @@
 "use client"
 
-import Image from "next/image"
 import { AnimatedSection } from "@/components/animated-section"
 import { Cite } from "@/components/cite"
 import { SOURCES, GLOBAL_KEYS, n } from "@/components/sources"
 import { Target, Users, Heart, Globe } from "lucide-react"
-import { withBasePath } from "@/lib/base-path"
+import { FullPhoto } from "@/components/full-photo"
 
-const photos: { src: string; alt: string; position?: string }[] = [
+const photos: { src: string; alt: string }[] = [
   { src: "/fip-leadership-workshop.jpeg", alt: "FIP Young Pharmacists Group Leadership Development Workshop, Glasgow" },
-  { src: "/women-presidents-organization.jpeg", alt: "Women Presidents Organization", position: "15% center" },
+  { src: "/women-presidents-organization.jpeg", alt: "Women Presidents Organization" },
   { src: "/with-student-leader.jpeg", alt: "With a student leader" },
 ]
 
@@ -21,11 +20,10 @@ export function GWLContent() {
         <div className="grid lg:grid-cols-2 gap-16 items-center mb-24">
           <AnimatedSection animation="slide-left">
             <div className="relative aspect-[4/5] max-w-md">
-              <Image
-                src={withBasePath("/leadership-development-2023.jpeg")}
+              <FullPhoto
+                src="/leadership-development-2023.jpeg"
                 alt="Participants at a 2023 leadership development session"
-                fill
-                className="object-cover"
+                sizes="(max-width: 1024px) 100vw, 448px"
               />
               <div className="absolute -bottom-4 -right-4 w-full h-full border-2 border-gold -z-10" />
             </div>
@@ -88,14 +86,7 @@ export function GWLContent() {
             <AnimatedSection key={photo.src} delay={index * 75}>
               <figure>
                 <div className="relative aspect-[4/5] overflow-hidden">
-                  <Image
-                    src={withBasePath(photo.src)}
-                    alt={photo.alt}
-                    fill
-                    sizes="(max-width: 1024px) 50vw, 280px"
-                    className="object-cover"
-                    style={photo.position ? { objectPosition: photo.position } : undefined}
-                  />
+                  <FullPhoto src={photo.src} alt={photo.alt} sizes="(max-width: 1024px) 50vw, 280px" />
                 </div>
                 <figcaption className="mt-2 text-sm text-text-body">{photo.alt}</figcaption>
               </figure>
