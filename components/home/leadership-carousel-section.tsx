@@ -6,7 +6,7 @@ import { Eyebrow, SectionHeading } from "@/components/home/brand"
 import { withBasePath } from "@/lib/base-path"
 
 /** Photos are letterboxed on navy (object-contain) so nobody is cropped out. */
-const slides: { src: string; caption: string }[] = [
+const slides: { src: string; caption: string; credit?: string }[] = [
   { src: "/taiwan-partnership.jpeg", caption: "Signing an international partnership with a Taiwanese institution" },
   { src: "/hyderabad-presenting-dr-suresh.jpg", caption: "Presenting an award to Dr. B. Suresh, Pro Chancellor, JSS AHER, at the Leadership Educators’ Summit, Hyderabad, 2025" },
   { src: "/aacp-council-of-deans.jpeg", caption: "AACP Council of Deans" },
@@ -14,9 +14,10 @@ const slides: { src: string; caption: string }[] = [
   { src: "/next-generation-leaders.jpeg", caption: "Developing the next generation of leaders" },
   { src: "/women-presidents-organization.jpeg", caption: "Women Presidents Organization" },
   { src: "/ihe-us-universities-summit-2025.jpeg", caption: "Inside Higher Ed US Universities Summit, 2025" },
-  { src: "/unc-kohn-lecture-stage.jpeg", caption: "Delivering the Harold and Carol Kohn Distinguished Alumni Lecture, UNC Chapel Hill, 2026" },
-  { src: "/unc-kohn-lecture-audience.jpeg", caption: "Harold and Carol Kohn Distinguished Alumni Lecture, UNC Chapel Hill, 2026" },
-  { src: "/unc-kohn-award.jpeg", caption: "Receiving the Harold and Carol Kohn Distinguished Alumni Lecturer award, UNC Eshelman School of Pharmacy, 2026" },
+  { src: "/unc-kohn-lecture-stage.jpeg", caption: "Delivering the Harold and Carol Kohn Distinguished Alumni Lecture, UNC Chapel Hill, 2026", credit: "Danny Alexander" },
+  { src: "/unc-kohn-lecture-audience.jpeg", caption: "Harold and Carol Kohn Distinguished Alumni Lecture, UNC Chapel Hill, 2026", credit: "Danny Alexander" },
+  { src: "/unc-kohn-award.jpeg", caption: "Receiving the Harold and Carol Kohn Distinguished Alumni Lecturer award, UNC Eshelman School of Pharmacy, 2026", credit: "Danny Alexander" },
+  { src: "/howard-student-leaders.jpeg", caption: "With student leaders at Howard University College of Pharmacy" },
   { src: "/abcf-congress.jpeg", caption: "Speaking at the VII ABCF Congress, Brazil, 2024" },
   { src: "/ncoda.jpeg", caption: "With NCODA leaders" },
 ]
@@ -83,6 +84,7 @@ export function LeadershipCarouselSection() {
         <div className="mt-[18px] flex flex-wrap items-center justify-between gap-4 font-lato">
           <p aria-live="polite" className="min-h-[23px] text-[15px] leading-[1.5] text-brand-body">
             {slides[index].caption}
+            {slides[index].credit && <span className="text-brand-muted"> · Photo: {slides[index].credit}</span>}
           </p>
           <div className="flex flex-wrap gap-2">
             {slides.map((slide, i) => (

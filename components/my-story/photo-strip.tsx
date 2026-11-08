@@ -5,6 +5,7 @@ const rows: { src: string; caption: string }[][] = [
   [
     { src: "/howard-colleagues-3.jpeg", caption: "With fellow academic leaders at Howard University" },
     { src: "/howard-colleagues-7.jpeg", caption: "With fellow academic leaders at Howard University" },
+    { src: "/howard-leaders-regalia.jpeg", caption: "In academic regalia with Howard University colleagues" },
     { src: "/francke-medal.jpeg", caption: "ASHP Donald E. Francke Medal, 2022" },
   ],
   [
