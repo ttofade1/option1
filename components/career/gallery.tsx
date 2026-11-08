@@ -12,6 +12,7 @@ const photos: { src: string; caption: string }[] = [
   { src: "/mou-signing-telangana.jpg", caption: "Signing an international MOU for ACPHS, Telangana, 2025" },
   { src: "/howard-deans-with-president.jpeg", caption: "With fellow Howard University leaders and the University President" },
   { src: "/georgetown-ipe-day.jpeg", caption: "Georgetown University Interprofessional Education Day" },
+  { src: "/aacp-colleagues.jpeg", caption: "With fellow leaders at the American Association of Colleges of Pharmacy (AACP)" },
   { src: "/fip-ecpg-group.jpeg", caption: "With the FIP Early Career Pharmaceutical Group" },
   { src: "/hyderabad-honoree-clock.jpg", caption: "Honored at the Leadership Educators’ Summit, Hyderabad, 2025" },
   { src: "/hyderabad-honoree-shawl.jpg", caption: "Honored at the Leadership Educators’ Summit, Hyderabad, 2025" },

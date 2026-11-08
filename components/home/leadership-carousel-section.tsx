@@ -16,8 +16,8 @@ const slides: { src: string; caption: string; credit?: string }[] = [
   { src: "/ihe-us-universities-summit-2025.jpeg", caption: "Inside Higher Ed US Universities Summit, 2025" },
   { src: "/unc-kohn-lecture-stage.jpeg", caption: "Delivering the Harold and Carol Kohn Distinguished Alumni Lecture, UNC Chapel Hill, 2026", credit: "Danny Alexander" },
   { src: "/unc-kohn-lecture-audience.jpeg", caption: "Harold and Carol Kohn Distinguished Alumni Lecture, UNC Chapel Hill, 2026", credit: "Danny Alexander" },
-  { src: "/unc-kohn-award.jpeg", caption: "Receiving the Harold and Carol Kohn Distinguished Alumni Lecturer award, UNC Eshelman School of Pharmacy, 2026", credit: "Danny Alexander" },
-  { src: "/howard-student-leaders.jpeg", caption: "With student leaders at Howard University College of Pharmacy" },
+  { src: "/unc-kohn-award.jpeg", caption: "Receiving the Harold and Carol Kohn Distinguished Alumni Lecturer award, UNC Eshelman School of Pharmacy, 2026" },
+  { src: "/howard-student-leaders.jpeg", caption: "With student leaders at Howard University" },
   { src: "/abcf-congress.jpeg", caption: "Speaking at the VII ABCF Congress, Brazil, 2024" },
   { src: "/ncoda.jpeg", caption: "With NCODA leaders" },
 ]
